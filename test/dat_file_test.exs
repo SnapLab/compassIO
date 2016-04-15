@@ -54,11 +54,7 @@ defmodule CompassIO.DatFileTest do
   end
 
   test "read the first shot to_station" do
-    assert first_shot.from_station == "LIFOO12"
-  end
-
-  test "read the first shot from_station" do
-    assert first_shot.to_station == "LIFOO1"
+    assert first_shot.to_station == "LIFOO2"
   end
 
   test "read the first shot length" do

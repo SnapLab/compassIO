@@ -28,7 +28,21 @@ defmodule CompassIO.DatFile do
       survey_date: read_attr(raw_survey, :survey_date),
       comment: read_attr(raw_survey, :survey_comment),
       team: read_attr(raw_survey, :team),
-      shots: read_attr(raw_survey, :shots)
+      shots: Enum.map(read_attr(raw_survey, :shots), &read_shot(&1))
+    }
+  end
+
+  defp read_shot(raw_shot) do
+    shot =
+      String.split(raw_shot, " ")
+      |> Enum.filter(&(&1 != ""))
+
+    %Shot{
+      from_station: Enum.fetch!(shot, 0),
+      to_station:  Enum.fetch!(shot, 1),
+      length:  Enum.fetch!(shot, 2),
+      bearing:  Enum.fetch!(shot, 3),
+      inclination:  Enum.fetch!(shot, 4)
     }
   end
 
