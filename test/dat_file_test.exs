@@ -70,10 +70,10 @@ defmodule CompassIO.DatFileTest do
   end
 
   test "read the first shot flags" do
-    assert first_shot.flags == "LP"
+    assert first_shot.flags == "PC"
   end
 
   test "read the first shot comment" do
-    assert first_shot.comment == "sm: Demo"
+    assert first_shot.comment == "This is the first station"
   end
 end

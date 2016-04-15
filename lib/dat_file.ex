@@ -37,12 +37,15 @@ defmodule CompassIO.DatFile do
       String.split(raw_shot, " ")
       |> Enum.filter(&(&1 != ""))
 
+
     %Shot{
       from_station: Enum.fetch!(shot, 0),
       to_station:  Enum.fetch!(shot, 1),
       length:  Enum.fetch!(shot, 2),
       bearing:  Enum.fetch!(shot, 3),
-      inclination:  Enum.fetch!(shot, 4)
+      inclination:  Enum.fetch!(shot, 4),
+      flags: read_attr(raw_shot, :flags),
+      comment: read_attr(raw_shot, :comment)
     }
   end
 
@@ -72,6 +75,17 @@ defmodule CompassIO.DatFile do
     |> List.last
     |> String.split(~r/\r\n/)
     |> List.delete_at(-1) # remove the last record, it's not a shot
+  end
+
+  defp read_attr(raw_shot, :flags) do
+    Regex.run(~r/\#\|(.*?)\#/, raw_shot)
+    |> read_capture_from_list
+  end
+
+  defp read_attr(raw_shot, :comment) do
+    comment = String.slice(raw_shot, 105..200)
+    Regex.run(~r/\#\|(.*)\#(.*?)\z/, comment)
+    |> read_capture_from_list
   end
 
   defp read_capture_from_list(list) do
