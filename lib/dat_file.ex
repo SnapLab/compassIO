@@ -19,19 +19,24 @@ defmodule CompassIO.DatFile do
     %Survey{
       name: read_attr(raw_survey, :survey_name),
       survey_date: read_attr(raw_survey, :survey_date),
-      comment: "Taking a shot from"
+      comment: read_attr(raw_survey, :survey_comment)
     }
   end
 
   defp read_attr(raw_survey, :survey_name) do
-    Regex.run(~r/SURVEY NAME: (.*?)\r\n/, raw_survey)
+    Regex.run(~r/SURVEY NAME:(.*?)\r\n/, raw_survey)
     |> read_capture_from_list
   end
 
   defp read_attr(raw_survey, :survey_date) do
-    Regex.run(~r/SURVEY DATE: (.*?)COMMENT/, raw_survey)
+    Regex.run(~r/SURVEY DATE:(.*?)COMMENT/, raw_survey)
     |> read_capture_from_list
     |> cleanup_survey_date
+  end
+
+  defp read_attr(raw_survey, :survey_comment) do
+    Regex.run(~r/COMMENT:(.*?)\r\n/, raw_survey)
+    |> read_capture_from_list
   end
 
   defp read_capture_from_list(list) do
