@@ -3,15 +3,35 @@ defmodule CompassIO.DatFileTest do
   doctest CompassIO
   alias CompassIO.DatFile
 
-  test "reading the cave data from a .dat file" do
-    cave = DatFile.reader("test/support/Linea\ Dorada.dat")
+  def cave do
+    DatFile.reader("test/support/Linea\ Dorada.dat")
+  end
+
+  def first_survey do
+    List.first(cave.surveys)
+  end
+
+  test "read the cave name" do
     assert cave.name == "Linea Dorada"
+  end
 
-    survey = List.first(cave.surveys)
-    assert survey.name == "Foo"
-    assert survey.survey_date == "2016-03-05"
-    assert Regex.match?(~r/Taking a shot from/, survey.comment)
+  test "read the first survey name" do
+    assert first_survey.name == "Foo"
+  end
 
+  test "read the first survey date" do
+    assert first_survey.survey_date == "2016-03-05"
+  end
+
+  test "read the first survey comment" do
+    assert Regex.match?(~r/Taking a shot from/, first_survey.comment)
+  end
+
+  test "read the first survey team" do
+    # assert first_survey.team == "Toby Privett"
+  end
+
+  test "read the number of surveys" do
     assert Enum.count(cave.surveys) == 6
   end
 end
