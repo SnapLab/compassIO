@@ -46,7 +46,13 @@ defmodule CompassIO.DatFile do
   end
 
   defp read_capture_from_list(list) do
-    List.last(list) |> String.strip
+    cond do
+      is_list(list) ->
+        List.last(list)
+        |> String.strip
+      true ->
+        ""
+    end
   end
 
   defp cleanup_survey_date(raw_date) do
