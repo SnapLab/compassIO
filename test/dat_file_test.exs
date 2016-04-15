@@ -16,6 +16,10 @@ defmodule CompassIO.DatFileTest do
     List.first(first_survey.shots)
   end
 
+  def last_shot do
+    List.last(first_survey.shots)
+  end
+
   test "gracefully handle a bad filename" do
     {:error, msg} = DatFile.reader("not-a-file")
     assert Regex.match?(~r/File could not be opened/, msg)
@@ -75,5 +79,9 @@ defmodule CompassIO.DatFileTest do
 
   test "read the first shot comment" do
     assert first_shot.comment == "This is the first station"
+  end
+
+  test "read the last shot comment" do
+    assert last_shot.comment == "eoc"
   end
 end

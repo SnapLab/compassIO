@@ -83,8 +83,8 @@ defmodule CompassIO.DatFile do
   end
 
   defp read_attr(raw_shot, :comment) do
-    comment = String.slice(raw_shot, 105..200)
-    Regex.run(~r/\#\|(.*)\#(.*?)\z/, comment)
+    String.slice(raw_shot, 105..200)
+    |> String.split(~r/\#\|(.*)\#/)
     |> read_capture_from_list
   end
 
