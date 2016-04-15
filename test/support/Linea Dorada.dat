@@ -1,0 +1,115 @@
+Linea Dorada
+SURVEY NAME: Foo
+SURVEY DATE: 3 5 2016  COMMENT:Taking a shot from the surface and tieing into an old line that ends soon
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              LIFOO1               LIFOO2    16.00   215.00   -18.21     0.00     0.00     0.00     0.00
+              LIFOO2               LIFOO3     8.00   224.00   -22.02     0.00     0.00     0.00     0.00
+              LIFOO3               LIFOO4    15.00   246.00   -32.23     0.00     0.00     0.00     0.00
+              LIFOO4               LIFOO5    13.00   272.00     4.41     0.00     0.00     0.00     0.00  t-intersection
+              LIFOO5               LIFOO6    13.00   110.00   -13.34     0.00     0.00     0.00     0.00
+              LIFOO6               LIFOO7     5.00    87.00   -11.54     0.00     0.00     0.00     0.00
+              LIFOO7               LIFOO8    23.00    91.00    -4.99     0.00     0.00     0.00     0.00  eoc
+
+Linea Dorada
+SURVEY NAME: Principal
+SURVEY DATE: 3 5 2016  COMMENT:Resurvey existing line, recent collapse, loops round cenote 
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              LIFOO5               LIPRI1    34.00   229.00   -17.10     0.00     0.00     0.00     0.00  Existing red sm: 'CJR'
+              LIPRI1               LIPRI2    16.00   235.00   -25.94     0.00     0.00     0.00     0.00
+              LIPRI2               LIPRI3    11.00   247.00    10.48     0.00     0.00     0.00     0.00
+              LIPRI3               LIPRI4     7.00   251.00     0.00     0.00     0.00     0.00     0.00
+              LIPRI4               LIPRI5    24.00   259.00    27.28     0.00     0.00     0.00     0.00
+              LIPRI5               LIPRI6     8.00   236.00    22.02     0.00     0.00     0.00     0.00
+              LIPRI6               LIPRI7     6.00   224.00     0.00     0.00     0.00     0.00     0.00
+              LIPRI7               LIPRI8    11.00   229.00     5.22     0.00     0.00     0.00     0.00  Floating t-intersection, sm: Linea Dorada (toby)
+              LIPRI8               LIPRI9     2.00   188.00     0.00     0.00     0.00     0.00     0.00
+              LIPRI9              LIPRI10    13.00   225.00    27.49     0.00     0.00     0.00     0.00
+             LIPRI10              LIPRI11     8.00   246.00    14.48     0.00     0.00     0.00     0.00
+             LIPRI11              LIPRI12     5.00   330.00    23.58     0.00     0.00     0.00     0.00  Cenote entrance
+             LIPRI12              LIPRI13     3.00   358.00   -19.47     0.00     0.00     0.00     0.00
+             LIPRI13              LIPRI14    10.00     5.00   -36.87     0.00     0.00     0.00     0.00  Thick rope line hidden under collaps, loops back to floating t-intersection
+
+Linea Dorada
+SURVEY NAME: Douche
+SURVEY DATE: 3 5 2016  COMMENT:New exploration, line ends in large room, good lead north
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              LIPRI7               LIDOU1     9.00   275.00   -12.84     0.00     0.00     0.00     0.00  Floating t-intersection, sm: Linea Dorada
+              LIDOU1               LIDOU2    18.00   352.00   -19.47     0.00     0.00     0.00     0.00
+              LIDOU2               LIDOU3    10.00   304.00   -17.46     0.00     0.00     0.00     0.00
+              LIDOU3               LIDOU4    29.00   239.00    -7.93     0.00     0.00     0.00     0.00
+              LIDOU4               LIDOU5    12.00   199.00     4.78     0.00     0.00     0.00     0.00
+              LIDOU5               LIDOU6    16.00   254.00    10.81     0.00     0.00     0.00     0.00
+              LIDOU6               LIDOU7     8.00   258.00    48.59     0.00     0.00     0.00     0.00
+              LIDOU7               LIDOU8     2.00   346.00     0.00     0.00     0.00     0.00     0.00
+              LIDOU8               LIDOU9     8.00   308.00   -30.00     0.00     0.00     0.00     0.00
+              LIDOU9              LIDOU10    12.00   356.00    -9.59     0.00     0.00     0.00     0.00
+             LIDOU10              LIDOU11    10.00   357.00     0.00     0.00     0.00     0.00     0.00  Lead north, sm: Rabid
+             LIDOU11              LIDOU12    52.00   253.00     5.52     0.00     0.00     0.00     0.00
+             LIDOU12              LIDOU13    15.00   250.00    11.54     0.00     0.00     0.00     0.00  eoc sm: Douche
+
+Linea Dorada
+SURVEY NAME: WellHung
+SURVEY DATE: 3 21 2016  COMMENT:Ends at cenote, difficult exit
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+     LIDOU13        LIWE1    20.00    30.00   -23.58     0.00     0.00     0.00     0.00  sm: Douche
+       LIWE1        LIWE2    10.00     2.00   -17.46     0.00     0.00     0.00     0.00
+       LIWE2        LIWE3    28.00    37.00     0.00     0.00     0.00     0.00     0.00
+       LIWE3        LIWE4    12.00    24.00    30.00     0.00     0.00     0.00     0.00
+       LIWE4        LIWE5    59.00    72.00     3.89     0.00     0.00     0.00     0.00
+       LIWE5        LIWE6    11.00    38.00    15.83     0.00     0.00     0.00     0.00
+       LIWE6        LIWE7     7.00    64.00    25.38     0.00     0.00     0.00     0.00
+       LIWE7        LIWE8    26.00    60.00    13.34     0.00     0.00     0.00     0.00
+       LIWE8        LIWE9    15.00   288.00    32.23     0.00     0.00     0.00     0.00  sm: Well Hung. cenote shaft with small exit
+
+Linea Dorada
+SURVEY NAME: BoxOfBits
+SURVEY DATE: 3 21 2016  COMMENT:needs a poke
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      LIDOU2       LIBOX1    41.00    55.00    -8.41     0.00     0.00     0.00     0.00  sm: Abechons
+      LIBOX1       LIBOX2    25.00    35.00     4.59     0.00     0.00     0.00     0.00
+      LIBOX2       LIBOX3    24.00    16.00     9.59     0.00     0.00     0.00     0.00
+      LIBOX3       LIBOX4     6.00    30.00     0.00     0.00     0.00     0.00     0.00  sm:Box of bits 
+
+Linea Dorada
+SURVEY NAME: BlueCrabsConnect
+SURVEY DATE: 3 21 2016  COMMENT:Links two end of lines around edge of cenote
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+     LIDOU13       LIBLU1    28.00   130.00   -12.37     0.00     0.00     0.00     0.00  #| #  sm: Douche
+      LIBLU1       LIBLU2    12.00   185.00    41.81     0.00     0.00     0.00     0.00
+      LIBLU2       LIBLU3    13.00    90.00     0.00     0.00     0.00     0.00     0.00
+      LIBLU3       LIBLU4    31.00    78.00    -3.70     0.00     0.00     0.00     0.00
+      LIBLU4       LIBLU5    12.00   152.00    19.47     0.00     0.00     0.00     0.00  cenote exit
+      LIBLU5       LIBLU6    16.00    66.00    -3.58     0.00     0.00     0.00     0.00
+      LIBLU6       LIBLU7    34.00    70.00   -11.88     0.00     0.00     0.00     0.00
+
+
