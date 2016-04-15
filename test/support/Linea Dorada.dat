@@ -7,7 +7,7 @@ DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRE
 
                 FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
 
-              LIFOO1               LIFOO2    16.00   215.00   -18.21     0.00     0.00     0.00     0.00
+              LIFOO1               LIFOO2    16.00   215.00   -18.21     0.00     0.00     0.00     0.00  #|PC#  This is the first station
               LIFOO2               LIFOO3     8.00   224.00   -22.02     0.00     0.00     0.00     0.00
               LIFOO3               LIFOO4    15.00   246.00   -32.23     0.00     0.00     0.00     0.00
               LIFOO4               LIFOO5    13.00   272.00     4.41     0.00     0.00     0.00     0.00  t-intersection
