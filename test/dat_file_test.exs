@@ -45,6 +45,10 @@ defmodule CompassIO.DatFileTest do
     assert Enum.count(cave.surveys) == 6
   end
 
+  test "read the number of shots from the first survey" do
+    assert Enum.count(first_survey.shots) == 7
+  end
+
   test "read the first shot from_station" do
     assert first_shot.from_station == "LIFOO1"
   end

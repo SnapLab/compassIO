@@ -27,7 +27,8 @@ defmodule CompassIO.DatFile do
       name: read_attr(raw_survey, :survey_name),
       survey_date: read_attr(raw_survey, :survey_date),
       comment: read_attr(raw_survey, :survey_comment),
-      team: read_attr(raw_survey, :team)
+      team: read_attr(raw_survey, :team),
+      shots: read_attr(raw_survey, :shots)
     }
   end
 
@@ -50,6 +51,13 @@ defmodule CompassIO.DatFile do
   defp read_attr(raw_survey, :team) do
     Regex.run(~r/SURVEY TEAM: \r\n(.*?)\r\n/, raw_survey)
     |> read_capture_from_list
+  end
+
+  defp read_attr(raw_survey, :shots) do
+    String.split(raw_survey, ~r/FLAGS  COMMENTS\r\n\r\n(.*?)/)
+    |> List.last
+    |> String.split(~r/\r\n/)
+    |> List.delete_at(-1) # remove the last record, it's not a shot
   end
 
   defp read_capture_from_list(list) do
