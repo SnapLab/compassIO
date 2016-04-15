@@ -41,7 +41,7 @@ defmodule CompassIO.DatFile do
   end
 
   defp read_attr(raw_survey, :team) do
-    Regex.run(~r/SURVEY TEAM:(.*?)\r\n/, raw_survey)
+    Regex.run(~r/SURVEY TEAM: \r\n(.*?)\r\n/, raw_survey)
     |> read_capture_from_list
   end
 

@@ -28,7 +28,7 @@ defmodule CompassIO.DatFileTest do
   end
 
   test "read the first survey team" do
-    # assert first_survey.team == "Toby Privett"
+    assert first_survey.team == "Toby Privett"
   end
 
   test "read the number of surveys" do
