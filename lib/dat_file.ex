@@ -14,9 +14,19 @@ defmodule CompassIO.DatFile do
 
   defp read_survey(raw_survey) do
     %Survey{
-      name: "Foo",
-      survey_date: "2016-03-05"
+      name: read_attr(raw_survey, :survey_name),
+      survey_date: "2016-03-05",
+      comment: "Taking a shot from"
     }
   end
 
+  defp read_attr(raw_survey, :survey_name) do
+    list = Regex.run(~r/SURVEY NAME: (.*?)\r\n/, raw_survey)
+    cond do
+      is_list(list) ->
+        List.last list
+      true ->
+        ""
+     end
+  end
 end
