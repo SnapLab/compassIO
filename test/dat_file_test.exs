@@ -10,7 +10,8 @@ defmodule CompassIO.DatFileTest do
     survey = List.first(cave.surveys)
     assert survey.name == "Foo"
     assert survey.survey_date == "2016-03-05"
+    assert Regex.match?(~r/Taking a shot from/, survey.comment)
 
-    assert Enum.count(cave.surveys) == 7
+    assert Enum.count(cave.surveys) == 6
   end
 end
