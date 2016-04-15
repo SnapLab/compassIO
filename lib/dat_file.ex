@@ -1,18 +1,25 @@
 defmodule CompassIO.DatFile do
+
   def reader(filename) do
-    data = File.read!(filename)
+    case File.read(filename) do
+      {:error, :enoent} ->
+        {:error, "File could not be opened"}
 
-    raw_surveys =
-      String.split(data, "\f\r")
-      |> List.delete_at(-1) # remove the last record, it's not a survey
+      {:ok, data} ->
+        raw_surveys =
+          String.split(data, "\f\r")
+          |> List.delete_at(-1) # remove the last record, it's not a survey
 
-    cave_name =
-      String.split(data, "\n") |> List.first |> String.strip
+        cave_name =
+          String.split(data, "\n") |> List.first |> String.strip
 
-    %Cave{
-      name: cave_name,
-      surveys: Enum.map(raw_surveys, &read_survey(&1))
-    }
+        {:ok,
+          %Cave{
+            name: cave_name,
+            surveys: Enum.map(raw_surveys, &read_survey(&1))
+          }
+        }
+    end
   end
 
   defp read_survey(raw_survey) do

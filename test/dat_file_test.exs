@@ -4,7 +4,8 @@ defmodule CompassIO.DatFileTest do
   alias CompassIO.DatFile
 
   def cave do
-    DatFile.reader("test/support/Linea\ Dorada.dat")
+    {:ok, cave} = DatFile.reader("test/support/Linea\ Dorada.dat")
+    cave
   end
 
   def first_survey do
@@ -13,6 +14,11 @@ defmodule CompassIO.DatFileTest do
 
   def first_shot do
     List.first(first_survey.shots)
+  end
+
+  test "gracefully handle a bad filename" do
+    {:error, msg} = DatFile.reader("not-a-file")
+    assert Regex.match?(~r/File could not be opened/, msg)
   end
 
   test "read the cave name" do
