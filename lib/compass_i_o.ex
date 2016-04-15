@@ -1,0 +1,2 @@
+defmodule CompassIO do
+end
