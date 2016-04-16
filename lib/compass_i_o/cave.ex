@@ -1,3 +1,3 @@
-defmodule Cave do
+defmodule CompassIO.Cave do
   defstruct name: "", surveys: []
 end

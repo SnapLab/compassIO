@@ -1,10 +1,11 @@
-defmodule CompassIO.DatFileTest do
+defmodule CompassIO.ReaderTest do
   use ExUnit.Case
   doctest CompassIO
-  alias CompassIO.DatFile
+
+  alias CompassIO.Reader
 
   def cave do
-    {:ok, cave} = DatFile.reader("test/support/Linea\ Dorada.dat")
+    {:ok, cave} = Reader.read("test/support/Linea\ Dorada.dat")
     cave
   end
 
@@ -21,7 +22,7 @@ defmodule CompassIO.DatFileTest do
   end
 
   test "gracefully handle a bad filename" do
-    {:error, msg} = DatFile.reader("not-a-file")
+    {:error, msg} = Reader.read("not-a-file")
     assert Regex.match?(~r/File could not be opened/, msg)
   end
 

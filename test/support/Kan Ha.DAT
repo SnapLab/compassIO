@@ -1,0 +1,1466 @@
+Kan Ha
+SURVEY NAME: KAJaimeLine
+SURVEY DATE: 1 7 2015  COMMENT:Cave ends or might continue very silty
+SURVEY TEAM: 
+Toby Privett & Jaime de la Puerta
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAJA1       KAJA2a   120.00   342.00     0.00     1.00     0.00     0.00     0.00  #|LP#
+      KAJA2a        KAJA2    11.00    28.00   -90.00     0.00     0.00     0.00     0.00  #| #
+       KAJA2        KAJA3    19.00    28.00   -21.62     0.00     0.00     0.00     0.00
+       KAJA3        KAJA4    43.00    64.00    -9.37     0.00     0.00     0.00     0.00  t-intersection. sm Kan Ha
+       KAJA4        KAJA5    50.00    12.00   -11.54     0.00     0.00     0.00     0.00
+       KAJA5        KAJA6    59.00    26.00     4.86     0.00     0.00     0.00     0.00
+       KAJA6        KAJA7    58.00    58.00    -0.99     0.00     0.00     0.00     0.00
+       KAJA7        KAJA8   117.00    54.00     4.90     0.00     0.00     0.00     0.00
+       KAJA8        KAJA9    65.00    75.00     0.88     0.00     0.00     0.00     0.00
+       KAJA9       KAJA10    13.00    74.00    -4.41     0.00     0.00     0.00     0.00
+      KAJA10       KAJA11    23.00    66.00     7.49     0.00     0.00     0.00     0.00
+      KAJA11       KAJA12    14.00    82.00     0.00     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KATobyLIne
+SURVEY DATE: 1 7 2015  COMMENT:cave ends. lead SE
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+               KAJA4                KATO1    27.00    90.00   -17.24     0.00     0.00     0.00     0.00  sm Fungal Toe
+               KATO1                KATO2    55.00   156.00   -14.75     0.00     0.00     0.00     0.00
+               KATO2                KATO3    11.00   152.00    -5.22     0.00     0.00     0.00     0.00  lead east. sm spirit of the age
+               KATO3                KATO4    24.00   126.00    -4.78     0.00     0.00     0.00     0.00  cave ends
+
+Kan Ha
+SURVEY NAME: KASpiritOfTheAge
+SURVEY DATE: 1 8 2015  COMMENT:cave continues, poor viz
+SURVEY TEAM: 
+Toby Privett & Jaime de la Puerta
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KATO3        KASP1     3.00   140.00     0.00     0.00     0.00     0.00     0.00
+       KASP1        KASP2     7.00   184.00   -16.60     0.00     0.00     0.00     0.00
+       KASP2        KASP3     5.00   218.00   -11.54     0.00     0.00     0.00     0.00
+       KASP3        KASP4    10.00   178.00     0.00     0.00     0.00     0.00     0.00
+       KASP4        KASP5     9.00   192.00     0.00     0.00     0.00     0.00     0.00
+       KASP5        KASP6    18.00   205.00     6.38     0.00     0.00     0.00     0.00
+       KASP6        KASP7    14.00   189.00     8.21     0.00     0.00     0.00     0.00
+       KASP7        KASP8    30.00   198.00    -3.82     0.00     0.00     0.00     0.00
+       KASP8        KASP9    20.00   179.00   -14.48     0.00     0.00     0.00     0.00  sm Broken Down. Cave continues 
+
+Kan Ha
+SURVEY NAME: KALIneJumper
+SURVEY DATE: 1 10 2015  COMMENT:mixed bag, cave continues
+SURVEY TEAM: 
+Jaime De La Puerta, Robbie Schmittner, Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+               KASP9                KALI1    18.00   184.00    -9.59     0.00     0.00     0.00     0.00  sm: Broken Down, survey marker
+               KALI1                KALI2    10.00   169.00    -5.74     0.00     0.00     0.00     0.00
+               KALI2                KALI3    19.00   189.00     9.08     0.00     0.00     0.00     0.00
+               KALI3                KALI4    20.00   159.00    -5.74     0.00     0.00     0.00     0.00
+               KALI4                KALI5    11.00   163.00     5.22     0.00     0.00     0.00     0.00
+               KALI5                KALI6     5.00   138.00     0.00     0.00     0.00     0.00     0.00
+               KALI6                KALI7    25.00   184.00    -4.59     0.00     0.00     0.00     0.00
+               KALI7                KALI8    27.00   196.00     4.25     0.00     0.00     0.00     0.00
+               KALI8                KALI9    13.00   210.00    13.34     0.00     0.00     0.00     0.00  T-intersection sm:Robbie
+               KALI9               KALI10    19.00   273.00    -3.02     0.00     0.00     0.00     0.00
+              KALI10               KALI11    14.00   228.00    -8.21     0.00     0.00     0.00     0.00  cave continues
+
+Kan Ha
+SURVEY NAME: KASAltyWater
+SURVEY DATE: 1 10 2015  COMMENT:cave continues through small breakdown crack
+SURVEY TEAM: 
+Toby Privett / Dave Sieff / Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KALI11        KASA1    52.00   254.00    -1.10     0.00     0.00     0.00     0.00
+       KASA1        KASA2    29.00   228.00     3.95     0.00     0.00     0.00     0.00
+       KASA2        KASA3    21.00   209.00     8.21     0.00     0.00     0.00     0.00
+       KASA3        KASA4    14.00   161.00   -25.38     0.00     0.00     0.00     0.00
+       KASA4        KASA5    49.00   229.00     2.34     0.00     0.00     0.00     0.00
+       KASA5        KASA6    19.00   217.00    -6.04     0.00     0.00     0.00     0.00
+       KASA6        KASA7    33.00   210.00    -6.96     0.00     0.00     0.00     0.00
+       KASA7        KASA8    21.00   202.00     5.47     0.00     0.00     0.00     0.00
+       KASA8        KASA9    20.00   170.00    -8.63     0.00     0.00     0.00     0.00  incomplete survey, toby is a lazy cunt, 2 or 3 more stations to sm: SOA
+       KASA9       KASA10    42.00   122.00    -4.10     0.00     0.00     0.00     0.00  Start resurvey of Tobys last stations and new exploration 11/01/15
+      KASA10       KASA11    18.00    85.00   -12.84     0.00     0.00     0.00     0.00
+      KASA11       KASA12    39.00    86.00     5.89     0.00     0.00     0.00     0.00
+      KASA12       KASA13    39.00    86.00     0.00     0.00     0.00     0.00     0.00
+      KASA13       KASA14     1.00   112.00     0.00     0.00     0.00     0.00     0.00
+      KASA14       KASA15    15.00   131.00    -3.82     0.00     0.00     0.00     0.00
+      KASA15       KASA16     7.00   182.00     0.00     0.00     0.00     0.00     0.00
+      KASA16       KASA17    15.00   181.00    -3.82     0.00     0.00     0.00     0.00
+      KASA17       KASA18     3.00   201.00     0.00     0.00     0.00     0.00     0.00
+      KASA18       KASA19    15.00   133.00     0.00     0.00     0.00     0.00     0.00
+      KASA19       KASA20     5.00   113.00     0.00     0.00     0.00     0.00     0.00
+      KASA20       KASA21     6.00   160.00    19.47     0.00     0.00     0.00     0.00
+      KASA21       KASA22    14.00   211.00    -4.10     0.00     0.00     0.00     0.00
+      KASA22       KASA23     6.00   186.00    90.00     0.00     0.00     0.00     0.00  T intersection sm: high tide
+      KASA23       KASA24    19.00   226.00    18.41     0.00     0.00     0.00     0.00
+      KASA24       KASA25    21.00   285.00    13.77     0.00     0.00     0.00     0.00
+      KASA25       KASA26    14.00   345.00   -25.38     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KASTressTest
+SURVEY DATE: 1 10 2015  COMMENT:mixed bag, cave continues
+SURVEY TEAM: 
+Jaime De La Puerta, Robbie Schmittner, Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+               KALI8                KAST1    31.00   154.00     7.41     0.00     0.00     0.00     0.00
+               KAST1                KAST2    26.00   130.00     4.41     0.00     0.00     0.00     0.00
+               KAST2                KAST3     9.00   190.00    26.39     0.00     0.00     0.00     0.00
+               KAST3                KAST4    12.00   216.00   -14.48     0.00     0.00     0.00     0.00  T-intersection. sm: Robbie Purple
+               KAST4                KAST5     7.00   226.00   -16.60     0.00     0.00     0.00     0.00
+               KAST5                KAST6     7.00   160.00    -8.21     0.00     0.00     0.00     0.00
+               KAST6                KAST7    17.00   144.00     3.37     0.00     0.00     0.00     0.00
+               KAST7                KAST8    12.00   116.00    19.47     0.00     0.00     0.00     0.00
+               KAST8                KAST9    13.00   158.00   -17.92     0.00     0.00     0.00     0.00
+               KAST9               KAST10    10.00   270.00   -17.46     0.00     0.00     0.00     0.00
+              KAST10               KAST11    10.00   220.00   -17.46     0.00     0.00     0.00     0.00
+              KAST11               KAST12     7.00   235.00   -25.38     0.00     0.00     0.00     0.00
+              KAST12               KAST13    51.00   196.00    -1.12     0.00     0.00     0.00     0.00
+              KAST13               KAST14    16.00   220.00    -3.58     0.00     0.00     0.00     0.00  Bones
+              KAST14               KAST15    46.00   248.00     1.25     0.00     0.00     0.00     0.00
+              KAST15               KAST16    33.00   238.00    -3.47     0.00     0.00     0.00     0.00  sm: Wriggle
+
+Kan Ha
+SURVEY NAME: KAOBeliskLine
+SURVEY DATE: 1 11 2015  COMMENT:line loops possible north lead 4 stations from the end
+SURVEY TEAM: 
+Toby Privett / Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KASA2        KAOB1    20.00   266.00   -11.54     0.00     0.00     0.00     0.00  sm: pharma funk
+       KAOB1        KAOB2    16.00   252.00    -3.58     0.00     0.00     0.00     0.00
+       KAOB2        KAOB3     6.00   276.00    -9.59     0.00     0.00     0.00     0.00
+       KAOB3        KAOB4    51.00   270.00    -1.12     0.00     0.00     0.00     0.00
+       KAOB4        KAOB5    47.00   273.00     1.22     0.00     0.00     0.00     0.00
+       KAOB5        KAOB6    18.00   269.00    -3.18     0.00     0.00     0.00     0.00
+       KAOB6        KAOB7     9.00   260.00    -6.38     0.00     0.00     0.00     0.00
+       KAOB7        KAOB8    25.00   258.00     4.59     0.00     0.00     0.00     0.00
+       KAOB8        KAOB9    33.00   269.00    -1.74     0.00     0.00     0.00     0.00
+       KAOB9       KAOB10    45.00    35.00     0.00     0.00     0.00     0.00     0.00
+      KAOB10       KAOB11    26.00   310.00    -2.20     0.00     0.00     0.00     0.00
+      KAOB11       KAOB12    25.00    71.00     0.00     0.00     0.00     0.00     0.00  sm:transkini / cave continues
+      KAOB12       KAOB13     5.00   356.00   -36.87     0.00     0.00     0.00     0.00  start exploration 12/01/15  Dave Sieff / Nadia Berni
+      KAOB13       KAOB14    16.00    89.00     0.00     0.00     0.00     0.00     0.00
+      KAOB14       KAOB15    11.00    79.00    10.48     0.00     0.00     0.00     0.00  lead: N
+      KAOB15       KAOB16    17.00   102.00    -3.37     0.00     0.00     0.00     0.00
+      KAOB16       KAOB17    20.00   111.00    -2.87     0.00     0.00     0.00     0.00
+      KAOB17       KAOB18    50.00   152.00     2.29     0.00     0.00     0.00     0.00  sm: stolen moments
+
+Kan Ha
+SURVEY NAME: KASCaryTLine
+SURVEY DATE: 1 11 2015  COMMENT:scary
+SURVEY TEAM: 
+Dave Sieff / Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KASA23        KASC1     7.00    90.00    25.38     0.00     0.00     0.00     0.00
+       KASC1        KASC2    28.00   102.00     4.10     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KATAdicLine
+SURVEY DATE: 1 11 2015  COMMENT:possible leads
+SURVEY TEAM: 
+Bruce Pye / jaime de la Peurta
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KASA22        KATA1    16.00   278.00    10.81     0.00     0.00     0.00     0.00  sm: super stylin
+       KATA1        KATA2     4.00   270.00     0.00     0.00     0.00     0.00     0.00
+       KATA2        KATA3    12.00   285.00    -4.78     0.00     0.00     0.00     0.00
+       KATA3        KATA4     9.00   316.00     6.38     0.00     0.00     0.00     0.00
+       KATA4        KATA5    33.00   258.00     0.00     0.00     0.00     0.00     0.00  sm:Tadic
+
+Kan Ha
+SURVEY NAME: KASTEppema
+SURVEY DATE: 1 12 2015  COMMENT:Cave continues
+SURVEY TEAM: 
+Jaime de la Puerta & Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              KAST14               KASTE1     9.00   152.00    33.75     0.00     0.00     0.00     0.00  sm: S.Teppema
+              KASTE1               KASTE2     9.00   142.00   -41.81     0.00     0.00     0.00     0.00
+              KASTE2               KASTE3    36.00   112.00    -3.18     0.00     0.00     0.00     0.00
+              KASTE3               KASTE4     9.00    84.00    12.84     0.00     0.00     0.00     0.00
+              KASTE4               KASTE5    16.00    74.00    -7.18     0.00     0.00     0.00     0.00
+              KASTE5               KASTE6    15.00    20.00     3.82     0.00     0.00     0.00     0.00
+              KASTE6               KASTE7     8.00    98.00    -7.18     0.00     0.00     0.00     0.00  lead N
+              KASTE7               KASTE8     6.00   100.00     9.59     0.00     0.00     0.00     0.00
+              KASTE8               KASTE9     6.00   158.00    -9.59     0.00     0.00     0.00     0.00
+              KASTE9              KASTE10     5.00   192.00     0.00     0.00     0.00     0.00     0.00
+             KASTE10              KASTE11    12.00   141.00     0.00     0.00     0.00     0.00     0.00
+             KASTE11              KASTE12    11.00   168.00    -5.22     0.00     0.00     0.00     0.00
+             KASTE12              KASTE13    20.00   104.00    -5.74     0.00     0.00     0.00     0.00
+             KASTE13              KASTE14    10.00   153.00     0.00     0.00     0.00     0.00     0.00
+             KASTE14              KASTE15    20.00   162.00     0.00     0.00     0.00     0.00     0.00
+             KASTE15              KASTE16    20.00   122.00     2.87     0.00     0.00     0.00     0.00  jump to RAIF line
+             KASTE16              KASTE17    19.00    94.00    -6.04     0.00     0.00     0.00     0.00
+             KASTE17              KASTE18    14.00    76.00     0.00     0.00     0.00     0.00     0.00
+             KASTE18              KASTE19    17.00    68.00    -3.37     0.00     0.00     0.00     0.00
+             KASTE19              KASTE20    92.00    60.00     0.00     0.00     0.00     0.00     0.00
+             KASTE20              KASTE21    48.00    52.00     2.39     0.00     0.00     0.00     0.00  lead
+             KASTE21              KASTE22    29.00   117.00     0.00     0.00     0.00     0.00     0.00
+             KASTE22              KASTE23    14.00   120.00    -4.10     0.00     0.00     0.00     0.00  hole down
+             KASTE23              KASTE24    20.00    84.00     2.87     0.00     0.00     0.00     0.00  lead sw
+             KASTE24              KASTE25    26.00    66.00     0.00     0.00     0.00     0.00     0.00
+             KASTE25              KASTE26    44.00    34.00    -1.30     0.00     0.00     0.00     0.00  sm: jaime
+             KASTE26              KASTE27    41.00     7.00     1.40     0.00     0.00     0.00     0.00
+             KASTE27              KASTE28    42.00    76.00     0.00     0.00     0.00     0.00     0.00
+             KASTE28              KASTE29    43.00    44.00     0.00     0.00     0.00     0.00     0.00  sm: Stitches. cave continues
+             KASTE29              KASTE30    43.00    60.00     2.67     0.00     0.00     0.00     0.00  start exploration 13/01/15   Bruce/Jaime
+             KASTE30              KASTE31    17.00    56.00    17.10     0.00     0.00     0.00     0.00  closes loop, sm Oculus Rift, sm facing the opposite way
+
+Kan Ha
+SURVEY NAME: KAJAmel
+SURVEY DATE: 1 12 2015  COMMENT:line ends in beautiful dome
+SURVEY TEAM: 
+Jaime de la Puerta
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAST3       KAJAM1     3.00   130.00     0.00     0.00     0.00     0.00     0.00  T-intersection, sm: Robbie
+      KAJAM1       KAJAM2     5.00    70.00    53.13     0.00     0.00     0.00     0.00
+      KAJAM2       KAJAM3    15.00    78.00    19.47     0.00     0.00     0.00     0.00
+      KAJAM3       KAJAM4    21.00    18.00     2.73     0.00     0.00     0.00     0.00
+      KAJAM4       KAJAM5     9.00    13.00    12.84     0.00     0.00     0.00     0.00
+      KAJAM5       KAJAM6    13.00    30.00    13.34     0.00     0.00     0.00     0.00
+      KAJAM6       KAJAM7    13.00    55.00     0.00     0.00     0.00     0.00     0.00  sm: Jamel
+
+Kan Ha
+SURVEY NAME: KASPookyboots
+SURVEY DATE: 1 12 2015  COMMENT:loops back to Tobys line
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAOB8       KASPO1    16.00   217.00   -18.21     0.00     0.00     0.00     0.00
+      KASPO1       KASPO2    22.00   218.00    -5.22     0.00     0.00     0.00     0.00
+      KASPO2       KASPO3    28.00   249.00     2.05     0.00     0.00     0.00     0.00
+      KASPO3       KASPO4    18.00   214.00    -3.18     0.00     0.00     0.00     0.00
+      KASPO4       KASPO5    23.00   207.00     2.49     0.00     0.00     0.00     0.00
+      KASPO5       KASPO6     9.00   174.00     0.00     0.00     0.00     0.00     0.00
+      KASPO6       KASPO7     5.00   119.00     0.00     0.00     0.00     0.00     0.00
+      KASPO7       KASPO8     8.00    90.00    -7.18     0.00     0.00     0.00     0.00
+      KASPO8       KASPO9     8.00    76.00     0.00     0.00     0.00     0.00     0.00
+      KASPO9      KASPO10     7.00    66.00     0.00     0.00     0.00     0.00     0.00
+     KASPO10      KASPO11    15.00   105.00     0.00     0.00     0.00     0.00     0.00
+     KASPO11      KASPO12    23.00    41.00     0.00     0.00     0.00     0.00     0.00
+     KASPO12      KASPO13    12.00    77.00     0.00     0.00     0.00     0.00     0.00
+     KASPO13      KASPO14    19.00    67.00     3.02     0.00     0.00     0.00     0.00
+     KASPO14      KASPO15    10.00    59.00     5.74     0.00     0.00     0.00     0.00
+     KASPO15      KASPO16    10.00   293.00    -5.74     0.00     0.00     0.00     0.00
+     KASPO16      KASPO17    22.00    44.00     5.22     0.00     0.00     0.00     0.00
+     KASPO17      KASPO18    15.00    34.00     3.82     0.00     0.00     0.00     0.00
+     KASPO18      KASPO19    11.00    90.00   -15.83     0.00     0.00     0.00     0.00
+     KASPO19      KASPO20    18.00    92.00     9.59     0.00     0.00     0.00     0.00  sm:silver sausage
+
+Kan Ha
+SURVEY NAME: KASTAllyfields
+SURVEY DATE: 1 13 2015  COMMENT:line loops back on itself / Leads
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KASA7       KASTA1    23.00   276.00    -2.49     0.00     0.00     0.00     0.00  sm:shin dig
+      KASTA1       KASTA2    30.00   223.00     0.00     0.00     0.00     0.00     0.00
+      KASTA2       KASTA3    10.00   228.00   -11.54     0.00     0.00     0.00     0.00
+      KASTA3       KASTA4    13.00   204.00    -4.41     0.00     0.00     0.00     0.00
+      KASTA4       KASTA5     8.00   209.00     0.00     0.00     0.00     0.00     0.00
+      KASTA5       KASTA6    12.00   283.00     0.00     0.00     0.00     0.00     0.00
+      KASTA6       KASTA7    20.00   221.00     0.00     0.00     0.00     0.00     0.00
+      KASTA7       KASTA8     6.00   228.00     0.00     0.00     0.00     0.00     0.00
+      KASTA8       KASTA9    27.00   198.00     6.38     0.00     0.00     0.00     0.00
+      KASTA9      KASTA10    49.00   213.00     1.17     0.00     0.00     0.00     0.00  sm:Pinken Yellow
+     KASTA10      KASTA11    13.00   196.00    -4.41     0.00     0.00     0.00     0.00  start exploration 15/01/15
+     KASTA11      KASTA12    45.00   240.00    -5.10     0.00     0.00     0.00     0.00
+     KASTA12      KASTA13    34.00   280.00     1.69     0.00     0.00     0.00     0.00
+     KASTA13      KASTA14    21.00   272.00     0.00     0.00     0.00     0.00     0.00
+     KASTA14      KASTA15    39.00   234.00     1.47     0.00     0.00     0.00     0.00
+     KASTA15      KASTA16     5.00   284.00    23.58     0.00     0.00     0.00     0.00
+     KASTA16      KASTA17     7.00   280.00     0.00     0.00     0.00     0.00     0.00
+     KASTA17      KASTA18     9.00   227.00     0.00     0.00     0.00     0.00     0.00
+     KASTA18      KASTA19    22.00   213.00     0.00     0.00     0.00     0.00     0.00
+     KASTA19      KASTA20     6.00   229.00     9.59     0.00     0.00     0.00     0.00
+     KASTA20      KASTA21    10.00   265.00    -5.74     0.00     0.00     0.00     0.00
+     KASTA21      KASTA22    13.00   250.00     8.85     0.00     0.00     0.00     0.00
+     KASTA22      KASTA23     5.00   261.00    11.54     0.00     0.00     0.00     0.00
+     KASTA23      KASTA24    42.00   230.00    -4.10     0.00     0.00     0.00     0.00
+     KASTA24      KASTA25    11.00   158.00    21.32     0.00     0.00     0.00     0.00
+     KASTA25      KASTA26    20.00   114.00    20.49     0.00     0.00     0.00     0.00
+     KASTA26      KASTA27    20.00   148.00    17.46     0.00     0.00     0.00     0.00
+     KASTA27      KASTA28    19.00    21.00     9.08     0.00     0.00     0.00     0.00  lead: S  sm:lazy love
+     KASTA28      KASTA29     9.00    41.00     0.00     0.00     0.00     0.00     0.00  lead above
+     KASTA29      KASTA30    28.00     2.00   -23.13     0.00     0.00     0.00     0.00  sm:taco hell
+
+Kan Ha
+SURVEY NAME: KAOCulusrift
+SURVEY DATE: 1 13 2015  COMMENT:met Bruce and Jamie at the end of the line, nice salt water loop, many leads
+SURVEY TEAM: 
+Dave Sieff / Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+     KASTE25        KAOC1    14.00    98.00    -8.21     0.00     0.00     0.00     0.00
+       KAOC1        KAOC2    37.00    97.00     1.55     0.00     0.00     0.00     0.00
+       KAOC2        KAOC3    24.00    97.00     2.39     0.00     0.00     0.00     0.00
+       KAOC3        KAOC4    17.00   104.00    -6.76     0.00     0.00     0.00     0.00
+       KAOC4        KAOC5    13.00   143.00    -4.41     0.00     0.00     0.00     0.00
+       KAOC5        KAOC6    31.00   174.00     0.00     0.00     0.00     0.00     0.00
+       KAOC6        KAOC7    44.00   212.00     0.00     0.00     0.00     0.00     0.00
+       KAOC7        KAOC8    12.00   137.00     0.00     0.00     0.00     0.00     0.00
+       KAOC8        KAOC9    41.00   121.00    -1.40     0.00     0.00     0.00     0.00
+       KAOC9       KAOC10    17.00    65.00     6.76     0.00     0.00     0.00     0.00
+      KAOC10       KAOC11    36.00    52.00    -1.59     0.00     0.00     0.00     0.00
+      KAOC11       KAOC12    47.00    13.00     1.22     0.00     0.00     0.00     0.00
+      KAOC12       KAOC13    27.00    14.00     4.25     0.00     0.00     0.00     0.00
+      KAOC13       KAOC14    27.00    98.00     2.12     0.00     0.00     0.00     0.00
+      KAOC14       KAOC15    27.00    90.00    -2.12     0.00     0.00     0.00     0.00
+      KAOC15       KAOC16    14.00     6.00     4.10     0.00     0.00     0.00     0.00
+      KAOC16       KAOC17    29.00    12.00     0.00     0.00     0.00     0.00     0.00
+      KAOC17       KAOC18    37.00    43.00     0.00     0.00     0.00     0.00     0.00
+      KAOC18       KAOC19    44.00    22.00     2.61     0.00     0.00     0.00     0.00  sm:Lady Lettuice
+      KAOC19       KAOC20     8.00    87.00     7.18     0.00     0.00     0.00     0.00
+      KAOC20       KAOC21     9.00   147.00    -6.38     0.00     0.00     0.00     0.00
+      KAOC21       KAOC22    37.00    97.00     4.65     0.00     0.00     0.00     0.00
+      KAOC22       KAOC23    46.00    75.00    -2.49     0.00     0.00     0.00     0.00
+      KAOC23       KAOC24    29.00    56.00    -1.98     0.00     0.00     0.00     0.00
+      KAOC24       KAOC25    29.00   309.00     7.93     0.00     0.00     0.00     0.00
+      KAOC25       KAOC26    42.00   300.00     9.59     0.00     0.00     0.00     0.00  sm: mojo risisng, lead NE
+      KAOC26       KAOC27    33.00   307.00     0.00     0.00     0.00     0.00     0.00
+      KAOC27       KAOC28    78.00   264.00    -7.37     0.00     0.00     0.00     0.00
+      KAOC28       KAOC29    18.00   252.00     9.59     0.00     0.00     0.00     0.00
+      KAOC29       KAOC30    17.00   208.00    17.10     0.00     0.00     0.00     0.00
+      KAOC30       KAOC31    25.00   249.00     2.29     0.00     0.00     0.00     0.00
+      KAOC31       KAOC32    23.00   265.00   -15.12     0.00     0.00     0.00     0.00  sm:Oculus Rift
+
+Kan Ha
+SURVEY NAME: KAMojorisin
+SURVEY DATE: 1 15 2015  COMMENT:e.o.c  silty / chunks coming down from roof
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KAOC26         KAM1    26.00     2.00    20.25     0.00     0.00     0.00     0.00
+        KAM1         KAM2    24.00    16.00     4.78     0.00     0.00     0.00     0.00
+        KAM2         KAM3    55.00    71.00    15.83     0.00     0.00     0.00     0.00
+        KAM3         KAM4    32.00     9.00     7.18     0.00     0.00     0.00     0.00
+        KAM4         KAM5    19.00    52.00     6.04     0.00     0.00     0.00     0.00  lead north, sm:fluffer
+        KAM5         KAM6    42.00   124.00    -4.10     0.00     0.00     0.00     0.00
+        KAM6         KAM7    29.00    68.00    -5.94     0.00     0.00     0.00     0.00
+        KAM7         KAM8    16.00   118.00   -25.94     0.00     0.00     0.00     0.00
+        KAM8         KAM9    25.00   142.00   -16.26     0.00     0.00     0.00     0.00
+        KAM9        KAM10    18.00    85.00   -30.00     0.00     0.00     0.00     0.00
+       KAM10        KAM11    12.00   113.00   -14.48     0.00     0.00     0.00     0.00
+       KAM11        KAM12    21.00   118.00   -13.77     0.00     0.00     0.00     0.00
+       KAM12        KAM13    16.00    15.00    -7.18     0.00     0.00     0.00     0.00
+       KAM13        KAM14    24.00    54.00     2.39     0.00     0.00     0.00     0.00  T intersection / sm:pinical
+       KAM14        KAM15    14.00    50.00    -4.10     0.00     0.00     0.00     0.00
+       KAM15        KAM16    27.00    45.00    -2.12     0.00     0.00     0.00     0.00
+       KAM16        KAM17    18.00    30.00    -6.38     0.00     0.00     0.00     0.00
+       KAM17        KAM18    27.00    22.00     6.38     0.00     0.00     0.00     0.00
+       KAM18        KAM19    17.00    61.00   -10.16     0.00     0.00     0.00     0.00
+       KAM19        KAM20    23.00    93.00    -2.49     0.00     0.00     0.00     0.00
+       KAM20        KAM21    25.00    88.00     0.00     0.00     0.00     0.00     0.00
+       KAM21        KAM22     6.00   188.00     9.59     0.00     0.00     0.00     0.00
+       KAM22        KAM23    47.00   186.00     0.00     0.00     0.00     0.00     0.00  sm: the Angels share
+
+Kan Ha
+SURVEY NAME: KAWhynoarmyLine
+SURVEY DATE: 1 15 2015  COMMENT:line needs to be checked at the end, possibilities
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAM14         KAW1    12.00   162.00     0.00     0.00     0.00     0.00     0.00
+        KAW1         KAW2    13.00   148.00    17.92     0.00     0.00     0.00     0.00
+        KAW2         KAW3    12.00   148.00    48.59     0.00     0.00     0.00     0.00
+        KAW3         KAW4    62.00   165.00     1.85     0.00     0.00     0.00     0.00
+        KAW4         KAW5    28.00   164.00   -14.48     0.00     0.00     0.00     0.00
+        KAW5         KAW6    17.00    16.00   -13.61     0.00     0.00     0.00     0.00
+        KAW6         KAW7    18.00    48.00    -9.59     0.00     0.00     0.00     0.00
+        KAW7         KAW8    32.00   102.00     1.79     0.00     0.00     0.00     0.00
+        KAW8         KAW9    16.00   206.00    10.81     0.00     0.00     0.00     0.00
+        KAW9        KAW10    26.00   174.00    11.09     0.00     0.00     0.00     0.00  sm:why no army / possibilities
+       KAW10        KAW11    39.00   155.00     7.37     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KACItyOfTears
+SURVEY DATE: 1 16 2015  COMMENT:Loops back to ML
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+     KASTE24        KACI1    13.00   158.00     8.85     0.00     0.00     0.00     0.00  sm: City of tears
+       KACI1        KACI2    31.00   210.00     0.00     0.00     0.00     0.00     0.00
+       KACI2        KACI3    55.00   244.00    -1.04     0.00     0.00     0.00     0.00
+       KACI3        KACI4    22.00   276.00    -2.61     0.00     0.00     0.00     0.00  q`
+       KACI4        KACI5    15.00   256.00     0.00     0.00     0.00     0.00     0.00
+       KACI5        KACI6     9.00   318.00    -6.38     0.00     0.00     0.00     0.00
+       KACI6        KACI7    21.00   265.00     2.73     0.00     0.00     0.00     0.00
+       KACI7        KACI8    15.00   244.00     0.00     0.00     0.00     0.00     0.00
+       KACI8        KACI9    31.00   220.00    -1.85     0.00     0.00     0.00     0.00
+       KACI9       KACI10    18.00   220.00    -3.18     0.00     0.00     0.00     0.00
+      KACI10       KACI11    22.00   302.00     2.61     0.00     0.00     0.00     0.00
+      KACI11       KACI12     4.00     8.00    14.48     0.00     0.00     0.00     0.00
+      KACI12       KACI13    11.00   338.00     0.00     0.00     0.00     0.00     0.00
+      KACI13       KACI14     6.00   345.00     0.00     0.00     0.00     0.00     0.00  sm: Temblor
+
+Kan Ha
+SURVEY NAME: KAFLuffer
+SURVEY DATE: 1 16 2015  COMMENT:cave continues
+SURVEY TEAM: 
+Dave Sieff & Nadia Berni 
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+        KAM5        KAFL1    15.00    56.00    -7.66     0.00     0.00     0.00     0.00  sm: Fluffer
+       KAFL1        KAFL2    32.00    24.00    -3.58     0.00     0.00     0.00     0.00
+       KAFL2        KAFL3    24.00    34.00   -14.48     0.00     0.00     0.00     0.00
+       KAFL3        KAFL4    35.00    34.00   -11.54     0.00     0.00     0.00     0.00
+       KAFL4        KAFL5    54.00    71.00    -1.06     0.00     0.00     0.00     0.00
+       KAFL5        KAFL6    22.00   192.00     0.00     0.00     0.00     0.00     0.00
+       KAFL6        KAFL7     7.00   161.00   -25.38     0.00     0.00     0.00     0.00
+       KAFL7        KAFL8    11.00   153.00   -54.90     0.00     0.00     0.00     0.00
+       KAFL8        KAFL9    13.00   115.00   -17.92     0.00     0.00     0.00     0.00
+       KAFL9       KAFL10     6.00    41.00     9.59     0.00     0.00     0.00     0.00
+      KAFL10       KAFL11    30.00    69.00    -3.82     0.00     0.00     0.00     0.00
+      KAFL11       KAFL12    28.00   135.00     0.00     0.00     0.00     0.00     0.00
+      KAFL12       KAFL13    13.00    60.00     0.00     0.00     0.00     0.00     0.00
+      KAFL13       KAFL14    20.00    30.00   -23.58     0.00     0.00     0.00     0.00
+      KAFL14       KAFL15    22.00   352.00     0.00     0.00     0.00     0.00     0.00
+      KAFL15       KAFL16     8.00   348.00    14.48     0.00     0.00     0.00     0.00
+      KAFL16       KAFL17     6.00     4.00    41.81     0.00     0.00     0.00     0.00
+      KAFL17       KAFL18    10.00   352.00   -23.58     0.00     0.00     0.00     0.00
+      KAFL18       KAFL19    31.00   345.00     5.55     0.00     0.00     0.00     0.00
+      KAFL19       KAFL20    10.00   326.00    11.54     0.00     0.00     0.00     0.00
+      KAFL20       KAFL21    29.00   339.00    -7.93     0.00     0.00     0.00     0.00  lead W
+      KAFL21       KAFL22    36.00   357.00    -1.59     0.00     0.00     0.00     0.00  lead NW sm: rock steady
+      KAFL22       KAFL23    37.00    94.00     1.55     0.00     0.00     0.00     0.00
+      KAFL23       KAFL24    13.00   119.00     0.00     0.00     0.00     0.00     0.00
+      KAFL24       KAFL25    62.00    61.00    -1.85     0.00     0.00     0.00     0.00  lead E
+      KAFL25       KAFL26    30.00    39.00    -7.66     0.00     0.00     0.00     0.00
+      KAFL26       KAFL27    30.00    33.00    -9.59     0.00     0.00     0.00     0.00
+      KAFL27       KAFL28    11.00   133.00    10.48     0.00     0.00     0.00     0.00
+      KAFL28       KAFL29    35.00    68.00     4.92     0.00     0.00     0.00     0.00
+      KAFL29       KAFL30    22.00   100.00     0.00     0.00     0.00     0.00     0.00  sm: ?
+
+Kan Ha
+SURVEY NAME: KARAif
+SURVEY DATE: 1 17 2015  COMMENT:ends in breakdown
+SURVEY TEAM: 
+Bruce Pye & Jaime de la Puerta
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+             KASTE16                KARA1     3.00   228.00    19.47     0.00     0.00     0.00     0.00  sm: Raif
+               KARA1                KARA2    17.00   204.00     3.37     0.00     0.00     0.00     0.00
+               KARA2                KARA3    43.00   258.00     0.00     0.00     0.00     0.00     0.00
+               KARA3                KARA4    30.00   224.00     0.00     0.00     0.00     0.00     0.00  lead N & S
+               KARA4                KARA5    31.00   222.00     0.00     0.00     0.00     0.00     0.00
+               KARA5                KARA6    45.00   272.00     0.00     0.00     0.00     0.00     0.00
+               KARA6                KARA7    23.00   260.00     7.49     0.00     0.00     0.00     0.00
+               KARA7                KARA8     7.00   160.00     8.21     0.00     0.00     0.00     0.00
+               KARA8                KARA9    28.00   164.00   -10.29     0.00     0.00     0.00     0.00
+               KARA9               KARA10    17.00   160.00     3.37     0.00     0.00     0.00     0.00
+              KARA10               KARA11    17.00   142.00     0.00     0.00     0.00     0.00     0.00  sm: Elias. cave ends in breakdown
+
+Kan Ha
+SURVEY NAME: KAWHorehoppin
+SURVEY DATE: 1 19 2015  COMMENT:looking for the connection to Regina
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KAFL30        KAWH1     4.00   192.00     0.00     0.00     0.00     0.00     0.00
+       KAWH1        KAWH2    28.00   152.00     0.00     0.00     0.00     0.00     0.00
+       KAWH2        KAWH3    37.00   225.00     7.77     0.00     0.00     0.00     0.00
+       KAWH3        KAWH4    21.00   244.00    16.60     0.00     0.00     0.00     0.00
+       KAWH4        KAWH5    28.00   173.00    42.73     0.00     0.00     0.00     0.00  lead : w /sw
+       KAWH5        KAWH6    14.00   174.00    20.92     0.00     0.00     0.00     0.00
+       KAWH6        KAWH7    22.00   180.00    13.14     0.00     0.00     0.00     0.00  sm: paedo pan   lead: W 
+       KAWH7        KAWH8    18.00   190.00    -9.59     0.00     0.00     0.00     0.00
+       KAWH8        KAWH9    17.00   195.00   -20.67     0.00     0.00     0.00     0.00
+       KAWH9       KAWH10    23.00   254.00   -40.71     0.00     0.00     0.00     0.00
+      KAWH10       KAWH11    28.00   159.00   -12.37     0.00     0.00     0.00     0.00
+      KAWH11       KAWH12     4.00   177.00   -48.59     0.00     0.00     0.00     0.00
+      KAWH12       KAWH13    13.00   214.00    -8.85     0.00     0.00     0.00     0.00
+      KAWH13       KAWH14    15.00   222.00     3.82     0.00     0.00     0.00     0.00  sm:whore hoppin
+
+Kan Ha
+SURVEY NAME: KACHarlie
+SURVEY DATE: 1 19 2015  COMMENT:could be the way????  breakdown
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              KAFL30                KACH1    19.00    39.00     9.08     0.00     0.00     0.00     0.00
+               KACH1                KACH2    22.00    62.00     2.61     0.00     0.00     0.00     0.00
+               KACH2                KACH3    22.00    74.00    13.14     0.00     0.00     0.00     0.00
+               KACH3                KACH4    16.00   116.00    18.21     0.00     0.00     0.00     0.00
+               KACH4                KACH5    14.00    52.00    34.85     0.00     0.00     0.00     0.00  sm:teenage kicks
+               KACH5                KACH6    10.00   343.00    23.58     0.00     0.00     0.00     0.00  30/01/15 Bruce continues
+               KACH6                KACH7    11.00    72.00    39.52     0.00     0.00     0.00     0.00
+               KACH7                KACH8    10.00    58.00   -23.58     0.00     0.00     0.00     0.00  cave ends at breakdown
+
+Kan Ha
+SURVEY NAME: KACOntenderline
+SURVEY DATE: 1 19 2015  COMMENT:e.o.c   big breakdown
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+     KASTE20        KACO1    24.00   242.00     2.39     0.00     0.00     0.00     0.00
+       KACO1        KACO2    24.00   268.00    -4.78     0.00     0.00     0.00     0.00
+       KACO2        KACO3    29.00   262.00     5.94     0.00     0.00     0.00     0.00
+       KACO3        KACO4    40.00   312.00     5.74     0.00     0.00     0.00     0.00
+       KACO4        KACO5    25.00   340.00    16.26     0.00     0.00     0.00     0.00
+       KACO5        KACO6    34.00   312.00    15.35     0.00     0.00     0.00     0.00
+       KACO6        KACO7     8.00   309.00    14.48     0.00     0.00     0.00     0.00
+       KACO7        KACO8     9.00   277.00    -6.38     0.00     0.00     0.00     0.00
+       KACO8        KACO9    10.00   266.00     5.74     0.00     0.00     0.00     0.00  sm:Brooose
+
+Kan Ha
+SURVEY NAME: KALAzylove
+SURVEY DATE: 1 19 2015  COMMENT:leads near the end
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+             KASTA27                KALA1    14.00   197.00     0.00     0.00     0.00     0.00     0.00
+               KALA1                KALA2     8.00   240.00    -7.18     0.00     0.00     0.00     0.00
+               KALA2               KALA2a    17.00   210.00     3.37     0.00     0.00     0.00     0.00
+              KALA2a                KALA3    10.00   210.00     5.74     0.00     0.00     0.00     0.00  #| #
+               KALA3                KALA4    23.00   275.00     7.49     0.00     0.00     0.00     0.00  lead: nw    sm: dental moss
+               KALA4                KALA5     5.00   196.00   -11.54     0.00     0.00     0.00     0.00
+               KALA5                KALA6    19.00   224.00   -18.41     0.00     0.00     0.00     0.00
+               KALA6                KALA7    47.00   217.00    -6.11     0.00     0.00     0.00     0.00
+               KALA7                KALA8    14.00   238.00    -4.10     0.00     0.00     0.00     0.00
+               KALA8                KALA9    19.00   269.00   -15.26     0.00     0.00     0.00     0.00  lead: sw  sm: new age mellow drama
+               KALA9               KALA10    29.00   307.00    -3.95     0.00     0.00     0.00     0.00
+              KALA10               KALA11    47.00    43.00     1.22     0.00     0.00     0.00     0.00  sm: aimless amor
+
+Kan Ha
+SURVEY NAME: KADArkPlanet
+SURVEY DATE: 1 20 2015  COMMENT:pinches off, lots of flow and small leads
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+        KAM2        KADA1    31.00   312.00     0.00     0.00     0.00     0.00     0.00  sm: Dark Planet
+       KADA1        KADA2    32.00   346.00     8.99     0.00     0.00     0.00     0.00
+       KADA2        KADA3    25.00   356.00    -4.59     0.00     0.00     0.00     0.00
+       KADA3        KADA4    28.00    15.00   -16.60     0.00     0.00     0.00     0.00  lead E
+       KADA4        KADA5    33.00   314.00   -17.64     0.00     0.00     0.00     0.00
+       KADA5        KADA6    28.00   270.00     6.15     0.00     0.00     0.00     0.00
+       KADA6        KADA7    35.00   258.00    -6.56     0.00     0.00     0.00     0.00
+       KADA7        KADA8    28.00   256.00     4.10     0.00     0.00     0.00     0.00  lead S
+       KADA8        KADA9    15.00   314.00    15.47     0.00     0.00     0.00     0.00  lead E 
+       KADA9       KADA10    20.00   288.00     8.63     0.00     0.00     0.00     0.00
+      KADA10       KADA11    10.00   254.00    44.43     0.00     0.00     0.00     0.00
+      KADA11       KADA12    32.00   240.00     1.79     0.00     0.00     0.00     0.00
+      KADA12       KADA13    18.00   238.00     3.18     0.00     0.00     0.00     0.00  lead SE
+      KADA13       KADA14    31.00   248.00     7.41     0.00     0.00     0.00     0.00
+      KADA14       KADA15    34.00   252.00    -1.69     0.00     0.00     0.00     0.00
+      KADA15       KADA16    12.00   223.00    -9.59     0.00     0.00     0.00     0.00
+      KADA16       KADA17    17.00   234.00   -13.61     0.00     0.00     0.00     0.00
+      KADA17       KADA18     8.00   215.00   -22.02     0.00     0.00     0.00     0.00  lead SE
+      KADA18       KADA19    13.00   314.00    17.92     0.00     0.00     0.00     0.00
+      KADA19       KADA20     9.00   250.00    12.84     0.00     0.00     0.00     0.00
+      KADA20       KADA21    11.00   247.00     5.22     0.00     0.00     0.00     0.00
+      KADA21       KADA22     3.00   276.00    41.81     0.00     0.00     0.00     0.00
+      KADA22       KADA23    10.00   280.00    30.00     0.00     0.00     0.00     0.00
+      KADA23       KADA24     5.00   328.00    23.58     0.00     0.00     0.00     0.00  sm: Luis
+
+Kan Ha
+SURVEY NAME: KAROckSteady
+SURVEY DATE: 1 20 2015  COMMENT:ends in breakdown
+SURVEY TEAM: 
+DAve Sieff & Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KAFL22        KARO1    10.00   310.00    30.00     0.00     0.00     0.00     0.00  sm: Rock Steady
+       KARO1        KARO2    29.00   290.00    28.87     0.00     0.00     0.00     0.00
+       KARO2        KARO3    26.00   284.00    20.25     0.00     0.00     0.00     0.00
+       KARO3        KARO4    21.00   252.00     5.47     0.00     0.00     0.00     0.00
+       KARO4        KARO5     6.00   287.00    19.47     0.00     0.00     0.00     0.00
+       KARO5        KARO6    14.00     9.00    20.92     0.00     0.00     0.00     0.00
+       KARO6        KARO7    13.00    28.00     8.85     0.00     0.00     0.00     0.00
+       KARO7        KARO8    21.00    76.00   -25.38     0.00     0.00     0.00     0.00
+       KARO8        KARO9    44.00    70.00   -27.04     0.00     0.00     0.00     0.00
+       KARO9       KARO10    13.00    92.00     4.41     0.00     0.00     0.00     0.00  sm: Stupid Cupid
+
+Kan Ha
+SURVEY NAME: KAMAdPride
+SURVEY DATE: 1 20 2015  COMMENT:shortcut
+SURVEY TEAM: 
+Nadia Berni & Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KAFL21        KAMA1     6.00   236.00     0.00     0.00     0.00     0.00     0.00  sm: Mad Pride
+       KAMA1        KAMA2    31.00   228.00    -1.85     0.00     0.00     0.00     0.00
+       KAMA2        KAMA3    40.00   206.00    23.58     0.00     0.00     0.00     0.00
+       KAMA3        KAMA4    15.00   199.00    23.58     0.00     0.00     0.00     0.00  sm: PET
+
+Kan Ha
+SURVEY NAME: KAGOtham
+SURVEY DATE: 1 20 2015  COMMENT:shortcut
+SURVEY TEAM: 
+Nadia Berni & Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+     KASTE26        KAGO1     9.00   263.00    12.84     0.00     0.00     0.00     0.00
+       KAGO1        KAGO2    19.00   264.00     3.02     0.00     0.00     0.00     0.00
+       KAGO2        KAGO3    49.00   277.00    -1.17     0.00     0.00     0.00     0.00
+       KAGO3        KAGO4    23.00   236.00     2.49     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KACOnservationCut
+SURVEY DATE: 1 20 2015  COMMENT:shortcut to avoid killing more delicate formations
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+               KASA9                KACA1    20.00   210.00     5.74     0.00     0.00     0.00     0.00  previous line cut back. sm: pinken yellow
+               KACA1                KACA2    31.00   283.00    -5.55     0.00     0.00     0.00     0.00
+               KACA2                KACA3     8.00   282.00    -7.18     0.00     0.00     0.00     0.00
+               KACA3                KACA4     9.00   239.00     6.38     0.00     0.00     0.00     0.00
+               KACA4                KACA5    20.00   233.00    -2.87     0.00     0.00     0.00     0.00
+               KACA5                KACA6     6.00   251.00     0.00     0.00     0.00     0.00     0.00
+               KACA6                KACA7    21.00   215.00     2.73     0.00     0.00     0.00     0.00  tie into line. sm: slacker yoga
+
+Kan Ha
+SURVEY NAME: KANEwAgeMelodrama
+SURVEY DATE: 1 20 2015  COMMENT:cave continues, lots of leads in big room near eol
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+               KALA9                KANE1    21.00   206.00     2.73     0.00     0.00     0.00     0.00  sm: new age melodrama
+               KANE1                KANE2    19.00   199.00     0.00     0.00     0.00     0.00     0.00
+               KANE2                KANE3    21.00   208.00    -2.73     0.00     0.00     0.00     0.00
+               KANE3                KANE4    17.00   211.00    24.32     0.00     0.00     0.00     0.00
+               KANE4                KANE5    13.00   225.00     8.85     0.00     0.00     0.00     0.00  sm: western. possibly continues through restriction
+               KANE5                KANE6     7.00   304.00   -16.60     0.00     0.00     0.00     0.00  continued exploration: 23.1.2015
+               KANE6                KANE7     6.00   346.00   -19.47     0.00     0.00     0.00     0.00
+               KANE7                KANE8     9.00    57.00   -26.39     0.00     0.00     0.00     0.00
+               KANE8                KANE9    11.00   334.00   -15.83     0.00     0.00     0.00     0.00
+               KANE9               KANE10    17.00   279.00     6.76     0.00     0.00     0.00     0.00
+              KANE10               KANE11     7.00   293.00    16.60     0.00     0.00     0.00     0.00
+              KANE11               KANE12    22.00   314.00     0.00     0.00     0.00     0.00     0.00
+              KANE12               KANE13    18.00   298.00     0.00     0.00     0.00     0.00     0.00
+              KANE13               KANE14    14.00   210.00     0.00     0.00     0.00     0.00     0.00
+              KANE14               KANE15    15.00   225.00   -15.47     0.00     0.00     0.00     0.00
+              KANE15               KANE16    56.00   202.00    10.29     0.00     0.00     0.00     0.00
+              KANE16               KANE17    37.00   200.00     4.65     0.00     0.00     0.00     0.00
+              KANE17               KANE18    26.00   194.00   -17.92     0.00     0.00     0.00     0.00
+              KANE18               KANE19    44.00   141.00    -9.15     0.00     0.00     0.00     0.00
+              KANE19               KANE20    27.00   123.00    -8.52     0.00     0.00     0.00     0.00  cave continues sm: last arrow
+
+Kan Ha
+SURVEY NAME: KASUnnyMonday
+SURVEY DATE: 1 23 2015  COMMENT:shortcut to restriction. needs finishing
+SURVEY TEAM: 
+Toby Privett/Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KALI11        KASU1    22.00   323.00    -5.22     0.00     0.00     0.00     0.00
+       KASU1        KASU2    23.00     6.00     2.49     0.00     0.00     0.00     0.00  sm: sunny monday
+       KASU2        KASU3    38.00    23.00     4.53     0.00     0.00     0.00     0.00
+       KASU3        KASU4    18.00    44.00     3.18     0.00     0.00     0.00     0.00  sm ?
+       KASU4        KASU5    17.00   326.00   -13.61     0.00     0.00     0.00     0.00  start explore 02/02/15 Bruce
+       KASU5        KASU6    29.00   310.00     0.00     0.00     0.00     0.00     0.00
+       KASU6        KASU7     4.00   316.00     0.00     0.00     0.00     0.00     0.00  kiss off
+       KASU7        KASU8    10.00   354.00     0.00     0.00     0.00     0.00     0.00
+       KASU8        KASU9     7.00   292.00     8.21     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KACONtender
+SURVEY DATE: 1 23 2015  COMMENT:Very small, decorated and restricted - ends in shallow breakdown
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+               KAST8               KACON2    12.00   108.00     0.00     0.00     0.00     0.00     0.00  sm: contender
+              KACON2               KACON3     9.00    10.00    62.73     0.00     0.00     0.00     0.00
+              KACON3               KACON4     3.00    47.00     0.00     0.00     0.00     0.00     0.00
+              KACON4               KACON5    13.00   356.00    32.58     0.00     0.00     0.00     0.00
+              KACON5               KACON6    11.00    88.00    -5.22     0.00     0.00     0.00     0.00
+              KACON6               KACON7    12.00    62.00     4.78     0.00     0.00     0.00     0.00
+              KACON7               KACON8     9.00   324.00    26.39     0.00     0.00     0.00     0.00
+              KACON8               KACON9     4.00     7.00    14.48     0.00     0.00     0.00     0.00
+              KACON9              KACON10    10.00    68.00    30.00     0.00     0.00     0.00     0.00
+             KACON10              KACON11    13.00   146.00    13.34     0.00     0.00     0.00     0.00
+             KACON11              KACON12     6.00   146.00    30.00     0.00     0.00     0.00     0.00
+             KACON12              KACON13    19.00   106.00    18.41     0.00     0.00     0.00     0.00  ends very shallow and narrow envelope breakdown.
+
+Kan Ha
+SURVEY NAME: KAWIggle
+SURVEY DATE: 1 23 2015  COMMENT:deep trench cave continues
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              KAST12                KAWI1    18.00   254.00    -6.38     0.00     0.00     0.00     0.00  sm: Wiggle
+               KAWI1                KAWI2    36.00   238.00    -1.59     0.00     0.00     0.00     0.00
+               KAWI2                KAWI3    52.00   260.00     0.00     0.00     0.00     0.00     0.00
+               KAWI3                KAWI4    28.00   278.00    -4.10     0.00     0.00     0.00     0.00
+               KAWI4                KAWI5     9.00    80.00   -90.00     0.00     0.00     0.00     0.00
+               KAWI5                KAWI6    14.00    38.00    -4.10     0.00     0.00     0.00     0.00
+               KAWI6                KAWI7    23.00    12.00     0.00     0.00     0.00     0.00     0.00
+               KAWI7                KAWI8    41.00   294.00    -2.80     0.00     0.00     0.00     0.00  bones
+               KAWI8                KAWI9    28.00   310.00     0.00     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KAREflux
+SURVEY DATE: 1 24 2015  COMMENT:low silty halocline rooms
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KADA10        KARE1    17.00    38.00   -20.67     0.00     0.00     0.00     0.00
+       KARE1        KARE2    10.00   318.00   -36.87     0.00     0.00     0.00     0.00
+       KARE2        KARE3    32.00   268.00    -7.18     0.00     0.00     0.00     0.00
+       KARE3        KARE4    47.00   272.00     2.44     0.00     0.00     0.00     0.00
+       KARE4        KARE5    19.00    12.00    -9.08     0.00     0.00     0.00     0.00
+       KARE5        KARE6    15.00   314.00     3.82     0.00     0.00     0.00     0.00
+       KARE6        KARE7    11.00   335.00    10.48     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KANEWworldwater
+SURVEY DATE: 1 24 2015  COMMENT:going
+SURVEY TEAM: 
+Dave Sieff / Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+        KAW5       KANEW1    20.00   154.00   -23.58     0.00     0.00     0.00     0.00
+      KANEW1       KANEW2    20.00   285.00    -2.87     0.00     0.00     0.00     0.00
+      KANEW2       KANEW3    48.00   293.00     3.58     0.00     0.00     0.00     0.00
+      KANEW3       KANEW4    33.00   279.00    -5.22     0.00     0.00     0.00     0.00
+      KANEW4       KANEW5    18.00   238.00     3.18     0.00     0.00     0.00     0.00
+      KANEW5       KANEW6    57.00   305.00    -1.01     0.00     0.00     0.00     0.00
+      KANEW6       KANEW7    26.00   269.00     8.85     0.00     0.00     0.00     0.00
+      KANEW7       KANEW8    11.00   252.00    15.83     0.00     0.00     0.00     0.00  sm: el caniston
+      KANEW8       KANEW9    19.00   185.00   -18.41     0.00     0.00     0.00     0.00  start exploration 02/02/2015
+      KANEW9      KANEW10    22.00   196.00    -5.22     0.00     0.00     0.00     0.00
+     KANEW10      KANEW11    19.00   252.00    -6.04     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KAGOldenticket
+SURVEY DATE: 1 24 2015  COMMENT:line loops
+SURVEY TEAM: 
+Dave Sieff / Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAW11       KAGOL1    16.00    93.00    22.02     0.00     0.00     0.00     0.00
+      KAGOL1       KAGOL2    11.00    67.00    10.48     0.00     0.00     0.00     0.00
+      KAGOL2       KAGOL3    13.00   108.00    17.92     0.00     0.00     0.00     0.00
+      KAGOL3       KAGOL4     3.00   106.00    19.47     0.00     0.00     0.00     0.00
+      KAGOL4       KAGOL5    13.00    65.00     8.85     0.00     0.00     0.00     0.00
+      KAGOL5       KAGOL6    16.00    32.00    14.48     0.00     0.00     0.00     0.00
+      KAGOL6       KAGOL7    18.00   295.00    -9.59     0.00     0.00     0.00     0.00
+      KAGOL7       KAGOL8    17.00   314.00   -10.16     0.00     0.00     0.00     0.00
+      KAGOL8       KAGOL9    31.00   336.00    -1.85     0.00     0.00     0.00     0.00
+      KAGOL9      KAGOL10    19.00   290.00   -24.90     0.00     0.00     0.00     0.00
+     KAGOL10      KAGOL11    12.00   335.00   -48.59     0.00     0.00     0.00     0.00
+     KAGOL11      KAGOL12    16.00   336.00   -30.00     0.00     0.00     0.00     0.00
+     KAGOL12      KAGOL13    19.00   314.00    -3.02     0.00     0.00     0.00     0.00
+     KAGOL13      KAGOL14    10.00    12.00    -5.74     0.00     0.00     0.00     0.00
+     KAGOL14      KAGOL15    15.00   298.00     3.82     0.00     0.00     0.00     0.00
+     KAGOL15      KAGOL16    15.00   270.00    19.47     0.00     0.00     0.00     0.00
+     KAGOL16      KAGOL17    15.00   338.00    15.47     0.00     0.00     0.00     0.00
+     KAGOL17      KAGOL18    17.00   306.00     6.76     0.00     0.00     0.00     0.00  sm:Golden Ticket
+
+Kan Ha
+SURVEY NAME: KANOSoyPlayboy
+SURVEY DATE: 1 29 2015  COMMENT:poss cont
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              KANE18                KANO1     9.00   345.00    12.84     0.00     0.00     0.00     0.00  sm: No Soy Playboy
+               KANO1                KANO2    19.00   304.00     0.00     0.00     0.00     0.00     0.00
+               KANO2                KANO3    11.00   339.00   -15.83     0.00     0.00     0.00     0.00
+               KANO3                KANO4    25.00   300.00   -11.54     0.00     0.00     0.00     0.00
+               KANO4                KANO5    16.00   229.00    30.00     0.00     0.00     0.00     0.00
+               KANO5                KANO6    22.00   232.00    13.14     0.00     0.00     0.00     0.00
+               KANO6                KANO7    10.00   252.00     0.00     0.00     0.00     0.00     0.00
+               KANO7                KANO8    30.00   278.00    -1.91     0.00     0.00     0.00     0.00
+               KANO8                KANO9    18.00   254.00    -3.18     0.00     0.00     0.00     0.00
+               KANO9               KANO10    12.00   286.00    -9.59     0.00     0.00     0.00     0.00  sm: Hand Job 
+
+Kan Ha
+SURVEY NAME: KAPInkenYellow
+SURVEY DATE: 1 29 2015  COMMENT:loops to sm: Tadic
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+             KASTA11                KAPI1     5.00   112.00    53.13     0.00     0.00     0.00     0.00  sm: Pinken Yellow
+               KAPI1                KAPI2    22.00   106.00    10.48     0.00     0.00     0.00     0.00  sm: change of plan
+               KAPI2                KAPI3    11.00    70.00    46.66     0.00     0.00     0.00     0.00
+               KAPI3                KAPI4    20.00    86.00    26.74     0.00     0.00     0.00     0.00
+               KAPI4                KAPI5    22.00    74.00     2.61     0.00     0.00     0.00     0.00
+               KAPI5                KAPI6    14.00    86.00     4.10     0.00     0.00     0.00     0.00
+               KAPI6                KAPI7    21.00   162.00     5.47     0.00     0.00     0.00     0.00
+               KAPI7                KAPI8    19.00    88.00     3.02     0.00     0.00     0.00     0.00
+               KAPI8                KAPI9    14.00   120.00   -34.85     0.00     0.00     0.00     0.00
+               KAPI9               KAPI10    13.00    30.00   -37.98     0.00     0.00     0.00     0.00
+              KAPI10               KAPI11    13.00    34.00   -57.80     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KAMusselHussle
+SURVEY DATE: 1 30 2015  COMMENT:line ends in very decorated room
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAOC7        KAMU1    21.00   227.00     8.21     0.00     0.00     0.00     0.00  sm: Mussel Hussle
+       KAMU1        KAMU2    50.00   270.00     0.00     0.00     0.00     0.00     0.00
+       KAMU2        KAMU3    14.00   255.00     0.00     0.00     0.00     0.00     0.00
+       KAMU3        KAMU4    16.00   240.00    10.81     0.00     0.00     0.00     0.00
+       KAMU4        KAMU5    26.00   200.00     0.00     0.00     0.00     0.00     0.00
+       KAMU5        KAMU6    15.00   205.00    -7.66     0.00     0.00     0.00     0.00
+       KAMU6        KAMU7     7.00   234.00    -8.21     0.00     0.00     0.00     0.00
+       KAMU7        KAMU8    31.00   231.00    -1.85     0.00     0.00     0.00     0.00
+       KAMU8        KAMU9    18.00   230.00     6.38     0.00     0.00     0.00     0.00
+       KAMU9       KAMU10    31.00   270.00     9.28     0.00     0.00     0.00     0.00
+      KAMU10       KAMU11    20.00   269.00     0.00     0.00     0.00     0.00     0.00
+      KAMU11       KAMU12    25.00   298.00    -4.59     0.00     0.00     0.00     0.00
+      KAMU12       KAMU13    19.00   287.00     0.00     0.00     0.00     0.00     0.00
+      KAMU13       KAMU14    34.00   338.00    -1.69     0.00     0.00     0.00     0.00
+      KAMU14       KAMU15    27.00   248.00     4.25     0.00     0.00     0.00     0.00
+      KAMU15       KAMU16    37.00   277.00     1.55     0.00     0.00     0.00     0.00
+      KAMU16       KAMU17    19.00   243.00    -6.04     0.00     0.00     0.00     0.00  sm: Jah Hoover
+      KAMU17       KAMU18    28.00   278.00    12.37     0.00     0.00     0.00     0.00  continue exploration: 2 Feb 2015
+      KAMU18       KAMU19    26.00   257.00     6.63     0.00     0.00     0.00     0.00
+      KAMU19       KAMU20    21.00   173.00    22.39     0.00     0.00     0.00     0.00
+      KAMU20       KAMU21    15.00   197.00     0.00     0.00     0.00     0.00     0.00
+      KAMU21       KAMU22    29.00    86.00     9.93     0.00     0.00     0.00     0.00
+      KAMU22       KAMU23    11.00    26.00    -5.22     0.00     0.00     0.00     0.00
+      KAMU23       KAMU24    30.00    46.00   -41.81     0.00     0.00     0.00     0.00  sm: Ides of March. loop back to line
+
+Kan Ha
+SURVEY NAME: KATUmmyTwister
+SURVEY DATE: 1 30 2015  COMMENT:cave continues
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              KAFL29                KATU1     5.00   348.00    23.58     0.00     0.00     0.00     0.00  sm: Love Me
+               KATU1                KATU2     6.00   344.00    -9.59     0.00     0.00     0.00     0.00
+               KATU2                KATU3    14.00   356.00   -40.01     0.00     0.00     0.00     0.00
+               KATU3                KATU4    14.00    12.00    -4.10     0.00     0.00     0.00     0.00  kiss off
+               KATU4                KATU5    10.00     2.00     0.00     0.00     0.00     0.00     0.00
+               KATU5                KATU6    15.00   338.00    -3.82     0.00     0.00     0.00     0.00
+               KATU6                KATU7    16.00    18.00     0.00     0.00     0.00     0.00     0.00
+               KATU7                KATU8    23.00   320.00     2.49     0.00     0.00     0.00     0.00  lead West
+               KATU8                KATU9    32.00     0.00     0.00     0.00     0.00     0.00     0.00
+               KATU9               KATU10    32.00    26.00     0.00     0.00     0.00     0.00     0.00
+              KATU10               KATU11    20.00   352.00     0.00     0.00     0.00     0.00     0.00
+              KATU11               KATU12    32.00    18.00     1.79     0.00     0.00     0.00     0.00  sm: Tummy Tickler
+
+Kan Ha
+SURVEY NAME: KATEsty
+SURVEY DATE: 1 30 2015  COMMENT:cave continues
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KANE20        KATE1    16.00     9.00     0.00     0.00     0.00     0.00     0.00
+       KATE1        KATE2    13.00   316.00     0.00     0.00     0.00     0.00     0.00
+       KATE2        KATE3    32.00    17.00    -1.79     0.00     0.00     0.00     0.00
+       KATE3        KATE4     6.00   302.00    30.00     0.00     0.00     0.00     0.00
+       KATE4        KATE5    18.00   332.00    33.75     0.00     0.00     0.00     0.00
+       KATE5        KATE6    21.00    43.00    25.38     0.00     0.00     0.00     0.00
+       KATE6        KATE7    33.00    52.00     5.22     0.00     0.00     0.00     0.00
+       KATE7        KATE8    20.00    24.00     5.74     0.00     0.00     0.00     0.00
+       KATE8        KATE9    14.00     8.00     4.10     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KAORacle
+SURVEY DATE: 1 30 2015  COMMENT:line loops
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KALA11        KAOR1     3.00    26.00    19.47     0.00     0.00     0.00     0.00
+       KAOR1        KAOR2    14.00    66.00    20.92     0.00     0.00     0.00     0.00
+       KAOR2        KAOR3    13.00    36.00     0.00     0.00     0.00     0.00     0.00
+       KAOR3        KAOR4     8.00   114.00     0.00     0.00     0.00     0.00     0.00
+       KAOR4        KAOR5    11.00    76.00     0.00     0.00     0.00     0.00     0.00
+       KAOR5        KAOR6    17.00    29.00   -13.61     0.00     0.00     0.00     0.00
+       KAOR6        KAOR7    12.00    62.00     0.00     0.00     0.00     0.00     0.00
+       KAOR7        KAOR8     6.00    56.00    -9.59     0.00     0.00     0.00     0.00
+       KAOR8        KAOR9    15.00   108.00     3.82     0.00     0.00     0.00     0.00
+       KAOR9       KAOR10     8.00   110.00     7.18     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KAAntipop
+SURVEY DATE: 2 1 2015  COMMENT:e.o.c, but some leads and wriggling to check out /  halocline tunnel
+SURVEY TEAM: 
+Dave Sieff / Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KANE15         KAA1    22.00   227.00    -7.84     0.00     0.00     0.00     0.00
+        KAA1         KAA2    28.00   291.00    -6.15     0.00     0.00     0.00     0.00
+        KAA2         KAA3    19.00   238.00     6.04     0.00     0.00     0.00     0.00  lead : N    no s.m
+        KAA3         KAA4     4.00   236.00   -14.48     0.00     0.00     0.00     0.00
+        KAA4         KAA5    13.00   222.00    -8.85     0.00     0.00     0.00     0.00
+        KAA5         KAA6    15.00   241.00     0.00     0.00     0.00     0.00     0.00
+        KAA6         KAA7    38.00   315.00     1.51     0.00     0.00     0.00     0.00
+        KAA7         KAA8     9.00   223.00    -6.38     0.00     0.00     0.00     0.00
+        KAA8         KAA9    10.00   242.00     0.00     0.00     0.00     0.00     0.00
+        KAA9        KAA10     7.00   318.00   -16.60     0.00     0.00     0.00     0.00
+       KAA10        KAA11     5.00   222.00    11.54     0.00     0.00     0.00     0.00
+       KAA11        KAA12     9.00   222.00     6.38     0.00     0.00     0.00     0.00
+       KAA12        KAA13     6.00   242.00     0.00     0.00     0.00     0.00     0.00
+       KAA13        KAA14    14.00   256.00     0.00     0.00     0.00     0.00     0.00  lead :S   sm: trouser jazz
+       KAA14        KAA15    16.00   359.00    -7.18     0.00     0.00     0.00     0.00
+       KAA15        KAA16    25.00   352.00     0.00     0.00     0.00     0.00     0.00
+       KAA16        KAA17    55.00   261.00    -2.08     0.00     0.00     0.00     0.00
+       KAA17        KAA18    10.00   221.00    23.58     0.00     0.00     0.00     0.00
+       KAA18        KAA19     7.00   260.00    25.38     0.00     0.00     0.00     0.00
+       KAA19        KAA20    19.00   262.00     0.00     0.00     0.00     0.00     0.00
+       KAA20        KAA21    14.00   322.00     0.00     0.00     0.00     0.00     0.00  sm: Antipop    e.o.c
+
+Kan Ha
+SURVEY NAME: KACEnotease
+SURVEY DATE: 2 1 2015  COMMENT:line goes up to shallower cave and heads deeper, then loops back ? Beautiful section
+SURVEY TEAM: 
+Dave Sieff / Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KANE12        KACE1    13.00   171.00    17.92     0.00     0.00     0.00     0.00
+       KACE1        KACE2     8.00   188.00    48.59     0.00     0.00     0.00     0.00
+       KACE2        KACE3     1.00   163.00    90.00     0.00     0.00     0.00     0.00
+       KACE3        KACE4    23.00    97.00    15.12     0.00     0.00     0.00     0.00
+       KACE4        KACE5    14.00   128.00    40.01     0.00     0.00     0.00     0.00
+       KACE5        KACE6    13.00    88.00    13.34     0.00     0.00     0.00     0.00
+       KACE6        KACE7    31.00    79.00    -1.85     0.00     0.00     0.00     0.00
+       KACE7        KACE8    35.00    72.00   -16.60     0.00     0.00     0.00     0.00
+       KACE8        KACE9    14.00    65.00   -12.37     0.00     0.00     0.00     0.00
+       KACE9       KACE10     9.00     3.00     6.38     0.00     0.00     0.00     0.00
+      KACE10       KACE11    19.00   294.00    12.15     0.00     0.00     0.00     0.00
+      KACE11       KACE12    10.00   297.00    11.54     0.00     0.00     0.00     0.00
+      KACE12       KACE13    15.00   271.00     7.66     0.00     0.00     0.00     0.00
+      KACE13       KACE14    31.00   280.00    -7.41     0.00     0.00     0.00     0.00
+      KACE14       KACE15    19.00    35.00   -39.17     0.00     0.00     0.00     0.00  sm: Cenotease
+
+Kan Ha
+SURVEY NAME: KAPLasticFantastic
+SURVEY DATE: 2 2 2015  COMMENT:line loops back to existing line
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+               KAMU8                KAPL1    20.00    79.00     0.00     0.00     0.00     0.00     0.00  sm: Southern Belle
+               KAPL1                KAPL2    18.00    84.00     0.00     0.00     0.00     0.00     0.00
+               KAPL2                KAPL3    32.00    70.00    -1.79     0.00     0.00     0.00     0.00  sm: Plastic Fantastic. cave continues
+               KAPL3                KAPL4    30.00    60.00     3.82     0.00     0.00     0.00     0.00  continue exploration 3.2.2015
+               KAPL4                KAPL5    17.00    44.00     0.00     0.00     0.00     0.00     0.00
+               KAPL5                KAPL6     9.00   299.00     0.00     0.00     0.00     0.00     0.00
+               KAPL6                KAPL7    13.00   348.00     0.00     0.00     0.00     0.00     0.00
+               KAPL7                KAPL8     7.00   338.00    -8.21     0.00     0.00     0.00     0.00  sm: Blinkin'
+
+Kan Ha
+SURVEY NAME: KATRouserJazz
+SURVEY DATE: 2 2 2015  COMMENT:up into breakdown, poss continue up but not nice
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAA14        KATR1     5.00   104.00    11.54     0.00     0.00     0.00     0.00  sm: Trouser Jazz
+       KATR1        KATR2     8.00   190.00     7.18     0.00     0.00     0.00     0.00
+       KATR2        KATR3    16.00   226.00     3.58     0.00     0.00     0.00     0.00
+       KATR3        KATR4    17.00   202.00    13.61     0.00     0.00     0.00     0.00
+       KATR4        KATR5    12.00   208.00    35.69     0.00     0.00     0.00     0.00
+       KATR5        KATR6    11.00   130.00    39.52     0.00     0.00     0.00     0.00
+       KATR6        KATR7    10.00    60.00    30.00     0.00     0.00     0.00     0.00  arsehol
+
+Kan Ha
+SURVEY NAME: KASPErmspa
+SURVEY DATE: 2 2 2015  COMMENT:e.o.c
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KAOC10       KASPE1    30.00   104.00     0.00     0.00     0.00     0.00     0.00  sm: wanderer
+      KASPE1       KASPE2    20.00   100.00     0.00     0.00     0.00     0.00     0.00
+      KASPE2       KASPE3     5.00   127.00     0.00     0.00     0.00     0.00     0.00
+      KASPE3       KASPE4    26.00   142.00     0.00     0.00     0.00     0.00     0.00
+      KASPE4       KASPE5     8.00   134.00     0.00     0.00     0.00     0.00     0.00
+      KASPE5       KASPE6    40.00   103.00     0.00     0.00     0.00     0.00     0.00  sm:sperm spa
+
+Kan Ha
+SURVEY NAME: KAMOonmilk
+SURVEY DATE: 2 2 2015  COMMENT:line loops
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KAOC18        KAMO1    24.00   135.00     7.18     0.00     0.00     0.00     0.00
+       KAMO1        KAMO2    22.00   134.00    -5.22     0.00     0.00     0.00     0.00
+       KAMO2        KAMO3    17.00    81.00    17.10     0.00     0.00     0.00     0.00
+       KAMO3        KAMO4    21.00    40.00     0.00     0.00     0.00     0.00     0.00
+       KAMO4        KAMO5     8.00   356.00     0.00     0.00     0.00     0.00     0.00
+       KAMO5        KAMO6    30.00     6.00     0.00     0.00     0.00     0.00     0.00  sm:bomb the bass
+
+Kan Ha
+SURVEY NAME: KAPUrgery
+SURVEY DATE: 2 3 2015  COMMENT:cave might continue south
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+               KASP8                KAPU1    21.00   327.00     5.47     0.00     0.00     0.00     0.00  sm: Purgery
+               KAPU1                KAPU2     7.00   265.00    -8.21     0.00     0.00     0.00     0.00
+               KAPU2                KAPU3    21.00   242.00   -16.60     0.00     0.00     0.00     0.00
+               KAPU3                KAPU4    35.00   242.00    -1.64     0.00     0.00     0.00     0.00
+               KAPU4                KAPU5    20.00   290.00     2.87     0.00     0.00     0.00     0.00  sm: Easy Elbow
+
+Kan Ha
+SURVEY NAME: KATRanskini
+SURVEY DATE: 2 5 2015  COMMENT:EOC
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              KAOB11               KATRA1    23.00    40.00     0.00     0.00     0.00     0.00     0.00  sm: Transkini
+              KATRA1               KATRA2     5.00   345.00     0.00     0.00     0.00     0.00     0.00
+              KATRA2               KATRA3    13.00     4.00    -4.41     0.00     0.00     0.00     0.00
+              KATRA3               KATRA4    10.00    78.00     5.74     0.00     0.00     0.00     0.00
+              KATRA4               KATRA5    11.00    76.00     0.00     0.00     0.00     0.00     0.00
+              KATRA5               KATRA6    11.00    58.00     0.00     0.00     0.00     0.00     0.00
+              KATRA6               KATRA7    25.00    20.00     0.00     0.00     0.00     0.00     0.00  EOC
+
+Kan Ha
+SURVEY NAME: KAPOohPumper
+SURVEY DATE: 2 6 2015  COMMENT:shortcut to pinken yellow line
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+               KACA1                KAPO1    10.00   236.00     5.74     0.00     0.00     0.00     0.00  sm: Pooh Pumper
+               KAPO1                KAPO2    13.00   223.00    27.49     0.00     0.00     0.00     0.00
+               KAPO2                KAPO3    15.00   231.00    19.47     0.00     0.00     0.00     0.00
+               KAPO3                KAPO4    17.00   184.00    20.67     0.00     0.00     0.00     0.00  sm: Fester
+
+Kan Ha
+SURVEY NAME: KACAKeFactory
+SURVEY DATE: 2 6 2015  COMMENT:cave cont
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KADA13       KACAK1     6.00   142.00    19.47     0.00     0.00     0.00     0.00  sm: Browmie
+      KACAK1       KACAK2    25.00   188.00   -36.87     0.00     0.00     0.00     0.00
+      KACAK2       KACAK3     8.00   234.00   -90.00     0.00     0.00     0.00     0.00
+      KACAK3       KACAK4    16.00   164.00    -3.58     0.00     0.00     0.00     0.00
+      KACAK4       KACAK5    31.00   252.00    -3.70     0.00     0.00     0.00     0.00  lead SE
+      KACAK5       KACAK6    16.00   196.00   -30.00     0.00     0.00     0.00     0.00
+      KACAK6       KACAK7    25.00   242.00    -9.21     0.00     0.00     0.00     0.00
+      KACAK7       KACAK8    23.00   235.00    -7.49     0.00     0.00     0.00     0.00
+      KACAK8       KACAK9    16.00   344.00    10.81     0.00     0.00     0.00     0.00
+      KACAK9      KACAK10     9.00   304.00    -6.38     0.00     0.00     0.00     0.00
+     KACAK10      KACAK11    14.00   270.00     0.00     0.00     0.00     0.00     0.00
+     KACAK11      KACAK12    22.00   312.00    -2.61     0.00     0.00     0.00     0.00
+     KACAK12      KACAK13    36.00   297.00     3.18     0.00     0.00     0.00     0.00  sm: Cake Factory
+     KACAK13      KACAK14     7.00    14.00   -25.38     0.00     0.00     0.00     0.00  continue exploration 08/02/15 Bruce
+     KACAK14      KACAK15    31.00    72.00     1.85     0.00     0.00     0.00     0.00
+     KACAK15      KACAK16    53.00    74.00    -2.16     0.00     0.00     0.00     0.00
+     KACAK16      KACAK17    64.00    90.00     0.90     0.00     0.00     0.00     0.00
+     KACAK17      KACAK18    12.00   138.00    41.81     0.00     0.00     0.00     0.00  breakdown
+
+Kan Ha
+SURVEY NAME: KASOutherncunt
+SURVEY DATE: 2 14 2015  COMMENT:line loops back
+SURVEY TEAM: 
+Dave Sieff / Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAMU8        KASO1    10.00   310.00   -30.00     0.00     0.00     0.00     0.00
+       KASO1        KASO2    40.00   316.00     2.87     0.00     0.00     0.00     0.00
+       KASO2        KASO3    35.00   310.00     1.64     0.00     0.00     0.00     0.00
+       KASO3        KASO4     5.00   268.00    36.91     0.00     0.00     0.00     0.00
+       KASO4        KASO5    47.00   245.00     1.22     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KAEArthbutterLine
+SURVEY DATE: 2 17 2015  COMMENT:cave possibly continues small/ unstable / rocky breakdown/ zero viz
+SURVEY TEAM: 
+Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAPU5        KAEA1     6.00   296.00    -9.59     0.00     0.00     0.00     0.00
+       KAEA1        KAEA2     7.00   297.00    25.38     0.00     0.00     0.00     0.00
+       KAEA2        KAEA3    11.00   300.00    21.32     0.00     0.00     0.00     0.00
+       KAEA3        KAEA4    10.00   284.00    17.46     0.00     0.00     0.00     0.00
+       KAEA4        KAEA5    26.00   302.00    20.25     0.00     0.00     0.00     0.00
+       KAEA5        KAEA6     6.00   300.00   -19.47     0.00     0.00     0.00     0.00
+       KAEA6        KAEA7    13.00   293.00    13.34     0.00     0.00     0.00     0.00
+       KAEA7        KAEA8    22.00    34.00    36.22     0.00     0.00     0.00     0.00
+       KAEA8        KAEA9    10.00   338.00    17.46     0.00     0.00     0.00     0.00
+       KAEA9       KAEA10    12.00   274.00   -24.62     0.00     0.00     0.00     0.00
+      KAEA10       KAEA11    14.00   347.00     4.10     0.00     0.00     0.00     0.00
+      KAEA11       KAEA12     4.00    33.00     0.00     0.00     0.00     0.00     0.00  sm:digital detox      cave possibly continues, small and shitty /unstable?? zero viz
+
+Kan Ha
+SURVEY NAME: KASIngularity
+SURVEY DATE: 2 21 2015  COMMENT:line goes up to shallower chimney and terminates
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+     KASTE26        KASI1    29.00   348.00     0.00     0.00     0.00     0.00     0.00
+       KASI1        KASI2    14.00   244.00    20.92     0.00     0.00     0.00     0.00
+       KASI2        KASI3    17.00   312.00    17.10     0.00     0.00     0.00     0.00
+       KASI3        KASI4    14.00    33.00    34.85     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KALAdylettuce
+SURVEY DATE: 2 21 2015  COMMENT:ends in brekdown then a pitch up but too tight
+SURVEY TEAM: 
+Dave Sieff / Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAWH2       KALAD1     3.00    89.00    19.47     0.00     0.00     0.00     0.00
+      KALAD1       KALAD2     6.00   119.00     9.59     0.00     0.00     0.00     0.00
+      KALAD2       KALAD3    28.00   131.00     8.21     0.00     0.00     0.00     0.00
+      KALAD3       KALAD4    14.00    89.00   -30.00     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KAWAhnsinn
+SURVEY DATE: 2 26 2015  COMMENT:line loops
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KAFL25        KAWA1    25.00   122.00     4.59     0.00     0.00     0.00     0.00
+       KAWA1        KAWA2    16.00   150.00    43.43     0.00     0.00     0.00     0.00
+       KAWA2        KAWA3    20.00    97.00    30.00     0.00     0.00     0.00     0.00
+       KAWA3        KAWA4    14.00   106.00    25.38     0.00     0.00     0.00     0.00
+       KAWA4        KAWA5    13.00   122.00     8.85     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KACHeerup
+SURVEY DATE: 2 26 2015  COMMENT:e.o.c
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KAFL25       KACHE1    22.00   330.00   -10.48     0.00     0.00     0.00     0.00
+      KACHE1       KACHE2    66.00   274.00     0.00     0.00     0.00     0.00     0.00
+      KACHE2       KACHE3    33.00   281.00    10.48     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KABOmbastic
+SURVEY DATE: 2 26 2015  COMMENT:small no mount hole ahead 
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+       KAWH6        KABO1    18.00    60.00    -9.59     0.00     0.00     0.00     0.00
+       KABO1        KABO2    10.00    78.00     0.00     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KASOlareclipseline
+SURVEY DATE: 3 20 2015  COMMENT:poss continues in the salt, small / no  viz
+SURVEY TEAM: 
+Dave Sieff / Nadia Berni
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KANE18       KASOL1    15.00   284.00    15.47     0.00     0.00     0.00     0.00
+      KASOL1       KASOL2     9.00   237.00    12.84     0.00     0.00     0.00     0.00
+      KASOL2       KASOL3    10.00   224.00   -11.54     0.00     0.00     0.00     0.00
+      KASOL3       KASOL4    10.00   237.00   -17.46     0.00     0.00     0.00     0.00
+      KASOL4       KASOL5    18.00   228.00    -6.38     0.00     0.00     0.00     0.00
+      KASOL5       KASOL6     5.00   176.00    36.87     0.00     0.00     0.00     0.00
+      KASOL6       KASOL7    13.00   253.00    13.34     0.00     0.00     0.00     0.00
+      KASOL7       KASOL8    12.00   251.00     0.00     0.00     0.00     0.00     0.00
+      KASOL8       KASOL9     7.00   153.00    -8.21     0.00     0.00     0.00     0.00
+      KASOL9      KASOL10    14.00   203.00   -30.00     0.00     0.00     0.00     0.00
+     KASOL10      KASOL11    14.00   206.00    12.37     0.00     0.00     0.00     0.00
+     KASOL11      KASOL12    11.00   169.00    10.48     0.00     0.00     0.00     0.00
+     KASOL12      KASOL13    21.00   222.00     5.47     0.00     0.00     0.00     0.00
+     KASOL13      KASOL14     8.00   322.00     0.00     0.00     0.00     0.00     0.00
+     KASOL14      KASOL15    53.00   228.00    -3.24     0.00     0.00     0.00     0.00
+     KASOL15      KASOL16    23.00   209.00   -28.57     0.00     0.00     0.00     0.00
+     KASOL16      KASOL17    27.00   228.00    -4.25     0.00     0.00     0.00     0.00
+     KASOL17      KASOL18    66.00   170.00     0.87     0.00     0.00     0.00     0.00
+     KASOL18      KASOL19    29.00   221.00    -5.94     0.00     0.00     0.00     0.00
+     KASOL19      KASOL20    32.00   206.00     3.58     0.00     0.00     0.00     0.00
+     KASOL20      KASOL21    16.00   111.00    -3.58     0.00     0.00     0.00     0.00
+     KASOL21      KASOL22     7.00    80.00   -16.60     0.00     0.00     0.00     0.00
+     KASOL22      KASOL23     8.00   148.00     0.00     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KAKArat
+SURVEY DATE: 3 21 2015  COMMENT:continues north/ poss lead to check? / small / halocline
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+     KASOL17        KAKA1    21.00   124.00     2.73     0.00     0.00     0.00     0.00
+       KAKA1        KAKA2    34.00   119.00     0.00     0.00     0.00     0.00     0.00
+       KAKA2        KAKA3    45.00    78.00     2.55     0.00     0.00     0.00     0.00
+       KAKA3        KAKA4    17.00    53.00     0.00     0.00     0.00     0.00     0.00
+       KAKA4        KAKA5    21.00    76.00     2.73     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KAJAsminejungle
+SURVEY DATE: 3 21 2015  COMMENT:e.o.c
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+     KASOL17       KAJAS1    20.00   320.00    14.48     0.00     0.00     0.00     0.00
+      KAJAS1       KAJAS2    26.00   337.00    25.03     0.00     0.00     0.00     0.00
+      KAJAS2       KAJAS3     9.00   322.00    12.84     0.00     0.00     0.00     0.00
+      KAJAS3       KAJAS4    16.00   336.00    10.81     0.00     0.00     0.00     0.00  sm: solar eclipse     t intersection
+      KAJAS4       KAJAS5    22.00    25.00     2.61     0.00     0.00     0.00     0.00
+      KAJAS5       KAJAS6    20.00    38.00    -2.87     0.00     0.00     0.00     0.00
+      KAJAS6       KAJAS7    17.00    44.00   -10.16     0.00     0.00     0.00     0.00
+      KAJAS7       KAJAS8    23.00    44.00    -4.99     0.00     0.00     0.00     0.00  sm:jasmine jungle
+
+Kan Ha
+SURVEY NAME: KAHOusesitter
+SURVEY DATE: 3 21 2015  COMMENT:continues small
+SURVEY TEAM: 
+Nadia Berni / Dave Sieff
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADN  CORRECTIONS:  0.00 0.00 0.00
+
+        FROM           TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+      KAJAS4        KAHO1    15.00   330.00   -15.47     0.00     0.00     0.00     0.00
+       KAHO1        KAHO2    19.00   249.00   -15.26     0.00     0.00     0.00     0.00
+       KAHO2        KAHO3     9.00   217.00   -12.84     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KACANdyCane
+SURVEY DATE: 9 30 2015  COMMENT:low ceiling milky silty
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+               KASA5               KACAN1    27.00   360.00   -10.67     0.00     0.00     0.00     0.00  sm: Candy Cane
+              KACAN1               KACAN2    11.00   310.00     0.00     0.00     0.00     0.00     0.00
+              KACAN2               KACAN3    12.00   300.00   -41.81     0.00     0.00     0.00     0.00  Hole
+
+Kan Ha
+SURVEY NAME: KAQueenAnt
+SURVEY DATE: 10 8 2015  COMMENT:Silty lower level, lots of possibilities
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              KAOB11                 KAQ1     8.00     0.00   -22.02     0.00     0.00     0.00     0.00
+                KAQ1                 KAQ2     6.00    90.00   -41.81     0.00     0.00     0.00     0.00
+                KAQ2                 KAQ3    11.00   288.00   -10.48     0.00     0.00     0.00     0.00
+                KAQ3                 KAQ4     9.00   324.00   -41.81     0.00     0.00     0.00     0.00  Lead S
+                KAQ4                 KAQ5    26.00   353.00    -6.63     0.00     0.00     0.00     0.00
+                KAQ5                 KAQ6    17.00   265.00     3.37     0.00     0.00     0.00     0.00  sm: Alcapara. Lead N
+                KAQ6                 KAQ7    38.00   206.00     1.51     0.00     0.00     0.00     0.00
+                KAQ7                 KAQ8    13.00   244.00     0.00     0.00     0.00     0.00     0.00  Lead N - loops back
+                KAQ8                 KAQ9    27.00   268.00     4.25     0.00     0.00     0.00     0.00
+                KAQ9                KAQ10    10.00   266.00    -5.74     0.00     0.00     0.00     0.00  Very delicate decorated restriction. Exploration continued 24/10/15
+               KAQ10                KAQ11     8.00   242.00    -7.18     0.00     0.00     0.00     0.00
+               KAQ11                KAQ12     4.00   250.00     0.00     0.00     0.00     0.00     0.00
+               KAQ12                KAQ13     5.00   289.00    11.54     0.00     0.00     0.00     0.00
+               KAQ13                KAQ14    14.00   316.00     0.00     0.00     0.00     0.00     0.00
+               KAQ14                KAQ15     9.00   276.00     0.00     0.00     0.00     0.00     0.00
+               KAQ15                KAQ16    10.00   308.00     0.00     0.00     0.00     0.00     0.00
+               KAQ16                KAQ17     4.00   256.00     0.00     0.00     0.00     0.00     0.00  possible tank off continue through delicate drip line decoration.
+
+Kan Ha
+SURVEY NAME: KAALcapara
+SURVEY DATE: 10 11 2015  COMMENT:ends at restriction small room beyond
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+                KAQ6                KAAL1    23.00   318.00     4.99     0.00     0.00     0.00     0.00
+               KAAL1                KAAL2    10.00   358.00     0.00     0.00     0.00     0.00     0.00
+               KAAL2                KAAL3     6.00   344.00     0.00     0.00     0.00     0.00     0.00
+               KAAL3                KAAL4    14.00   332.00     0.00     0.00     0.00     0.00     0.00
+               KAAL4                KAAL5    17.00    22.00    -3.37     0.00     0.00     0.00     0.00
+               KAAL5                KAAL6    13.00   350.00     0.00     0.00     0.00     0.00     0.00  restriction
+
+Kan Ha
+SURVEY NAME: KACRevicular
+SURVEY DATE: 10 12 2015  COMMENT:low and silty continues.
+SURVEY TEAM: 
+Pal Andre Larsen & Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              KALA2a                KACR1    13.00   100.00     8.85     0.00     0.00     0.00     0.00
+               KACR1                KACR2    11.00   132.00     5.22     0.00     0.00     0.00     0.00
+               KACR2                KACR3     9.00   138.00   -12.84     0.00     0.00     0.00     0.00
+               KACR3                KACR4    13.00   216.00   -27.49     0.00     0.00     0.00     0.00
+               KACR4                KACR5    15.00   172.00   -27.82     0.00     0.00     0.00     0.00
+               KACR5                KACR6    15.00   150.00   -32.23     0.00     0.00     0.00     0.00
+               KACR6                KACR7    14.00   198.00   -16.60     0.00     0.00     0.00     0.00
+
+Kan Ha
+SURVEY NAME: KAUcoming
+SURVEY DATE: 11 1 2015  COMMENT:crevice continue
+SURVEY TEAM: 
+Bruce Pye
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+             KASTA27                 KAU1    13.00    36.00    22.62     0.00     0.00     0.00     0.00  sm: Lazy Love
+                KAU1                 KAU2    13.00    48.00    22.62     0.00     0.00     0.00     0.00
+                KAU2                 KAU3    11.00    61.00    21.32     0.00     0.00     0.00     0.00
+                KAU3                 KAU4    10.00    82.00    17.46     0.00     0.00     0.00     0.00
+                KAU4                 KAU5     9.00    70.00     0.00     0.00     0.00     0.00     0.00  lead down
+                KAU5                 KAU6     8.00    76.00     0.00     0.00     0.00     0.00     0.00
+                KAU6                 KAU7    20.00    87.00     0.00     0.00     0.00     0.00     0.00  lead down
+                KAU7                 KAU8     5.00    42.00   -23.58     0.00     0.00     0.00     0.00
+                KAU8                 KAU9     9.00   120.00    51.06     0.00     0.00     0.00     0.00  possible continue through crevice
+
+Kan Ha
+SURVEY NAME: KATSuru
+SURVEY DATE: 11 7 2015  COMMENT:silty, halocline, loops to existing line
+SURVEY TEAM: 
+Toby Privett
+DECLINATION:    0.00  FORMAT: DDDWUDRLLADNF  CORRECTIONS:  0.00 0.00 0.00  CORRECTIONS2:  0.00 0.00
+
+                FROM                   TO   LENGTH  BEARING      INC     LEFT       UP     DOWN    RIGHT   FLAGS  COMMENTS
+
+              KASTA8               KATSU1    20.00   246.00     0.00     0.00     0.00     0.00     0.00  SM Sooroo
+              KATSU1               KATSU2    14.00   256.00    -4.10     0.00     0.00     0.00     0.00
+              KATSU2               KATSU3    15.00   166.00     0.00     0.00     0.00     0.00     0.00
+              KATSU3               KATSU4    12.00   234.00     4.78     0.00     0.00     0.00     0.00
+              KATSU4               KATSU5    14.00   183.00    -8.21     0.00     0.00     0.00     0.00
+              KATSU5               KATSU6    23.00   179.00     0.00     0.00     0.00     0.00     0.00  SM Tsuper
+
+

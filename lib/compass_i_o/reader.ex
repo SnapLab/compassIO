@@ -1,6 +1,10 @@
-defmodule CompassIO.DatFile do
+defmodule CompassIO.Reader do
 
-  def reader(filename) do
+  alias CompassIO.Cave
+  alias CompassIO.Survey
+  alias CompassIO.Shot
+
+  def read(filename) do
     case File.read(filename) do
       {:error, :enoent} ->
         {:error, "File could not be opened"}
