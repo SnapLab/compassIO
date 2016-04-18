@@ -4,6 +4,18 @@ defmodule CompassIO.Reader do
   alias CompassIO.Survey
   alias CompassIO.Shot
 
+  @doc """
+  Read a Compass Cave Survey .dat file and build a struct containing
+  cave, survey and shot data.
+
+  Source data file format: http://www.fountainware.com/compass/Documents/FileFormats/SurveyDataFormat.htm
+
+  ## Example:
+      iex> filename = "test/support/Linea\ Dorada.dat"
+      iex> CompassIO.Reader.read(filename)
+      "{:ok,
+        %CompassIO.Cave{name: "Linea Dorada"}..."
+  """
   def read(filename) do
     case File.read(filename) do
       {:error, :enoent} ->
