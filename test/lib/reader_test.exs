@@ -2,7 +2,7 @@ defmodule CompassIO.ReaderTest do
   use ExUnit.Case
   doctest CompassIO
 
-  alias CompassIO.Reader
+  alias CompassIO.DatFile.Reader
 
   def cave do
     {:ok, cave} = Reader.read("test/support/Linea\ Dorada.dat")

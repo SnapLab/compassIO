@@ -1,8 +1,6 @@
-defmodule CompassIO.Reader do
+defmodule CompassIO.DatFile.Reader do
 
-  alias CompassIO.Cave
-  alias CompassIO.Survey
-  alias CompassIO.Shot
+  alias CompassIO.DatFile
 
   @doc """
   Read a Compass Cave Survey .dat file and build a struct containing
@@ -30,7 +28,7 @@ defmodule CompassIO.Reader do
           String.split(data, "\n") |> List.first |> String.strip
 
         {:ok,
-          %Cave{
+          %DatFile.Cave{
             name: cave_name,
             surveys: Enum.map(raw_surveys, &read_survey(&1))
           }
@@ -39,7 +37,7 @@ defmodule CompassIO.Reader do
   end
 
   defp read_survey(raw_survey) do
-    %Survey{
+    %DatFile.Survey{
       name: read_attr(raw_survey, :survey_name),
       survey_date: read_attr(raw_survey, :survey_date),
       comment: read_attr(raw_survey, :survey_comment),
@@ -54,7 +52,7 @@ defmodule CompassIO.Reader do
       |> Enum.filter(&(&1 != ""))
 
 
-    %Shot{
+    %DatFile.Shot{
       from_station: Enum.fetch!(shot, 0),
       to_station:  Enum.fetch!(shot, 1),
       length:  Enum.fetch!(shot, 2),
