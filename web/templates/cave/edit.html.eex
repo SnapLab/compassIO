@@ -1,0 +1,6 @@
+<h2>Edit cave</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: cave_path(@conn, :update, @cave) %>
+
+<%= link "Back", to: cave_path(@conn, :index) %>

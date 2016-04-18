@@ -1,0 +1,13 @@
+<h2>Show cave</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @cave.name %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: cave_path(@conn, :edit, @cave) %>
+<%= link "Back", to: cave_path(@conn, :index) %>
