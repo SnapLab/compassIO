@@ -118,6 +118,6 @@ defmodule CompassIO.Reader do
     [{month, _}, {day, _}, {year, _}] =
       for x <- String.split(raw_date, " "), do: Integer.parse(x)
 
-    Timex.date({year, month, day})  |> Timex.format!("%Y-%m-%d", :strftime)
+    Chronos.Formatter.strftime({year, month, day}, "%Y-%0m-%0d")
   end
 end

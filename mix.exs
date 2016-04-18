@@ -14,7 +14,7 @@ defmodule CompassIO.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :timex, :earmark, :ex_doc]]
+    [applications: [:logger, :earmark, :ex_doc, :chronos]]
   end
 
   # Dependencies can be Hex packages:
@@ -28,9 +28,9 @@ defmodule CompassIO.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:timex, "~> 2.1.4"},
       {:earmark, "~> 0.1"},
-      {:ex_doc, "~> 0.11"}
+      {:ex_doc, "~> 0.11"},
+      {:chronos, "~> 1.5.1"}
     ]
   end
 end
