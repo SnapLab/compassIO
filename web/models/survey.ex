@@ -9,6 +9,7 @@ defmodule CompassIO.Survey do
     field :tie_in, :string
     field :prefix, :string
     belongs_to :cave, CompassIO.Cave
+    embeds_many :shots, CompassIO.Shot
 
     timestamps
   end
