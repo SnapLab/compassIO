@@ -1,15 +1,20 @@
-defmodule CompassIO.Cave do
+defmodule CompassIO.Survey do
   use CompassIO.Web, :model
 
-  schema "caves" do
+  schema "surveys" do
     field :name, :string
-    has_many :surveys, CompassIO.Survey
+    field :survey_date, Ecto.Date
+    field :comment, :string
+    field :team, :string
+    field :tie_in, :string
+    field :prefix, :string
+    belongs_to :cave, CompassIO.Cave
 
     timestamps
   end
 
   @required_fields ~w(name)
-  @optional_fields ~w()
+  @optional_fields ~w(survey_date comment team tie_in prefix)
 
   @doc """
   Creates a changeset based on the `model` and `params`.
@@ -20,6 +25,5 @@ defmodule CompassIO.Cave do
   def changeset(model, params \\ :empty) do
     model
     |> cast(params, @required_fields, @optional_fields)
-    |> cast_assoc(:surveys)
   end
 end

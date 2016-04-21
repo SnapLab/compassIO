@@ -16,9 +16,7 @@ defmodule CompassIO.CaveController do
   end
 
   def create(conn, %{"cave" => cave_params}) do
-    IO.inspect cave_params
-
-    if cave_params["dat_file"] != nil do
+     if cave_params["dat_file"] != nil do
       cave_params = CompassIO.DatFile.Parser.parse(cave_params["dat_file"].path)
     end
 
@@ -35,18 +33,24 @@ defmodule CompassIO.CaveController do
   end
 
   def show(conn, %{"id" => id}) do
-    cave = Repo.get!(Cave, id)
+    cave =
+      Repo.get!(Cave, id)
+      |> Repo.preload(:surveys)
     render(conn, "show.html", cave: cave)
   end
 
   def edit(conn, %{"id" => id}) do
-    cave = Repo.get!(Cave, id)
+    cave =
+      Repo.get!(Cave, id)
+      |> Repo.preload(:surveys)
     changeset = Cave.changeset(cave)
     render(conn, "edit.html", cave: cave, changeset: changeset)
   end
 
   def update(conn, %{"id" => id, "cave" => cave_params}) do
-    cave = Repo.get!(Cave, id)
+    cave =
+      Repo.get!(Cave, id)
+      |> Repo.preload(:surveys)
     changeset = Cave.changeset(cave, cave_params)
 
     case Repo.update(changeset) do
