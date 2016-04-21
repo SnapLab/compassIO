@@ -16,6 +16,12 @@ defmodule CompassIO.CaveController do
   end
 
   def create(conn, %{"cave" => cave_params}) do
+    IO.inspect cave_params
+
+    if cave_params["dat_file"] != nil do
+      cave_params = CompassIO.DatFile.Parser.parse(cave_params["dat_file"].path)
+    end
+
     changeset = Cave.changeset(%Cave{}, cave_params)
 
     case Repo.insert(changeset) do
