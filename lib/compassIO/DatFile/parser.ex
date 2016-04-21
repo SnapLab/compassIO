@@ -1,5 +1,6 @@
 defmodule CompassIO.DatFile.Parser do
   alias CompassIO.DatFile.Survey
+  alias CompassIO.DatFile.Shot
 
   @doc """
   Takes a filename and returns a CompassIO.Cave, by calling
@@ -28,7 +29,16 @@ defmodule CompassIO.DatFile.Parser do
       team: survey_struct.team,
       comment: survey_struct.comment,
       tie_in: Survey.tie_in(survey_struct),
-      prefix: Survey.prefix(survey_struct)
+      prefix: Survey.prefix(survey_struct),
+      shots: Enum.map(survey_struct.shots, &parse_shot(&1))
+    }
+  end
+
+  defp parse_shot(shot_struct) do
+    %{
+      depth_change: Shot.depth_change(shot_struct),
+      distance: Shot.distance(shot_struct),
+      azimuth: Shot.azimuth(shot_struct)
     }
   end
 end
