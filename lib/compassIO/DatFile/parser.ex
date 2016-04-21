@@ -6,7 +6,9 @@ defmodule CompassIO.DatFile.Parser do
   output to a CompassIO.Cave
 
   ## Example:
-
+      iex> filename = "test/support/Linea\ Dorada.dat"
+      iex> CompassIO.DatFile.Parser.read(filename)
+      "{name: "Linea Dorada", surveys: []}..."
   """
 
   def parse(filename) do
