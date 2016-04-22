@@ -16,16 +16,16 @@ defmodule CompassIO.DatFile.Parser do
   def parse(filename) do
     {:ok, cave_struct} = CompassIO.DatFile.Reader.read(filename)
 
-    %{
+    %CompassIO.Cave{
       name: cave_struct.name,
       surveys: Enum.map(cave_struct.surveys, &parse_survey(&1))
      }
   end
 
   defp parse_survey(survey_struct) do
-    %{
+    %CompassIO.Survey{
       name: survey_struct.name,
-      survey_date: survey_struct.survey_date,
+      survey_date: Ecto.Date.cast!(survey_struct.survey_date),
       team: survey_struct.team,
       comment: survey_struct.comment,
       tie_in: Survey.tie_in(survey_struct),
@@ -35,7 +35,7 @@ defmodule CompassIO.DatFile.Parser do
   end
 
   defp parse_shot(shot_struct) do
-    %{
+    %CompassIO.Shot{
       depth_change: Shot.depth_change(shot_struct),
       distance: Shot.distance(shot_struct),
       azimuth: Shot.azimuth(shot_struct)
