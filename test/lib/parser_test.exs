@@ -22,7 +22,15 @@ defmodule CompassIO.ParserTest do
     assert Enum.count(survey.shots) == 7
   end
 
-  test "it produces valid CompassIO.Cave params" do
-    assert Cave.changeset(%Cave{}, cave).valid?
+  test "it produces a valid CompassIO.Cave" do
+    assert is_a_compassIO_cave?(cave)
+  end
+
+  def is_a_compassIO_cave?(%CompassIO.Cave{}) do
+    true
+  end
+
+  def is_a_compassIO_cave?(_) do
+    false
   end
 end
