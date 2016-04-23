@@ -1,5 +1,5 @@
 defmodule CompassIO.Shot do
-  use Ecto.Model
+  use Ecto.Schema
 
   embedded_schema do
     field :depth_change
