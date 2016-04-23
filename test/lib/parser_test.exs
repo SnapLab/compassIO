@@ -3,7 +3,6 @@ defmodule CompassIO.ParserTest do
   doctest CompassIO
 
   alias CompassIO.DatFile.Parser
-  alias CompassIO.Cave
 
   def cave do
     Parser.parse("test/support/Linea\ Dorada.dat")
