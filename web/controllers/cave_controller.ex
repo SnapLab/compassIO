@@ -1,6 +1,6 @@
 defmodule CompassIO.CaveController do
   use CompassIO.Web, :controller
-
+  require IEx
   alias CompassIO.Cave
 
   plug :scrub_params, "cave" when action in [:create, :update]
@@ -25,10 +25,10 @@ defmodule CompassIO.CaveController do
       end
 
     case Repo.insert(changeset) do
-      {:ok, _cave} ->
+      {:ok, cave} ->
         conn
         |> put_flash(:info, "Cave created successfully.")
-        |> redirect(to: cave_path(conn, :index))
+        |> redirect(to: cave_path(conn, :show, cave))
       {:error, changeset} ->
         render(conn, "new.html", changeset: changeset)
     end

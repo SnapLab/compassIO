@@ -1,4 +1,4 @@
-<h2>New cave</h2>
+<h2>New survey</h2>
 
 <%= render "form.html", changeset: @changeset,
                         action: cave_path(@conn, :create) %>

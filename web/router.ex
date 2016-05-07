@@ -16,7 +16,7 @@ defmodule CompassIO.Router do
   scope "/", CompassIO do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", CaveController, :index
     resources "/caves", CaveController
   end
 
