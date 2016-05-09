@@ -19,7 +19,8 @@ defmodule CompassIO.Mixfile do
   def application do
     [mod: {CompassIO, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :earmark, :ex_doc, :chronos]]
+                    :phoenix_ecto, :postgrex, :earmark, :ex_doc, :chronos,
+                    :ex_machina]]
   end
 
   # Specifies which paths to compile per environment.
@@ -39,7 +40,8 @@ defmodule CompassIO.Mixfile do
      {:cowboy, "~> 1.0"},
      {:earmark, "~> 0.1"},
      {:ex_doc, "~> 0.11"},
-     {:chronos, "~> 1.5.1"}
+     {:chronos, "~> 1.5.1"},
+     {:ex_machina, "~> 0.6.1"}
    ]
   end
 

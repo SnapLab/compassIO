@@ -14,7 +14,7 @@ defmodule CompassIO.Survey do
     timestamps
   end
 
-  @required_fields ~w(name)
+  @required_fields ~w(name cave_id)
   @optional_fields ~w(survey_date comment team tie_in prefix)
 
   @doc """

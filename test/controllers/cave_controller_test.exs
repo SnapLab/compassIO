@@ -15,9 +15,9 @@ defmodule CompassIO.CaveControllerTest do
     assert html_response(conn, 200)# =~ "New cave"
   end
 
-  test "creates resource and redirects when data is valid", %{conn: conn} do
+  test "creates resource and redirects to the cave", %{conn: conn} do
     conn = post conn, cave_path(conn, :create), cave: @valid_attrs
-    assert Regex.scan(~r/\/show\//, redirected_to(conn))
+    assert Regex.scan(~r/\/survey\//, redirected_to(conn))
     assert Repo.get_by(Cave, @valid_attrs)
   end
 

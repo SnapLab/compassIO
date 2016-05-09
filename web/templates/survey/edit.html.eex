@@ -1,0 +1,6 @@
+<h2>Edit survey</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: cave_survey_path(@conn, :update, @cave, @survey) %>
+
+<%= link "Back", to: cave_survey_path(@conn, :index, @cave) %>

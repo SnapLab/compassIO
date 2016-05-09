@@ -1,0 +1,36 @@
+<h2><%= @cave.name %></h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Survey date</th>
+      <th>Comment</th>
+      <th>Team</th>
+      <th>Tie in</th>
+      <th>Prefix</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for survey <- @surveys do %>
+    <tr>
+      <td><%= survey.name %></td>
+      <td><%= survey.survey_date %></td>
+      <td><%= survey.comment %></td>
+      <td><%= survey.team %></td>
+      <td><%= survey.tie_in %></td>
+      <td><%= survey.prefix %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: cave_survey_path(@conn, :show, @cave, survey), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: cave_survey_path(@conn, :edit, @cave, survey), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: cave_survey_path(@conn, :delete, @cave, survey), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New survey", to: cave_survey_path(@conn, :new, @cave) %>

@@ -1,0 +1,38 @@
+<h2>Show survey</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @survey.name %>
+  </li>
+
+  <li>
+    <strong>Survey date:</strong>
+    <%= @survey.survey_date %>
+  </li>
+
+  <li>
+    <strong>Comment:</strong>
+    <%= @survey.comment %>
+  </li>
+
+  <li>
+    <strong>Team:</strong>
+    <%= @survey.team %>
+  </li>
+
+  <li>
+    <strong>Tie in:</strong>
+    <%= @survey.tie_in %>
+  </li>
+
+  <li>
+    <strong>Prefix:</strong>
+    <%= @survey.prefix %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: cave_survey_path(@conn, :edit, @cave, @survey) %>
+<%= link "Back", to: cave_survey_path(@conn, :index, @cave) %>
