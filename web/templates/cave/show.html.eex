@@ -2,7 +2,7 @@
 <ul>
 <%= for survey <- @cave.surveys do %>
   <li>
-    <%= link survey.name, cave_survey_path(@cave, show: survey) %>
+    <%= link survey.name, to: cave_survey_path(@conn, :show, @cave, survey) %>
   </li>
 <% end %>
 </ul>
