@@ -16,7 +16,8 @@
       <header class="header">
         <nav role="navigation">
           <ul class="nav nav-pills pull-right">
-            <li><%= link "New survey", to: cave_path(@conn, :new) %></li>
+            <li><%= link "My Caves", to: cave_path(@conn, :index) %></li>
+            <li><%= link "New Cave", to: cave_path(@conn, :new) %></li>
           </ul>
         </nav>
       </header>

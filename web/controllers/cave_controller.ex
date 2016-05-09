@@ -21,7 +21,9 @@ defmodule CompassIO.CaveController do
         cave_params["dat_file"] != nil ->
           CompassIO.DatFile.Parser.parse(cave_params["dat_file"].path)
         true ->
-          Cave.changeset(%Cave{}, cave_params)
+          Cave.changeset(%Cave{},
+            Map.merge(cave_params, %{"surveys" => [%{"name" => "Survey 1"}]})
+          )
       end
 
     case Repo.insert(changeset) do

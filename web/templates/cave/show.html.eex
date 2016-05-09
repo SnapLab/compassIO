@@ -1,12 +1,10 @@
-<h2>Show cave</h2>
-
+<h2><%= @cave.name %></h2>
 <ul>
-
+<%= for survey <- @cave.surveys do %>
   <li>
-    <strong>Name:</strong>
-    <%= @cave.name %>
+    <%= link survey.name, cave_survey_path(@cave, show: survey) %>
   </li>
-
+<% end %>
 </ul>
 
 <%= link "Edit", to: cave_path(@conn, :edit, @cave) %>

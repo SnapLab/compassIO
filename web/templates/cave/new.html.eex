@@ -1,6 +1,31 @@
-<h2>New survey</h2>
+<h2>New Cave</h2>
 
-<%= render "form.html", changeset: @changeset,
-                        action: cave_path(@conn, :create) %>
+<%= form_for @changeset, cave_path(@conn, :create), [multipart: true], fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, :name, class: "control-label" do %>
+    Add the name of the cave
+    <% end %>
+    <%= text_input f, :name, class: "form-control" %>
+    <%= error_tag f, :name %>
+  </div>
+
+  <div class="form-group">
+    <label> Or upload a compass DAT file</label>
+    <%= file_input f, :dat_file, class: "form-control" %>
+    <%= error_tag f, :dat_file %>
+  </div>
+
+
+  <div class="form-group">
+    <%= submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
 
 <%= link "Back", to: cave_path(@conn, :index) %>
