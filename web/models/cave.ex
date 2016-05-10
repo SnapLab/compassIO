@@ -3,6 +3,7 @@ defmodule CompassIO.Cave do
 
   schema "caves" do
     field :name, :string
+    field :station_start
     has_many :surveys, CompassIO.Survey
 
     timestamps

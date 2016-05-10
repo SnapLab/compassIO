@@ -28,4 +28,11 @@ defmodule CompassIO.Survey do
     |> cast(params, @required_fields, @optional_fields)
     |> cast_embed(:shots)
   end
+
+  def tie_in_depth(survey) do
+    tie_in = survey.tie_in
+    # Begin with cave.from_station
+    #  and build the depths until we find the station we want (tie_in)
+    1.0
+  end
 end

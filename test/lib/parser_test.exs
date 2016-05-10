@@ -12,6 +12,10 @@ defmodule CompassIO.ParserTest do
     assert cave.name == "Linea Dorada"
   end
 
+  test "it has a station where the surveying starts" do
+    assert cave.station_start == "LIFOO1"
+  end
+
   test "it has 6 surveys" do
     assert Enum.count(cave.surveys) == 6
   end

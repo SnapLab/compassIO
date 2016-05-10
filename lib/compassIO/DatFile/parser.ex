@@ -1,4 +1,5 @@
 defmodule CompassIO.DatFile.Parser do
+  alias CompassIO.DatFile.Cave
   alias CompassIO.DatFile.Survey
   alias CompassIO.DatFile.Shot
 
@@ -18,6 +19,7 @@ defmodule CompassIO.DatFile.Parser do
 
     %CompassIO.Cave{
       name: cave_struct.name,
+      station_start: Cave.station_start(cave_struct),
       surveys: Enum.map(cave_struct.surveys, &parse_survey(&1))
      }
   end
