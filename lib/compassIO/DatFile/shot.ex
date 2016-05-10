@@ -2,12 +2,27 @@ defmodule CompassIO.DatFile.Shot do
   defstruct from_station: "", to_station: "", length: "", bearing: "",
     inclination: "", flags: "", comment: ""
 
-  def depth_change(shot) do
-    {degrees, _} = Float.parse(shot.inclination)
+  def from_station(shot) do
+    shot.from_station
+  end
 
-    (:math.sin(to_radians(degrees)) * distance(shot))
+  def to_station(shot) do
+    shot.to_station
+  end
+
+  def inclination(shot) do
+    {degrees, _} = Float.parse(shot.inclination)
+    degrees
+  end
+
+  def depth_change(shot) do
+    (:math.sin(to_radians(inclination(shot))) * distance(shot))
     |> Float.round(0)
     |> positivity(shot)
+  end
+
+  def flags(shot) do
+    shot.flags
   end
 
   def distance(shot) do

@@ -36,9 +36,13 @@ defmodule CompassIO.DatFile.Parser do
 
   defp parse_shot(shot_struct) do
     %CompassIO.Shot{
+      station_from: Shot.from_station(shot_struct),
+      inclination: Shot.inclination(shot_struct),
       depth_change: Shot.depth_change(shot_struct),
       distance: Shot.distance(shot_struct),
-      azimuth: Shot.azimuth(shot_struct)
+      azimuth: Shot.azimuth(shot_struct),
+      flags: Shot.flags(shot_struct),
+      station_to: Shot.to_station(shot_struct)
     }
   end
 end

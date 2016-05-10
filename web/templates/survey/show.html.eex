@@ -24,14 +24,22 @@
 
 <h3>Shots</h3>
 <table class="table table-striped">
+  <th>Station from</th>
   <th>Depth change</th>
+  <th>Inclination</th>
   <th>Azimuth</th>
   <th>Distance</th>
+  <th>Flags</th>
+  <th>Station to</th>
   <%= for shot <- @survey.shots do %>
   <tr>
+    <td><%= shot.station_from %></td>
     <td><%= shot.depth_change %></td>
+    <td><%= shot.inclination %></td>
     <td><%= shot.azimuth %></td>
     <td><%= shot.distance %></td>
+    <td><%= shot.flags %></td>
+    <td><%= shot.station_to %></td>
   </tr>
   <% end %>
 </table>
