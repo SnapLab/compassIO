@@ -36,7 +36,7 @@ defmodule CompassIO.SurveyControllerTest do
     cave = create(:cave)
     survey = Repo.insert! %Survey{}
     conn = get conn, cave_survey_path(conn, :show, cave, survey)
-    assert html_response(conn, 200) =~ "Show survey"
+    assert html_response(conn, 200) =~ cave.name
   end
 
   test "renders page not found when id is nonexistent", %{conn: conn} do

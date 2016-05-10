@@ -26,5 +26,6 @@ defmodule CompassIO.Survey do
   def changeset(model, params \\ :invalid) do
     model
     |> cast(params, @required_fields, @optional_fields)
+    |> cast_embed(:shots)
   end
 end

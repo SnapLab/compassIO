@@ -33,6 +33,7 @@ defmodule CompassIO.SurveyController do
 
   def show(conn, %{"id" => id}) do
     survey = Repo.get!(Survey, id)
+
     render(conn, "show.html", survey: survey)
   end
 

@@ -1,38 +1,40 @@
-<h2>Show survey</h2>
+<h2><%= link @cave.name, to: cave_path(@conn, :show, @cave) %></h2>
 
-<ul>
+<dl>
 
-  <li>
-    <strong>Name:</strong>
-    <%= @survey.name %>
-  </li>
+  <dt>Survey name</dt>
+  <dd><%= @survey.name %></dd>
 
-  <li>
-    <strong>Survey date:</strong>
-    <%= @survey.survey_date %>
-  </li>
+  <dt>Survey date</dt>
+  <dd><%= @survey.survey_date %></dd>
 
-  <li>
-    <strong>Comment:</strong>
-    <%= @survey.comment %>
-  </li>
+  <dt>Comment</dt>
+  <dd><%= @survey.comment %></dd>
 
-  <li>
-    <strong>Team:</strong>
-    <%= @survey.team %>
-  </li>
+  <dt>Team</dt>
+  <dd><%= @survey.team %></dd>
 
-  <li>
-    <strong>Tie in:</strong>
-    <%= @survey.tie_in %>
-  </li>
+  <dt>Tie in</dt>
+  <dd><%= @survey.tie_in %></dd>
 
-  <li>
-    <strong>Prefix:</strong>
-    <%= @survey.prefix %>
-  </li>
+  <dt>Prefix</dt>
+  <dd><%= @survey.prefix %></dd>
 
-</ul>
+</dl>
+
+<h3>Shots</h3>
+<table class="table table-striped">
+  <th>Depth change</th>
+  <th>Azimuth</th>
+  <th>Distance</th>
+  <%= for shot <- @survey.shots do %>
+  <tr>
+    <td><%= shot.depth_change %></td>
+    <td><%= shot.azimuth %></td>
+    <td><%= shot.distance %></td>
+  </tr>
+  <% end %>
+</table>
 
 <%= link "Edit", to: cave_survey_path(@conn, :edit, @cave, @survey) %>
 <%= link "Back", to: cave_survey_path(@conn, :index, @cave) %>
