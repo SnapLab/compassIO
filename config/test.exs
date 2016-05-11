@@ -16,4 +16,5 @@ config :compassIO, CompassIO.Repo,
   password: "",
   database: "compassio_test",
   hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  pool: Ecto.Adapters.SQL.Sandbox,
+  extensions: [{Geo.PostGIS.Extension, library: Geo}]
