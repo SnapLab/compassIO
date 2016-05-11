@@ -4,6 +4,7 @@ defmodule CompassIO.Cave do
   schema "caves" do
     field :name, :string
     field :station_start
+    field :start_point, Geo.Point
     has_many :surveys, CompassIO.Survey
 
     timestamps
@@ -24,3 +25,5 @@ defmodule CompassIO.Cave do
     |> cast_assoc(:surveys)
   end
 end
+
+%Geo.Point{coordinates: {0, 0}, srid: 4326}
