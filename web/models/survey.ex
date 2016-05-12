@@ -32,23 +32,29 @@ defmodule CompassIO.Survey do
     |> cast_embed(:stations)
   end
 
+  def tie_in_station(model) do
+    %Station{name: List.first(model.shots).station_from, depth: 0.0}
+  end
+
   def build_stations(model) do
-    stations =
-      Enum.map(model.shots, &build_station(&1))
-      |> List.insert_at(0, first_station(model))
-      |> insert_depth(0.0)
+    stations = Enum.map(model.shots, &build_station(&1))
+    |> List.insert_at(0, tie_in_station(model))
+
+    insert_depth(stations, List.first(stations))
   end
 
-  def build_station(shot) do
+  defp build_station(shot) do
     %Station{
-      name: shot.station_to}
+      name: shot.station_to,
+      depth_change: shot.depth_change
+    }
   end
 
-  def first_station(model) do
-    %Station{name: List.first(model.shots).station_from}
+  defp insert_depth([], _) do
+    []
   end
-
-  def insert_depth(stations, start_depth) do
-    stations
+  defp insert_depth([head|tail], station_from) do
+    station = Map.merge(head, %{depth: station_from.depth + head.depth_change})
+    [station | insert_depth(tail, station)]
   end
 end
