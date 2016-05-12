@@ -26,4 +26,3 @@ defmodule CompassIO.Cave do
   end
 end
 
-%Geo.Point{coordinates: {0, 0}, srid: 4326}

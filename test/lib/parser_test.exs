@@ -25,6 +25,11 @@ defmodule CompassIO.ParserTest do
     assert Enum.count(survey.shots) == 7
   end
 
+  test "the first survey 21 stations" do
+    survey = List.first(cave.surveys)
+    assert Enum.count(survey.stations) == 21
+  end
+
   test "it produces a valid CompassIO.Cave" do
     assert is_a_compassIO_cave?(cave)
   end

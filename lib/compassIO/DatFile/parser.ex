@@ -25,7 +25,7 @@ defmodule CompassIO.DatFile.Parser do
   end
 
   defp parse_survey(survey_struct) do
-    %CompassIO.Survey{
+    survey = %CompassIO.Survey{
       name: survey_struct.name,
       survey_date: Ecto.Date.cast!(survey_struct.survey_date),
       team: survey_struct.team,
@@ -34,6 +34,7 @@ defmodule CompassIO.DatFile.Parser do
       prefix: Survey.prefix(survey_struct),
       shots: Enum.map(survey_struct.shots, &parse_shot(&1))
     }
+    Map.merge(survey, %{stations: CompassIO.Survey.build_stations(survey)})
   end
 
   defp parse_shot(shot_struct) do

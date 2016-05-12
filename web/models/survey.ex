@@ -1,5 +1,6 @@
 defmodule CompassIO.Survey do
   use CompassIO.Web, :model
+  alias CompassIO.Station
 
   schema "surveys" do
     field :name, :string
@@ -10,6 +11,7 @@ defmodule CompassIO.Survey do
     field :prefix, :string
     belongs_to :cave, CompassIO.Cave
     embeds_many :shots, CompassIO.Shot
+    embeds_many :stations, CompassIO.Station
 
     timestamps
   end
@@ -27,12 +29,26 @@ defmodule CompassIO.Survey do
     model
     |> cast(params, @required_fields, @optional_fields)
     |> cast_embed(:shots)
+    |> cast_embed(:stations)
   end
 
-  def tie_in_depth(survey) do
-    tie_in = survey.tie_in
-    # Begin with cave.from_station
-    #  and build the depths until we find the station we want (tie_in)
-    1.0
+  def build_stations(model) do
+    stations =
+      Enum.map(model.shots, &build_station(&1))
+      |> List.insert_at(0, first_station(model))
+      |> insert_depth(0.0)
+  end
+
+  def build_station(shot) do
+    %Station{
+      name: shot.station_to}
+  end
+
+  def first_station(model) do
+    %Station{name: List.first(model.shots).station_from}
+  end
+
+  def insert_depth(stations, start_depth) do
+    stations
   end
 end

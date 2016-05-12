@@ -44,5 +44,14 @@
   <% end %>
 </table>
 
+<h3>Stations</h3>
+<ul>
+<%= for station <- @survey.stations do %>
+  <li>
+    <%= station.name %>
+  </li>
+<% end %>
+</ul>
+
 <%= link "Edit", to: cave_survey_path(@conn, :edit, @cave, @survey) %>
 <%= link "Back", to: cave_survey_path(@conn, :index, @cave) %>
