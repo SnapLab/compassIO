@@ -6,11 +6,12 @@ defmodule CompassIO.Station do
     field :depth, :float
     field :point, :string
     belongs_to :survey, CompassIO.Survey
+    belongs_to :cave, CompassIO.Cave
 
     timestamps
   end
 
-  @required_fields ~w(name survey_id depth)
+  @required_fields ~w(name survey_id cave_id depth)
   @optional_fields ~w()
 
   @doc """
@@ -23,5 +24,7 @@ defmodule CompassIO.Station do
     model
     |> cast(params, @required_fields, @optional_fields)
     |> unique_constraint(:name)
+    |> foreign_key_constraint(:survey_id)
+    |> unique_constraint(:name_survey_id)
   end
 end
