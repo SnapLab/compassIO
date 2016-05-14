@@ -22,6 +22,7 @@ defmodule CompassIO.Cave do
     model
     |> cast(params, @required_fields, @optional_fields)
     |> cast_assoc(:surveys)
+    |> unique_constraint(:name)
   end
 end
 

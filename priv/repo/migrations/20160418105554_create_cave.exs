@@ -9,5 +9,6 @@ defmodule CompassIO.Repo.Migrations.CreateCave do
       timestamps
     end
 
+    create index(:caves, [:name], unique: true)
   end
 end
