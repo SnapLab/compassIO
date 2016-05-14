@@ -1,5 +1,7 @@
 defmodule CompassIO.ParserTest do
   use ExUnit.Case
+  use CompassIO.ModelCase
+
   doctest CompassIO
 
   alias CompassIO.DatFile.Parser
@@ -27,6 +29,11 @@ defmodule CompassIO.ParserTest do
 
   test "it produces a valid CompassIO.Cave" do
     assert is_a_compassIO_cave?(cave)
+  end
+
+  test "it timestamps the name if it already exists" do
+    CompassIO.Repo.insert!(%CompassIO.Cave{ name: "Linea Dorada"})
+    assert Regex.match?(~r/Linea Dorada-20.*/, cave.name)
   end
 
   def is_a_compassIO_cave?(%CompassIO.Cave{}) do

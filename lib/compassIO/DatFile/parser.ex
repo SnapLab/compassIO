@@ -18,7 +18,7 @@ defmodule CompassIO.DatFile.Parser do
     {:ok, cave_struct} = CompassIO.DatFile.Reader.read(filename)
 
     %CompassIO.Cave{
-      name: cave_struct.name,
+      name: Cave.name(cave_struct),
       station_start: Cave.station_start(cave_struct),
       surveys: Enum.map(cave_struct.surveys, &parse_survey(&1))
      }
