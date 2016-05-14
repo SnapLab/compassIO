@@ -1,0 +1,18 @@
+<h2><%= @cave.name %></h2>
+
+<table class='table table-bordered table-striped'>
+  <th>Survey</th>
+  <th>Tie in</th>
+  <th>Stations</th>
+<%= for survey <- @cave.surveys do %>
+  <tr>
+    <td><%= link survey.name, to: cave_survey_path(@conn, :show, @cave, survey) %></td>
+    <td><%= survey.tie_in %></td>
+    <td>
+    <%= for station <- survey.stations do %>
+      <%= station.name %> (<%= station.depth %>)
+    <% end %>
+    </td>
+   </tr>
+<% end %>
+</table>

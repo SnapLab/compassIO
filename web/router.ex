@@ -20,6 +20,7 @@ defmodule CompassIO.Router do
     resources "/caves", CaveController do
       resources "/surveys", SurveyController
     end
+    resources "/maps", MapController, only: [:show]
   end
 
   # Other scopes may use custom stacks.
