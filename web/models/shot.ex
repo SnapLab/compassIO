@@ -14,7 +14,7 @@ defmodule CompassIO.Shot do
     timestamps
   end
 
-  @required_fields ~w()
+  @required_fields ~w(station_from station_to depth_change azimuth distance survey_id)
   @optional_fields ~w()
 
   @doc """
