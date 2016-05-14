@@ -5,6 +5,7 @@ defmodule CompassIO.Station do
     field :name, :string
     field :depth, :float
     field :point, :string
+    belongs_to :survey, CompassIO.Survey
 
     timestamps
   end
@@ -21,5 +22,6 @@ defmodule CompassIO.Station do
   def changeset(model, params \\ :invalid) do
     model
     |> cast(params, @required_fields, @optional_fields)
+    |> unique_constraint(:name)
   end
 end

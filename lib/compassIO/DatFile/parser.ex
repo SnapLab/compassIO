@@ -25,7 +25,7 @@ defmodule CompassIO.DatFile.Parser do
   end
 
   defp parse_survey(survey_struct) do
-    survey = %CompassIO.Survey{
+    %CompassIO.Survey{
       name: survey_struct.name,
       survey_date: Ecto.Date.cast!(survey_struct.survey_date),
       team: survey_struct.team,

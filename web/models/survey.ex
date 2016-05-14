@@ -10,6 +10,7 @@ defmodule CompassIO.Survey do
     field :prefix, :string
     belongs_to :cave, CompassIO.Cave
     has_many :shots, CompassIO.Shot
+    has_many :stations, CompassIO.Station
 
     timestamps
   end
@@ -27,10 +28,5 @@ defmodule CompassIO.Survey do
     model
     |> cast(params, @required_fields, @optional_fields)
     |> cast_assoc(:shots)
-    |> build_stations
-  end
-
-  def build_stations(model) do
-    model
   end
 end
