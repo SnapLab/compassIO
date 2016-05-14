@@ -25,18 +25,6 @@ defmodule CompassIO.ParserTest do
     assert Enum.count(survey.shots) == 7
   end
 
-  test "the first survey has 21 stations" do
-    survey = List.first(cave.surveys)
-    assert Enum.count(survey.stations) == 8
-  end
-
-  test "the last station depth for the first survey" do
-    survey = List.first(cave.surveys)
-    station = List.last(survey.stations)
-    assert station.name == "LIFOO8"
-    assert station.depth == -21.0
-  end
-
   test "it produces a valid CompassIO.Cave" do
     assert is_a_compassIO_cave?(cave)
   end
