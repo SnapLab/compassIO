@@ -39,7 +39,6 @@ defmodule CompassIO.CaveController do
       Repo.get!(Cave, id)
       |> Repo.preload(:surveys)
 
-    CompassIO.StationBuilder.build(cave)
     render(conn, "show.html", cave: cave)
   end
 
