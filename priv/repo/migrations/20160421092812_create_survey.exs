@@ -3,7 +3,7 @@ defmodule CompassIO.Repo.Migrations.CreateSurvey do
 
   def change do
     create table(:surveys) do
-      add :cave_id, references(:caves, on_delete: :nothing)
+      add :cave_id, references(:caves, on_delete: :delete_all)
       add :name, :string
       add :survey_date, :date
       add :comment, :text

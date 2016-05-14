@@ -26,5 +26,7 @@ defmodule CompassIO.Shot do
   def changeset(model, params \\ :invalid) do
     model
     |> cast(params, @required_fields, @optional_fields)
+    |> foreign_key_constraint(:survey_id)
+    |> foreign_key_constraint(:shots_survey_id_fkey)
   end
 end

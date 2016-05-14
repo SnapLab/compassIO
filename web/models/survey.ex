@@ -9,8 +9,8 @@ defmodule CompassIO.Survey do
     field :tie_in, :string
     field :prefix, :string
     belongs_to :cave, CompassIO.Cave
-    has_many :shots, CompassIO.Shot
-    has_many :stations, CompassIO.Station
+    has_many :shots, CompassIO.Shot, on_delete: :delete_all
+    has_many :stations, CompassIO.Station, on_delete: :delete_all
 
     timestamps
   end
@@ -28,5 +28,6 @@ defmodule CompassIO.Survey do
     model
     |> cast(params, @required_fields, @optional_fields)
     |> cast_assoc(:shots)
+    |> foreign_key_constraint(:surveys_cave_id_index)
   end
 end

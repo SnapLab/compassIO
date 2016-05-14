@@ -3,7 +3,7 @@ defmodule CompassIO.Repo.Migrations.CreateShotsTable do
 
   def change do
     create table(:shots) do
-      add :survey_id, references(:surveys, on_delete: :nothing)
+      add :survey_id, references(:surveys, on_delete: :delete_all)
       add :station_from, :string
       add :depth_change, :float
       add :inclination, :float
