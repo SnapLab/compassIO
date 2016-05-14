@@ -10,6 +10,7 @@ defmodule CompassIO.Repo.Migrations.CreateSurvey do
       add :team, :string
       add :tie_in, :string
       add :prefix, :string
+      add :shots, {:array, :map}, default: []
       timestamps
     end
     create index(:surveys, [:cave_id])
