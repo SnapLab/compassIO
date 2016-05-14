@@ -4,7 +4,6 @@ defmodule CompassIO.Cave do
   schema "caves" do
     field :name, :string
     field :station_start
-    field :start_point, Geo.Point
     has_many :surveys, CompassIO.Survey
 
     timestamps

@@ -32,19 +32,18 @@ defmodule CompassIO.SurveyController do
   end
 
   def show(conn, %{"id" => id}) do
-    survey = Repo.get!(Survey, id)
-
+    survey = Repo.get!(Survey, id) |> Repo.preload(:shots)
     render(conn, "show.html", survey: survey)
   end
 
   def edit(conn, %{"id" => id}) do
-    survey = Repo.get!(Survey, id)
+    survey = Repo.get!(Survey, id) |> Repo.preload(:shots)
     changeset = Survey.changeset(survey)
     render(conn, "edit.html", survey: survey, changeset: changeset)
   end
 
   def update(conn, %{"id" => id, "survey" => survey_params}) do
-    survey = Repo.get!(Survey, id)
+    survey = Repo.get!(Survey, id) |> Repo.preload(:shots)
     changeset = Survey.changeset(survey, survey_params)
 
     case Repo.update(changeset) do

@@ -44,21 +44,5 @@
   <% end %>
 </table>
 
-<h3>Stations</h3>
-<table class="table table-striped">
-  <th>Name</th>
-  <th>Depth</th>
-<%= for station <- @survey.stations do %>
-  <tr>
-    <td>
-      <%= station.name %>
-    </td>
-    <td>
-      <%= station.depth %>
-    </td>
-  </tr>
-<% end %>
-</table>
-
 <%= link "Edit", to: cave_survey_path(@conn, :edit, @cave, @survey) %>
 <%= link "Back", to: cave_survey_path(@conn, :index, @cave) %>

@@ -31,7 +31,7 @@ defmodule CompassIO.DatFile.Shot do
   end
 
   def azimuth(shot) do
-    {val, _} = Integer.parse(shot.bearing)
+    {val, _} = Float.parse(shot.bearing)
     val
   end
 

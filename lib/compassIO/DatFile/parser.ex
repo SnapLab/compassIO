@@ -34,7 +34,6 @@ defmodule CompassIO.DatFile.Parser do
       prefix: Survey.prefix(survey_struct),
       shots: Enum.map(survey_struct.shots, &parse_shot(&1))
     }
-    Map.merge(survey, %{stations: CompassIO.Survey.build_stations(survey)})
   end
 
   defp parse_shot(shot_struct) do
