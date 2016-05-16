@@ -16,7 +16,7 @@ defmodule CompassIO.StationBuilder do
     Repo.delete_all(CompassIO.Station, cave_id: cave.id)
 
     Repo.get!(Cave, cave.id)
-      |> Repo.preload(surveys: [shots: (from s in CompassIO.Shot, order_by: s.id)])
+      |> Repo.preload(surveys: from(s in CompassIO.Survey, order_by: s.id))
   end
 
   defp build_stations_and_tie_in(cave, survey) do
@@ -28,10 +28,12 @@ defmodule CompassIO.StationBuilder do
       else
         Repo.get_by(Station, name: survey.tie_in, cave_id: cave.id)
       end
-    build_stations(survey.shots, survey, tie_in)
+
+    shots = Repo.all(from s in Shot, where: s.survey_id == ^survey.id, order_by: s.id)
+    build_stations(shots, survey, tie_in)
   end
 
-  defp build_stations([], survey, _last_station) do
+  defp build_stations([], _survey, _last_station) do
     []
   end
 

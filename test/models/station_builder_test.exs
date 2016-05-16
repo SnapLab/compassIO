@@ -6,39 +6,35 @@ defmodule CompassIO.StationBuilderTest do
 
   doctest CompassIO
 
-  def insert_cave do
+  def cave do
     CompassIO.Repo.insert!(
       CompassIO.DatFile.Parser.parse("test/support/Linea\ Dorada.dat")
      )
   end
 
-  def last_station(cave) do
+  def last_station do
     survey =
-      CompassIO.Repo.get_by(CompassIO.Survey, name: "Foo")
+      CompassIO.Repo.get_by(CompassIO.Survey, name: "Principal")
       |> Repo.preload(stations: (from s in CompassIO.Station, order_by: s.id))
 
     List.last(survey.stations)
   end
 
   test "it build stations with the correct depth" do
-    cave = insert_cave
     StationBuilder.build(cave)
-    station = last_station(cave)
-    assert station.depth == -21.0
+    assert last_station.depth == -12.0
   end
 
   test "it build stations with the correct name" do
-    cave = insert_cave
     StationBuilder.build(cave)
-    station = last_station(cave)
-    assert last_station(cave).name == "LIFOO8"
+    assert last_station.name == "LIPRI14"
   end
 
-  test "it handles updates (for now) by deleting the existing stations)" do
-    cave = insert_cave
-    StationBuilder.build(cave)
-    StationBuilder.build(cave)
-    station = last_station(cave)
-    assert station.depth == -21.0
+  test "it is successful when the StationBuilder runs twice" do
+    this_cave = cave
+    StationBuilder.build(this_cave)
+    assert last_station.depth == -12.0
+    StationBuilder.build(this_cave)
+    assert last_station.depth == -12.0
   end
 end
