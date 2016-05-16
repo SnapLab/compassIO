@@ -4,7 +4,7 @@
   <th>Survey</th>
   <th>Tie in</th>
   <th>Stations</th>
-<%= for survey <- @cave.surveys do %>
+<%= for survey <- @surveys do %>
   <tr>
     <td><%= link survey.name, to: cave_survey_path(@conn, :show, @cave, survey) %></td>
     <td><%= survey.tie_in %></td>
