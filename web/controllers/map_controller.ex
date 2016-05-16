@@ -6,11 +6,9 @@ defmodule CompassIO.MapController do
 
   def show(conn, %{"id" => id}) do
     StationBuilder.build(Repo.get!(Cave, id))
-
     cave =
       Repo.get!(Cave, id)
-      |> Repo.preload(:surveys)
-      |> Repo.preload(surveys: :stations)
+      |> Repo.preload(surveys: [stations: (from s in CompassIO.Station, order_by: s.id)])
 
     render(conn, "show.html", cave: cave)
   end

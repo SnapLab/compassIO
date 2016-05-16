@@ -3,6 +3,7 @@ defmodule CompassIO.SurveyController do
 
   alias CompassIO.Survey
   alias CompassIO.Cave
+  alias CompassIO.Shot
 
   plug :scrub_params, "survey" when action in [:create, :update]
   plug :assign_cave
@@ -32,7 +33,11 @@ defmodule CompassIO.SurveyController do
   end
 
   def show(conn, %{"id" => id}) do
-    survey = Repo.get!(Survey, id) |> Repo.preload(:shots)
+    survey =
+      Repo.get!(Survey, id)
+      |> Repo.preload(
+          shots: from(s in CompassIO.Shot, order_by: s.id))
+
     render(conn, "show.html", survey: survey)
   end
 

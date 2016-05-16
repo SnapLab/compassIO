@@ -1,21 +1,22 @@
 defmodule CompassIO.StationBuilder do
+  import Ecto.Query
   alias CompassIO.Repo
   alias CompassIO.Cave
   alias CompassIO.Survey
+  alias CompassIO.Shot
   alias CompassIO.Station
 
 
   def build(cave) do
-    cave = reload_cave(cave)
+    cave = reset_cave_stations(cave)
     Enum.map(cave.surveys, &build_stations_and_tie_in(cave, &1))
-    reload_cave(cave)
   end
 
-  defp reload_cave(cave) do
+  defp reset_cave_stations(cave) do
+    Repo.delete_all(CompassIO.Station, cave_id: cave.id)
+
     Repo.get!(Cave, cave.id)
-      |> Repo.preload(:surveys)
-      |> Repo.preload(surveys: :shots)
-      |> Repo.preload(surveys: :stations)
+      |> Repo.preload(surveys: [shots: (from s in CompassIO.Shot, order_by: s.id)])
   end
 
   defp build_stations_and_tie_in(cave, survey) do
@@ -27,7 +28,6 @@ defmodule CompassIO.StationBuilder do
       else
         Repo.get_by(Station, name: survey.tie_in, cave_id: cave.id)
       end
-
     build_stations(survey.shots, survey, tie_in)
   end
 
@@ -45,11 +45,11 @@ defmodule CompassIO.StationBuilder do
 
     station = Repo.insert!(
       %Station{
-        name: head.station_to,
-        depth: last_depth + head.depth_change,
-        survey_id: survey.id,
-        cave_id: survey.cave_id
-        })
+      name: head.station_to,
+      depth: last_depth + head.depth_change,
+      survey_id: survey.id,
+      cave_id: survey.cave_id
+      })
 
     build_stations(tail, survey, station)
   end

@@ -2,7 +2,6 @@ defmodule CompassIO.CaveController do
   use CompassIO.Web, :controller
   require IEx
   alias CompassIO.Cave
-  alias CompassIO.StationBuilder
 
   plug :scrub_params, "cave" when action in [:create, :update]
 
@@ -27,7 +26,6 @@ defmodule CompassIO.CaveController do
 
     case Repo.insert(changeset) do
       {:ok, cave} ->
-        StationBuilder.build(cave)
         conn
         |> put_flash(:info, "Cave created successfully.")
         |> redirect(to: cave_path(conn, :show, cave))
@@ -39,7 +37,8 @@ defmodule CompassIO.CaveController do
   def show(conn, %{"id" => id}) do
     cave =
       Repo.get!(Cave, id)
-      |> Repo.preload(:surveys)
+      |> Repo.preload(
+          surveys: from(s in CompassIO.Survey, order_by: s.id))
 
     render(conn, "show.html", cave: cave)
   end
