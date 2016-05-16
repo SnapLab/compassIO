@@ -11,6 +11,6 @@ defmodule CompassIO.Repo.Migrations.CreateStations do
       timestamps
     end
     create index(:stations, [:survey_id])
-    create unique_index(:stations, [:name, :cave_id], unique: true)
+    create unique_index(:stations, [:cave_id, :survey_id, :name], unique: true)
   end
 end
