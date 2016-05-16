@@ -13,10 +13,10 @@ defmodule CompassIO.StationBuilder do
   end
 
   defp reset_cave_stations(cave) do
-    Repo.delete_all(CompassIO.Station, cave_id: cave.id)
+    Repo.delete_all(Station, cave_id: cave.id)
 
     Repo.get!(Cave, cave.id)
-      |> Repo.preload(surveys: from(s in CompassIO.Survey, order_by: s.id))
+      |> Repo.preload(surveys: from(s in Survey, order_by: s.id))
   end
 
   defp build_stations_and_tie_in(cave, survey) do
