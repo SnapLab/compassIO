@@ -38,8 +38,7 @@ defmodule CompassIO.StationBuilder do
   defp load_tie_in(cave, survey) do
     if to_string(survey.tie_in) == "" do
       Repo.insert!(
-        %Station{name: cave.station_start, depth: 0.0,
-                  survey_id: survey.id, cave_id: cave.id})
+        %Station{name: cave.station_start, survey_id: survey.id, cave_id: cave.id})
     else
       Repo.get_by(Station, name: survey.tie_in, cave_id: cave.id)
     end
