@@ -38,17 +38,10 @@ defmodule CompassIO.StationBuilder do
   end
 
   defp build_stations([head|tail], survey, last_station) do
-    last_depth =
-      if last_station do
-        last_station.depth
-      else
-        0.0
-      end
-
     station = Repo.insert!(
       %Station{
       name: head.station_to,
-      depth: last_depth + head.depth_change,
+      depth: last_station.depth + head.depth_change,
       survey_id: survey.id,
       cave_id: survey.cave_id
       })
