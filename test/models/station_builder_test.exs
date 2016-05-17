@@ -37,4 +37,6 @@ defmodule CompassIO.StationBuilderTest do
     StationBuilder.build(this_cave)
     assert last_station.depth == -12.0
   end
+
+  test "it sorts out the weird Regina stations"
 end

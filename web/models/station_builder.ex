@@ -8,35 +8,46 @@ defmodule CompassIO.StationBuilder do
 
 
   def build(cave) do
-    cave = reset_cave_stations(cave)
-    Enum.map(cave.surveys, &build_stations_and_tie_in(cave, &1))
+    reset_cave_stations(cave)
+    cave =
+      Repo.get!(Cave, cave.id)
+      |> Repo.preload(surveys: from(s in Survey, order_by: s.id))
+    process_surveys(cave.surveys, cave)
   end
 
   defp reset_cave_stations(cave) do
     Repo.delete_all(Station, cave_id: cave.id)
-
-    Repo.get!(Cave, cave.id)
-      |> Repo.preload(surveys: from(s in Survey, order_by: s.id))
   end
 
-  defp build_stations_and_tie_in(cave, survey) do
-    tie_in =
-      if to_string(survey.tie_in) == "" do
-        Repo.insert!(
-          %Station{name: cave.station_start, depth: 0.0,
-                    survey_id: survey.id, cave_id: cave.id})
-      else
-        Repo.get_by(Station, name: survey.tie_in, cave_id: cave.id)
-      end
+  defp process_surveys([], _cave) do
+    []
+  end
+  defp process_surveys([head|tail], cave) do
+    tie_in = load_tie_in(cave, head)
+    if is_nil(tie_in) do
+      # move this survey to the end of the list and get the next one
+      [head | tail] = tail ++ [head]
+      process_surveys(tail, cave)
+    else
+      shots = Repo.all(from s in Shot, where: s.survey_id == ^head.id, order_by: s.id)
+      build_stations(shots, head, tie_in)
+      process_surveys(tail, cave)
+    end
+  end
 
-    shots = Repo.all(from s in Shot, where: s.survey_id == ^survey.id, order_by: s.id)
-    build_stations(shots, survey, tie_in)
+  defp load_tie_in(cave, survey) do
+    if to_string(survey.tie_in) == "" do
+      Repo.insert!(
+        %Station{name: cave.station_start, depth: 0.0,
+                  survey_id: survey.id, cave_id: cave.id})
+    else
+      Repo.get_by(Station, name: survey.tie_in, cave_id: cave.id)
+    end
   end
 
   defp build_stations([], _survey, _last_station) do
     []
   end
-
   defp build_stations([head|tail], survey, last_station) do
     station = Repo.insert!(
       %Station{
