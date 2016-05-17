@@ -3,7 +3,6 @@ defmodule CompassIO.SurveyController do
 
   alias CompassIO.Survey
   alias CompassIO.Cave
-  alias CompassIO.Shot
 
   plug :scrub_params, "survey" when action in [:create, :update]
   plug :assign_cave
