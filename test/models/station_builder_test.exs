@@ -30,6 +30,11 @@ defmodule CompassIO.StationBuilderTest do
     assert last_station.name == "LIPRI14"
   end
 
+  test "it build stations with the correct entrance distance" do
+    StationBuilder.build(cave)
+    assert last_station.entrance_distance == 210.0
+  end
+
   test "it is successful when the StationBuilder runs twice" do
     this_cave = cave
     StationBuilder.build(this_cave)

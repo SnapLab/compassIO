@@ -9,9 +9,18 @@
     <td><%= link survey.name, to: cave_survey_path(@conn, :show, @cave, survey) %></td>
     <td><%= survey.tie_in %></td>
     <td>
-    <%= for station <- survey.stations do %>
-      <%= station.name %> (<%= station.depth %>)
-    <% end %>
+      <table class='table'>
+        <th>Name</th>
+        <th>Depth</th>
+        <th>Entrance distance</th>
+        <%= for station <- survey.stations do %>
+          <tr>
+            <td><%= station.name %></td>
+            <td><%= station.depth %></td>
+            <td><%= station.entrance_distance %></td>
+            <td></td>
+        <% end %>
+      </table>
     </td>
    </tr>
 <% end %>
