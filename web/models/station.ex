@@ -4,7 +4,7 @@ defmodule CompassIO.Station do
   schema "stations" do
     field :name, :string
     field :depth, :float, default: 0.0
-    field :point, :string
+    field :point, Geo.Point
     field :entrance_distance, :float, default: 0.0
     belongs_to :survey, CompassIO.Survey
     belongs_to :cave, CompassIO.Cave

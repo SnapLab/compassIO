@@ -26,7 +26,7 @@ defmodule CompassIO.StationBuilder do
     tie_in = load_tie_in(cave, head)
     if is_nil(tie_in) do
       # move this survey to the end of the list and get the next one
-      [head | tail] = tail ++ [head]
+      [_head | tail] = tail ++ [head]
       process_surveys(tail, cave)
     else
       shots = Repo.all(from s in Shot, where: s.survey_id == ^head.id, order_by: s.id)

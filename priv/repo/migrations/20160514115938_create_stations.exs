@@ -7,7 +7,8 @@ defmodule CompassIO.Repo.Migrations.CreateStations do
       add :cave_id, references(:caves, on_delete: :delete_all)
       add :name, :string
       add :depth, :float
-      add :point, :string
+      add :entrance_distance, :float
+      add :point, :geometry
       timestamps
     end
     create index(:stations, [:survey_id])
