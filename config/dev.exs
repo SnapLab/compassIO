@@ -39,4 +39,5 @@ config :compassIO, CompassIO.Repo,
   password: "",
   database: "compassio_dev",
   hostname: "localhost",
-  pool_size: 10
+  pool_size: 10,
+  extensions: [{Geo.PostGIS.Extension, library: Geo}]

@@ -41,7 +41,8 @@ defmodule CompassIO.Mixfile do
      {:earmark, "~> 0.1"},
      {:ex_doc, "~> 0.11"},
      {:chronos, "~> 1.5.1"},
-     {:ex_machina, "~> 0.6.1"}
+     {:ex_machina, "~> 0.6.1"},
+     {:geo, "~> 1.0"}
    ]
   end
 
