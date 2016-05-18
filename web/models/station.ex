@@ -12,7 +12,7 @@ defmodule CompassIO.Station do
     timestamps
   end
 
-  @required_fields ~w(name survey_id cave_id depth)
+  @required_fields ~w(name survey_id cave_id depth point)
   @optional_fields ~w()
 
   @doc """

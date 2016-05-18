@@ -5,6 +5,7 @@ defmodule CompassIO.StationBuilder do
   alias CompassIO.Survey
   alias CompassIO.Shot
   alias CompassIO.Station
+  alias CompassIO.PointBuilder
 
 
   def build(cave) do
@@ -38,7 +39,8 @@ defmodule CompassIO.StationBuilder do
   defp load_tie_in(cave, survey) do
     if to_string(survey.tie_in) == "" do
       Repo.insert!(
-        %Station{name: cave.station_start, survey_id: survey.id, cave_id: cave.id})
+        %Station{name: cave.station_start, survey_id: survey.id, cave_id: cave.id,
+                  point: PointBuilder.point_zero})
     else
       Repo.get_by(Station, name: survey.tie_in, cave_id: cave.id)
     end
@@ -53,7 +55,7 @@ defmodule CompassIO.StationBuilder do
       name: head.station_to,
       depth: last_station.depth + head.depth_change,
       entrance_distance: last_station.entrance_distance + head.distance,
-      point: %Geo.Point{coordinates: {30, -90}},
+      point: PointBuilder.build_point(last_station.point, head.distance, head.azimuth),
       survey_id: survey.id,
       cave_id: survey.cave_id
       })

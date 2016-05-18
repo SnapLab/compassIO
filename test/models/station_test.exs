@@ -2,8 +2,10 @@ defmodule CompassIO.StationTest do
   use CompassIO.ModelCase
 
   alias CompassIO.Station
+  alias CompassIO.PointBuilder
 
-  @valid_attrs %{survey_id: 1, cave_id: 1, name: "some content", depth: 0.0}
+  @valid_attrs %{survey_id: 1, cave_id: 1,
+    name: "some content", depth: 0.0, point: PointBuilder.point_zero}
   @invalid_attrs %{}
 
   test "changeset with valid attributes" do
