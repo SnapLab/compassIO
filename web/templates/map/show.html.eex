@@ -13,11 +13,13 @@
         <th>Name</th>
         <th>Depth</th>
         <th>Entrance distance</th>
+        <th>Point</th>
         <%= for station <- survey.stations do %>
           <tr>
             <td><%= station.name %></td>
             <td><%= station.depth %></td>
             <td><%= station.entrance_distance %></td>
+            <td><%= point_to_json(station) %></td>
             <td></td>
         <% end %>
       </table>

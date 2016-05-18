@@ -7,6 +7,7 @@
 <% end %>
 </ul>
 
+<%= link "Map", to: map_path(@conn, :show, @cave) %>
 <%= link "Edit", to: cave_path(@conn, :edit, @cave) %>
 <%= link "Back", to: cave_path(@conn, :index) %>
 <%= link "New survey", to: cave_survey_path(@conn, :new, @cave) %>

@@ -28,4 +28,10 @@ defmodule CompassIO.Station do
     |> foreign_key_constraint(:survey_id)
     |> unique_constraint(:name_survey_id)
   end
+
+  def point_json(model) do
+    unless is_nil(model.point) do
+      Geo.JSON.encode(model.point)
+    end
+  end
 end

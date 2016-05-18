@@ -53,6 +53,7 @@ defmodule CompassIO.StationBuilder do
       name: head.station_to,
       depth: last_station.depth + head.depth_change,
       entrance_distance: last_station.entrance_distance + head.distance,
+      point: %Geo.Point{coordinates: {30, -90}},
       survey_id: survey.id,
       cave_id: survey.cave_id
       })
