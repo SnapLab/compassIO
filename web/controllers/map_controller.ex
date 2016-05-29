@@ -6,6 +6,8 @@ defmodule CompassIO.MapController do
   alias CompassIO.Station
   alias CompassIO.StationBuilder
 
+  plug :put_layout, "map.html"
+
   def show(conn, %{"id" => id}) do
     StationBuilder.build(Repo.get!(Cave, id))
     cave = Repo.get!(Cave, id)

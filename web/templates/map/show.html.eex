@@ -1,5 +1,7 @@
 <h2><%= @cave.name %></h2>
 <p><%= @cave.station_start %></p>
+<canvas id="myCanvas" class="canvas" width="200" height="200" style="background-color: white;">
+</canvas>
 <table class='table table-bordered table-striped'>
   <th>Survey</th>
   <th>Tie in</th>
