@@ -11,7 +11,9 @@ defmodule CompassIO.DatFile.Survey do
   end
 
   def prefix(survey) do
-    Regex.replace(~r/\d/,
-      List.first(survey.shots).to_station, "")
+    %{"prefix" => result} =
+      Regex.named_captures(~r/(?<prefix>[^\d]*)/,
+        List.first(survey.shots).to_station)
+    result
   end
 end

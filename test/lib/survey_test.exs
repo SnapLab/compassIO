@@ -20,6 +20,14 @@ defmodule CompassIO.DatFile.SurveyTest do
     }
   end
 
+  def survey_c do
+    %Survey{
+      shots: [
+        %Shot{ from_station: "ABC2", to_station: "ABC2a" }
+      ]
+    }
+  end
+
   test "survey A has a tie_in" do
     assert Survey.tie_in(survey_a) == "XYZ1"
   end
@@ -34,5 +42,9 @@ defmodule CompassIO.DatFile.SurveyTest do
 
   test "survey B has a prefix" do
     assert Survey.prefix(survey_b) == "ABC"
+  end
+
+  test "survey C has prefix" do
+    assert Survey.prefix(survey_c) == "ABC"
   end
 end
