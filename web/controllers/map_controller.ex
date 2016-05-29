@@ -5,6 +5,7 @@ defmodule CompassIO.MapController do
   alias CompassIO.Survey
   alias CompassIO.Station
   alias CompassIO.StationBuilder
+  alias CompassIO.Shot
 
   plug :put_layout, "map.html"
 
@@ -13,6 +14,7 @@ defmodule CompassIO.MapController do
     surveys =
       Repo.all(from s in Survey, where: s.cave_id == ^cave.id, order_by: s.id)
       |> Repo.preload(stations: from(s in Station, order_by: s.id))
+      |> Repo.preload(shots: from(s in Shot, order_by: s.id))
 
     render(conn, "show.html", cave: cave, surveys: surveys)
   end

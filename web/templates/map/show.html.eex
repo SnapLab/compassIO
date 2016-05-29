@@ -1,6 +1,6 @@
 <h2><%= @cave.name %></h2>
 <p><%= @cave.station_start %></p>
-<canvas id="myCanvas" class="canvas" width="200" height="200" style="background-color: white;">
+<canvas id="myCanvas" class="canvas" width="800" height="800" style="background-color: black;">
 </canvas>
 <table class='table table-bordered table-striped'>
   <th>Survey</th>
@@ -29,3 +29,23 @@
    </tr>
 <% end %>
 </table>
+<script type="text/paperscript" canvas="myCanvas">
+  paper.view.setCenter(0,0);
+
+  // Create a Paper.js Path to draw a line into it:
+  var path = new Path();
+
+  // Give the stroke a color
+  path.strokeColor = 'red';
+
+  console.log(<%= Enum.count(List.first(@surveys).shots) %>);
+
+  <%
+  # this doesn't work - is it too OO?
+
+  for shot <- List.first(@surveys).shots do %>
+    path.moveTo(<%= point_xy(shot.station_from) %>);
+    path.lineTo(<%= point_xy(shot.station_to) %>);
+
+  <% end %>
+</script>
