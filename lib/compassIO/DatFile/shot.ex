@@ -16,7 +16,7 @@ defmodule CompassIO.DatFile.Shot do
   end
 
   def depth_change(shot) do
-    (:math.sin(to_radians(inclination(shot))) * distance(shot))
+    (:math.sin(Maths.to_radians(inclination(shot))) * distance(shot))
     |> Float.round(0)
     |> positivity(shot)
   end
@@ -37,10 +37,6 @@ defmodule CompassIO.DatFile.Shot do
 
   defp down?(shot) do
     Float.parse(shot.inclination) < 0
-  end
-
-  defp to_radians(degrees) do
-    degrees * (:math.pi / 180)
   end
 
   defp positivity(number, shot) do
