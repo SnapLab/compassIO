@@ -37,7 +37,7 @@ defmodule CompassIO.StationBuilderTest do
 
   test "it build stations with the correct point" do
     StationBuilder.build(cave)
-    assert last_station.point == %Geo.Point{coordinates: {30.0, -90.0}}
+    assert last_station.point == %Geo.Point{coordinates: {-80.29097495656191, -158.11384208405187}}
   end
 
   test "it is successful when the StationBuilder runs twice" do
