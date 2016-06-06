@@ -14,6 +14,6 @@ defmodule CompassIO.MapView do
   end
 
   def station_at(stations, station_name) do
-    Enum.find(stations, &match?(%{name: station_name}, &1))
+    stations[String.to_atom(station_name)]
   end
 end

@@ -48,8 +48,10 @@
   // Give the stroke a color
   path.strokeColor = 'red';
 
-  <%= for shot <- List.first(@surveys).shots do %>
+  <%= for survey <- @surveys do %>
+  <%= for shot <- survey.shots do %>
     path.moveTo(<%= point_xy(station_at(@stations, shot.station_from)) %>);
     path.lineTo(<%= point_xy(station_at(@stations, shot.station_to)) %>);
+  <%= end %>
   <%= end %>
 </script>
