@@ -13,9 +13,11 @@ defmodule CompassIO.MapController do
     cave = Repo.get!(Cave, id)
     surveys =
       Repo.all(from s in Survey, where: s.cave_id == ^cave.id, order_by: s.id)
-      |> Repo.preload(stations: from(s in Station, order_by: s.id))
       |> Repo.preload(shots: from(s in Shot, order_by: s.id))
 
-    render(conn, "show.html", cave: cave, surveys: surveys)
+    stations =
+      Repo.all(from s in Station, where: s.cave_id == ^cave.id, order_by: s.name)
+
+    render(conn, "show.html", cave: cave, surveys: surveys, stations: stations)
   end
 end

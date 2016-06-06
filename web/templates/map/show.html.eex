@@ -5,26 +5,36 @@
 <table class='table table-bordered table-striped'>
   <th>Survey</th>
   <th>Tie in</th>
-  <th>Stations</th>
+  <th>Shots</th>
 <%= for survey <- @surveys do %>
   <tr>
     <td><%= link survey.name, to: cave_survey_path(@conn, :show, @cave, survey) %></td>
     <td><%= survey.tie_in %></td>
     <td>
-      <table class='table'>
-        <th>Name</th>
-        <th>Depth</th>
-        <th>Entrance distance</th>
-        <th>Point</th>
-        <%= for station <- survey.stations do %>
-          <tr>
-            <td><%= station.name %></td>
-            <td><%= station.depth %></td>
-            <td><%= station.entrance_distance %></td>
-            <td><%= point_to_json(station) %></td>
-            <td></td>
-        <% end %>
-      </table>
+      <table class="table table-striped">
+      <th>Station from</th>
+      <th>Depth change</th>
+      <th>Inclination</th>
+      <th>Azimuth</th>
+      <th>Distance</th>
+      <th>Flags</th>
+      <th>Station to</th>
+      <%= for shot <- survey.shots do %>
+      <tr>
+        <td>
+          <%= station_at(@stations, shot.station_from).name %>
+          <%= point_to_json(station_at(@stations, shot.station_from)) %>
+        </td>
+        <td><%= shot.depth_change %></td>
+        <td><%= shot.inclination %></td>
+        <td><%= shot.azimuth %></td>
+        <td><%= shot.distance %></td>
+        <td><%= shot.flags %></td>
+        <td><%= station_at(@stations, shot.station_to).name %>
+          <%= point_to_json(station_at(@stations, shot.station_to)) %></td>
+      </tr>
+      <% end %>
+    </table>
     </td>
    </tr>
 <% end %>
@@ -38,14 +48,9 @@
   // Give the stroke a color
   path.strokeColor = 'red';
 
-  console.log(<%= Enum.count(List.first(@surveys).shots) %>);
 
-  <%
-  # this doesn't work - is it too OO?
-
-  for shot <- List.first(@surveys).shots do %>
+  <% for shot <- List.first(@surveys).shots do %>
     path.moveTo(<%= point_xy(shot.station_from) %>);
     path.lineTo(<%= point_xy(shot.station_to) %>);
-
   <% end %>
 </script>
