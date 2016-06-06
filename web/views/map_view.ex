@@ -8,7 +8,9 @@ defmodule CompassIO.MapView do
   end
 
   def point_xy(station) do
-    [1,3]
+    station.point.coordinates
+    |> Tuple.to_list
+    |> Enum.join(",")
   end
 
   def station_at(stations, station_name) do
