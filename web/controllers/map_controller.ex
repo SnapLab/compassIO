@@ -9,7 +9,6 @@ defmodule CompassIO.MapController do
   plug :put_layout, "map.html"
 
   def show(conn, %{"id" => id}) do
-    StationBuilder.build(Repo.get!(Cave, id))
     cave = Repo.get!(Cave, id)
     surveys =
       Repo.all(from s in Survey, where: s.cave_id == ^cave.id, order_by: s.id)
