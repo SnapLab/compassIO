@@ -17,7 +17,7 @@ defmodule CompassIO.StationBuilder do
   end
 
   defp reset_cave_stations(cave) do
-    Repo.delete_all(Station, cave_id: cave.id)
+    Repo.delete_all(from(s in Station, where: s.cave_id == ^cave.id))
   end
 
   defp process_surveys([], _cave) do
