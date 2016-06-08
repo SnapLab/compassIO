@@ -1,6 +1,6 @@
 <h2><%= @cave.name %></h2>
 <p><%= @cave.station_start %></p>
-<canvas id="myCanvas" class="canvas" width="800" height="800" style="background-color: black;">
+<canvas id="myCanvas" class="canvas" width="500" height="500" style="background-color: black;">
 </canvas>
 <table class='table table-bordered table-striped'>
   <th>Survey</th>
@@ -22,16 +22,14 @@
       <%= for shot <- survey.shots do %>
       <tr>
         <td>
-          <%= station_at(@stations, shot.station_from).name %>
-          <%= point_to_json(station_at(@stations, shot.station_from)) %>
+          <%= shot.station_from %>
         </td>
         <td><%= shot.depth_change %></td>
         <td><%= shot.inclination %></td>
         <td><%= shot.azimuth %></td>
         <td><%= shot.distance %></td>
         <td><%= shot.flags %></td>
-        <td><%= station_at(@stations, shot.station_to).name %>
-          <%= point_to_json(station_at(@stations, shot.station_to)) %></td>
+        <td><%= shot.station_to %></td>
       </tr>
       <% end %>
     </table>
@@ -40,22 +38,22 @@
 <% end %>
 </table>
 <script type="text/paperscript" canvas="myCanvas">
-  paper.view.setCenter(0,0)
+  <%# paper.view.setCenter(0,0) %>
+
+  cave = new CompoundPath
   <%= for survey <- @surveys do %>
-    var path = new Path();
-    path.strokeColor = 'red';
-    path.strokeWidth = 1;
+  var line = new Path({
+    segments: [<%= survey_xy(@stations, survey) %>]
+    });
 
-    <%= if survey.tie_in == "" do %>
-      path.add(0,0);
-    <%= else %>
-      var tie_in = new Point(<%= point_xy(station_at(@stations, survey.tie_in)) %>)
-      path.add(tie_in);
-    <%= end %>
-
-    <%= for shot <- survey.shots do %>
-      path.add(<%= point_xy(station_at(@stations, shot.station_to)) %>);
-    <%= end %>
-
+  cave.addChild(line);
   <%= end %>
+  cave.strokeColor = 'red'
+  cave.rotate(-90);
+
+  var path = new Path.Rectangle({
+    point: [50, 50],
+    size: [400, 400]
+});
+  cave.fitBounds(path.bounds)
 </script>

@@ -7,13 +7,22 @@ defmodule CompassIO.MapView do
     Poison.encode!(Station.point_json(station))
   end
 
-  def point_xy(station) do
-    station.point.coordinates
-    |> Tuple.to_list
-    |> Enum.join(",")
+  def point_xy(stations, station_name) do
+    station = stations[String.to_atom(station_name)]
+    if station == nil do
+      "0,0"
+    else
+      station.point.coordinates
+      |> Tuple.to_list
+      |> Enum.join(",")
+    end
   end
 
-  def station_at(stations, station_name) do
-    stations[String.to_atom(station_name)]
+  def survey_xy(stations, survey) do
+    Enum.map(survey.shots, &(
+       "[#{ point_xy(stations, &1.station_to) }]"
+    ))
+    |> List.insert_at(0, "[#{ point_xy(stations, survey.tie_in) }]")
+    |> Enum.join(",")
   end
 end
