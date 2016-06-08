@@ -41,16 +41,21 @@
 </table>
 <script type="text/paperscript" canvas="myCanvas">
   paper.view.setCenter(0,0)
-  var path = new Path();
-  path.strokeColor = 'red';
-
-  path.add(0, 0);
   <%= for survey <- @surveys do %>
+    var path = new Path();
+    path.strokeColor = 'red';
+    path.strokeWidth = 1;
 
-  console.log('now move to the tie-in station: <%= survey.tie_in %>');
-  <%= for shot <- survey.shots do %>
-    path.add(<%= point_xy(station_at(@stations, shot.station_to)) %>);
+    <%= if survey.tie_in == "" do %>
+      path.add(0,0);
+    <%= else %>
+      var tie_in = new Point(<%= point_xy(station_at(@stations, survey.tie_in)) %>)
+      path.add(tie_in);
+    <%= end %>
+
+    <%= for shot <- survey.shots do %>
+      path.add(<%= point_xy(station_at(@stations, shot.station_to)) %>);
+    <%= end %>
+
   <%= end %>
-  <%= end %>
-  path.rotate(-90);
 </script>
