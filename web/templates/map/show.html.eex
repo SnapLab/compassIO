@@ -40,18 +40,17 @@
 <% end %>
 </table>
 <script type="text/paperscript" canvas="myCanvas">
-  paper.view.setCenter(0,0);
-
-  // Create a Paper.js Path to draw a line into it:
+  paper.view.setCenter(0,0)
   var path = new Path();
-
-  // Give the stroke a color
   path.strokeColor = 'red';
 
+  path.add(0, 0);
   <%= for survey <- @surveys do %>
+
+  console.log('now move to the tie-in station: <%= survey.tie_in %>');
   <%= for shot <- survey.shots do %>
-    path.moveTo(<%= point_xy(station_at(@stations, shot.station_from)) %>);
-    path.lineTo(<%= point_xy(station_at(@stations, shot.station_to)) %>);
+    path.add(<%= point_xy(station_at(@stations, shot.station_to)) %>);
   <%= end %>
   <%= end %>
+  path.rotate(-90);
 </script>
