@@ -10,4 +10,5 @@ config :compassIO, CompassIO.Endpoint,
 config :compassIO, CompassIO.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
-  pool_size: 20
+  pool_size: 20,
+  extensions: [{Geo.PostGIS.Extension, library: Geo}]
