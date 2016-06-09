@@ -22,3 +22,10 @@ erl_crash.dump
 # secrets file as long as you replace its contents by environment
 # variables.
 /config/prod.secret.exs
+
+# conform files
+/config/compassIO.conf
+/config/compassIO.schema.exs
+
+# Not sure if we need this, but it annoys me so
+/npm-debug.log
