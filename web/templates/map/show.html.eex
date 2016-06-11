@@ -40,20 +40,21 @@
 <script type="text/paperscript" canvas="myCanvas">
   <%# paper.view.setCenter(0,0) %>
 
-  cave = new CompoundPath
+  cave = new Group
   <%= for survey <- @surveys do %>
   var line = new Path({
     segments: [<%= survey_xy(@stations, survey) %>]
     });
-
+  line.name = '<%= survey.prefix %>';
+  line.strokeColor = 'green';
   cave.addChild(line);
   <%= end %>
-  cave.strokeColor = 'red'
+
   cave.rotate(-90);
 
   var path = new Path.Rectangle({
     point: [50, 50],
     size: [400, 400]
-});
+  });
   cave.fitBounds(path.bounds)
 </script>
