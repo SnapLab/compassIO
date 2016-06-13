@@ -11,10 +11,9 @@
   <tbody>
 <%= for cave <- @caves do %>
     <tr>
-      <td><%= cave.name %></td>
+      <td><%= link cave.name, to: cave_path(@conn, :show, cave) %></td>
       <td class="text-right">
-        <%= link "Map", to: map_path(@conn, :show, cave), class: "btn btn-default btn-xs" %>
-        <%= link "Show", to: cave_path(@conn, :show, cave), class: "btn btn-default btn-xs" %>
+
         <%= link "Edit", to: cave_path(@conn, :edit, cave), class: "btn btn-default btn-xs" %>
         <%= link "Delete", to: cave_path(@conn, :delete, cave), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
       </td>
@@ -23,4 +22,3 @@
   </tbody>
 </table>
 
-<%= link "New cave", to: cave_path(@conn, :new) %>

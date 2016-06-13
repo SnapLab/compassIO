@@ -1,13 +1,30 @@
 <h2><%= @cave.name %></h2>
+<canvas id="myCanvas" class="canvas" width="500" height="500" style="background-color: black;">
+</canvas>
 <ul>
-<%= for survey <- @cave.surveys do %>
+<%= for survey <- @surveys do %>
   <li>
     <%= link survey.name, to: cave_survey_path(@conn, :show, @cave, survey) %>
   </li>
 <% end %>
 </ul>
 
-<%= link "Map", to: map_path(@conn, :show, @cave) %>
-<%= link "Edit", to: cave_path(@conn, :edit, @cave) %>
-<%= link "Back", to: cave_path(@conn, :index) %>
-<%= link "New survey", to: cave_survey_path(@conn, :new, @cave) %>
+<script type="text/paperscript" canvas="myCanvas">
+  cave = new Group
+  <%= for survey <- @surveys do %>
+  var line = new Path({
+    segments: [<%= survey_xy(@stations, survey) %>]
+    });
+  line.name = '<%= survey.prefix %>';
+  line.strokeColor = 'green';
+  cave.addChild(line);
+  <%= end %>
+
+  cave.rotate(-90);
+
+  var path = new Path.Rectangle({
+    point: [50, 50],
+    size: [400, 400]
+  });
+  cave.fitBounds(path.bounds)
+</script>

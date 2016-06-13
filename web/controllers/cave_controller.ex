@@ -1,8 +1,11 @@
 defmodule CompassIO.CaveController do
   use CompassIO.Web, :controller
-  require IEx
+
   alias CompassIO.Cave
+  alias CompassIO.Survey
+  alias CompassIO.Station
   alias CompassIO.StationBuilder
+  alias CompassIO.Shot
 
   plug :scrub_params, "cave" when action in [:create, :update]
 
@@ -42,7 +45,16 @@ defmodule CompassIO.CaveController do
       |> Repo.preload(
           surveys: from(s in CompassIO.Survey, order_by: s.id))
 
-    render(conn, "show.html", cave: cave)
+    cave = Repo.get!(Cave, id)
+    surveys =
+      Repo.all(from s in Survey, where: s.cave_id == ^cave.id, order_by: s.id)
+      |> Repo.preload(shots: from(s in Shot, order_by: s.id))
+
+    stations =
+      Repo.all(from s in Station, where: s.cave_id == ^cave.id, order_by: s.name)
+      |> Enum.map(&{ String.to_atom(&1.name),  &1})
+
+    render(conn, "show.html", cave: cave, surveys: surveys, stations: stations)
   end
 
   def edit(conn, %{"id" => id}) do

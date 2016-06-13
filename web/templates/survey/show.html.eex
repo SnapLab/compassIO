@@ -43,6 +43,3 @@
   </tr>
   <% end %>
 </table>
-
-<%= link "Edit", to: cave_survey_path(@conn, :edit, @cave, @survey) %>
-<%= link "Back", to: cave_survey_path(@conn, :index, @cave) %>
