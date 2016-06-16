@@ -11,7 +11,8 @@ defmodule CompassIO.StationBuilder do
   def build(cave) do
     reset_cave_stations(cave)
     cave =
-      Repo.get!(Cave, cave.id)
+      Cave
+      |> Repo.get!(cave.id)
       |> Repo.preload(surveys: from(s in Survey, order_by: s.id))
     process_surveys(cave.surveys, cave)
   end

@@ -47,7 +47,7 @@ defmodule CompassIO.SurveyController do
   end
 
   def update(conn, %{"id" => id, "survey" => survey_params}) do
-    survey = Repo.get!(Survey, id) |> Repo.preload(:shots)
+    survey = Survey |> Repo.get!(id) |> Repo.preload(:shots)
     changeset = Survey.changeset(survey, survey_params)
 
     case Repo.update(changeset) do

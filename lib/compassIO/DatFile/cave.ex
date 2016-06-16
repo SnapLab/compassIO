@@ -10,12 +10,12 @@ defmodule CompassIO.DatFile.Cave do
     # check if the name exists
     existing_cave = CompassIO.Repo.get_by(CompassIO.Cave, name: cave_struct.name)
 
-    name =
+    ret =
     if existing_cave do
       "#{ existing_cave.name }-#{ Chronos.today |> Tuple.to_list |> Enum.join("-") }-#{ :os.system_time(:seconds) }"
     else
       cave_struct.name
     end
-    name
+    ret
   end
 end
