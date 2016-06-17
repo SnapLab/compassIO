@@ -12,3 +12,9 @@ config :compassIO, CompassIO.Repo,
   url: System.get_env("DATABASE_URL"),
   pool_size: 20,
   extensions: [{Geo.PostGIS.Extension, library: Geo}]
+
+config :compassIO, :basic_auth, [
+  realm: "Under Construction",
+  username: System.get_env("DEV_USER"),
+  password: System.get_env("DEV_PWD")
+]
