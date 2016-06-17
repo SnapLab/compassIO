@@ -43,7 +43,8 @@ defmodule CompassIO.Mixfile do
      {:chronos, "~> 1.5.1"},
      {:ex_machina, "~> 0.6.1"},
      {:geo, "~> 1.0"},
-     {:credo, "~> 0.4", only: [:dev, :test]}
+     {:credo, "~> 0.4", only: [:dev, :test]},
+     {:basic_auth, ">= 0.0.1"}
    ]
   end
 

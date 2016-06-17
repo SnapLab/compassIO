@@ -7,6 +7,8 @@ defmodule CompassIO.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug BasicAuth, realm: "Under Construction",
+      username: "admin", password: System.get_env("DEV_PWD")
   end
 
   pipeline :api do
