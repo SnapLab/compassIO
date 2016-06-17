@@ -21,7 +21,7 @@ config :compassIO, CompassIO.Repo,
 
 
 config :compassIO, :basic_auth, [
-  realm: "Under Construction",
+  realm: "Under Construction!",
   username: "admin",
   password: "admin"
 ]

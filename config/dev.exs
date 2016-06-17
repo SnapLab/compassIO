@@ -43,7 +43,7 @@ config :compassIO, CompassIO.Repo,
   extensions: [{Geo.PostGIS.Extension, library: Geo}]
 
 config :compassIO, :basic_auth, [
-  realm: "Under Construction",
+  realm: "Under Construction!",
   username: "admin",
   password: "admin"
 ]
