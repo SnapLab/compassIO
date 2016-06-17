@@ -18,3 +18,10 @@ config :compassIO, CompassIO.Repo,
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox,
   extensions: [{Geo.PostGIS.Extension, library: Geo}]
+
+
+config :compassIO, :basic_auth, [
+  realm: "Under Construction",
+  username: "admin",
+  password: "admin"
+]
