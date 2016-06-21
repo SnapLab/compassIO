@@ -1,4 +1,4 @@
-defmodule CompassIO.SurveyController do
+defmodule CompassIO.Browser.SurveyController do
   use CompassIO.Web, :controller
 
   alias CompassIO.Survey

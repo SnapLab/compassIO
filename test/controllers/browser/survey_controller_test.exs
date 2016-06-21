@@ -1,4 +1,4 @@
-defmodule CompassIO.SurveyControllerTest do
+defmodule CompassIO.Brower.SurveyControllerTest do
   use CompassIO.ConnCase
 
   alias CompassIO.Survey

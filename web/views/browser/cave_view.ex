@@ -1,4 +1,4 @@
-defmodule CompassIO.CaveView do
+defmodule CompassIO.Browser.CaveView do
   use CompassIO.Web, :view
   alias CompassIO.Station
 

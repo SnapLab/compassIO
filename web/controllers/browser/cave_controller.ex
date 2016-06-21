@@ -1,4 +1,4 @@
-defmodule CompassIO.CaveController do
+defmodule CompassIO.Browser.CaveController do
   use CompassIO.Web, :controller
 
   alias CompassIO.Cave

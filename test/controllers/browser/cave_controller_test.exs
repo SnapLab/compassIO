@@ -1,4 +1,4 @@
-defmodule CompassIO.CaveControllerTest do
+defmodule CompassIO.Browser.CaveControllerTest do
   use CompassIO.ConnCase
 
   alias CompassIO.Cave
