@@ -40,11 +40,6 @@ defmodule CompassIO.Browser.CaveController do
   end
 
   def show(conn, %{"id" => id}) do
-    cave =
-      Repo.get!(Cave, id)
-      |> Repo.preload(
-          surveys: from(s in CompassIO.Survey, order_by: s.id))
-
     cave = Repo.get!(Cave, id)
     surveys =
       Repo.all(from s in Survey, where: s.cave_id == ^cave.id, order_by: s.id)
