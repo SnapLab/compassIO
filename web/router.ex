@@ -25,8 +25,7 @@ defmodule CompassIO.Router do
     end
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", CompassIO do
-  #   pipe_through :api
-  # end
+  scope "/api/v1", CompassIO, as: :api do
+    resources "/caves", Api.CaveController, except: [:new, :edit]
+  end
 end
