@@ -24,4 +24,4 @@ erl_crash.dump
 # /config/prod.secret.exs
 
 # Not sure if we need this, but it annoys me so
-/npm-debug.log
+npm-debug.log
