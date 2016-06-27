@@ -1,6 +1,7 @@
 <h2><%= @cave.name %></h2>
 <canvas id="myCanvas" class="canvas" width="500" height="500" style="background-color: black;">
 </canvas>
+<div id='cave-map'></div>
 <ul>
 <%= for survey <- @surveys do %>
   <li>

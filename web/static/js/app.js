@@ -19,3 +19,17 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+import React from "react"
+import ReactDOM from "react-dom"
+
+class CaveMap extends React.Component {
+  render() {
+    return (<h1>Cave Map!</h1>)
+  }
+}
+
+ReactDOM.render(
+  <CaveMap/>,
+  document.getElementById("cave-map")
+)
