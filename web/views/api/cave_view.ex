@@ -5,16 +5,6 @@ defmodule CompassIO.Api.CaveView do
     %{data: render_many(caves, CompassIO.Api.CaveView, "cave.json")}
   end
 
-  def render("show.json", %{cave: cave}) do
-     %{
-      data:
-        %{
-          cave: render_one(cave, CompassIO.Api.CaveView, "cave.json"),
-          surveys: []
-        }
-     }
-  end
-
   def render("show.json", %{cave: cave, surveys: surveys, stations: stations}) do
     %{
       data:

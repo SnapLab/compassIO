@@ -21,7 +21,7 @@ defmodule CompassIO.Api.CaveController do
         conn
         |> put_status(:created)
         |> put_resp_header("location", cave_path(conn, :show, cave))
-        |> render("show.json", cave: cave)
+        |> render("show.json", cave: cave, surveys: [], stations: [])
       {:error, changeset} ->
         conn
         |> put_status(:unprocessable_entity)
@@ -51,7 +51,7 @@ defmodule CompassIO.Api.CaveController do
 
     case Repo.update(changeset) do
       {:ok, cave} ->
-        render(conn, "show.json", cave: cave)
+        render(conn, "show.json", cave: cave, surveys: [], stations: [])
       {:error, changeset} ->
         conn
         |> put_status(:unprocessable_entity)
