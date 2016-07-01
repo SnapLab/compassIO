@@ -15,10 +15,10 @@ defmodule CompassIO.Api.CaveControllerTest do
   end
 
   test "shows chosen resource", %{conn: conn} do
-    cave = Repo.insert! %Cave{}
+    cave = Repo.insert! %Cave{name: "foo"}
     conn = get conn, api_cave_path(conn, :show, cave)
-    assert json_response(conn, 200)["data"] == %{"id" => cave.id,
-      "name" => cave.name}
+    assert json_response(conn, 200)["data"] == %{"cave" => %{"id" => cave.id,
+      "name" => "foo"}, "surveys" => []}
   end
 
   test "does not show resource and instead throw error when id is nonexistent", %{conn: conn} do
@@ -29,7 +29,7 @@ defmodule CompassIO.Api.CaveControllerTest do
 
   test "creates and renders resource when data is valid", %{conn: conn} do
     conn = post conn, api_cave_path(conn, :create), cave: @valid_attrs
-    assert json_response(conn, 201)["data"]["id"]
+    assert json_response(conn, 201)["data"]
     assert Repo.get_by(Cave, @valid_attrs)
   end
 
@@ -41,7 +41,7 @@ defmodule CompassIO.Api.CaveControllerTest do
   test "updates and renders chosen resource when data is valid", %{conn: conn} do
     cave = Repo.insert! %Cave{}
     conn = put conn, api_cave_path(conn, :update, cave), cave: @valid_attrs
-    assert json_response(conn, 200)["data"]["id"]
+    assert json_response(conn, 200)["data"]
     assert Repo.get_by(Cave, @valid_attrs)
   end
 

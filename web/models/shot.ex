@@ -10,7 +10,6 @@ defmodule CompassIO.Shot do
     field :flags, :string
     field :station_to, :string
     belongs_to :survey, CompassIO.Survey
-
     timestamps
   end
 
