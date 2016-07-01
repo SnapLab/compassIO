@@ -25,7 +25,7 @@ import ReactDOM from "react-dom"
 
 class CaveMap extends React.Component {
   render() {
-    return (<h1>Cave Map!</h1>)
+    return (<p>Rendered React Component</p>)
   }
 }
 
