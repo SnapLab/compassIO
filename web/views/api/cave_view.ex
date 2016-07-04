@@ -7,18 +7,18 @@ defmodule CompassIO.Api.CaveView do
 
   def render("show.json", %{cave: cave, surveys: surveys, stations: stations}) do
     %{
-      data:
+      cave:
         %{
-          cave: render_one(cave, CompassIO.Api.CaveView, "cave.json"),
-          surveys: Enum.map(surveys, &render_survey(&1, stations))
+            id: cave.id,
+            name: cave.name,
+            surveys: Enum.map(surveys, &render_survey(&1, stations))
         }
      }
   end
 
   def render("cave.json", %{cave: cave}) do
     %{
-      id: cave.id,
-      name: cave.name
+
     }
   end
 

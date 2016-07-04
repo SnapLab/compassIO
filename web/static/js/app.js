@@ -22,10 +22,20 @@ import "phoenix_html"
 
 import React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import ReduxPromise from 'redux-promise';
+
+import reducers from './reducers';
 import StickMap from "./components/stick_map";
+
+const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 var map_container = document.getElementById('cave-map');
 if (map_container) {
-  ReactDOM.render(<StickMap />, map_container);
+  ReactDOM.render(
+  <Provider store={createStoreWithMiddleware(reducers)}>
+    <StickMap />
+  </Provider>
+  , map_container);
 }
-
