@@ -29,7 +29,8 @@ class CaveMap extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <CaveMap/>,
-  document.getElementById("cave-map")
-)
+var cave_map_target = document.getElementById('cave-map');
+if (cave_map_target) {
+  ReactDOM.render(<CaveMap/>,cave_map_target);
+}
+
