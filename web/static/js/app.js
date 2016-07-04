@@ -20,17 +20,12 @@ import "phoenix_html"
 
 // import socket from "./socket"
 
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react-dom";
+import StickMap from "./components/stick_map";
 
-class CaveMap extends React.Component {
-  render() {
-    return (<p>Rendered React Component</p>)
-  }
-}
-
-var cave_map_target = document.getElementById('cave-map');
-if (cave_map_target) {
-  ReactDOM.render(<CaveMap/>,cave_map_target);
+var map_container = document.getElementById('cave-map');
+if (map_container) {
+  ReactDOM.render(<StickMap />, map_container);
 }
 
