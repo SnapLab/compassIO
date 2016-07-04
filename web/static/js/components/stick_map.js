@@ -8,9 +8,9 @@ export default class StickMap extends React.Component {
     this.props.fetchCave();
   }
 
-  componentDidMount() {
+  componentDidUpdate() {
     paper.setup('canvas');
-
+    console.log(this.props.cave)
     var group = new paper.Group
     var segments = [new paper.Point(0,0), new paper.Point(100, 100), new paper.Point(200, 100), new paper.Point(300, 100)];
 
