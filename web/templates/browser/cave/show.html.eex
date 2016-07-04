@@ -1,7 +1,9 @@
-<h2><%= @cave.name %></h2>
+<div id='cave-map'></div>
+
+
 <canvas id="myCanvas" class="canvas" width="500" height="500" style="background-color: black;">
 </canvas>
-<div id='cave-map'></div>
+
 <p><%= link "API", to: api_cave_path(@conn, :show, @cave) %>
 <ul>
 <%= for survey <- @surveys do %>
