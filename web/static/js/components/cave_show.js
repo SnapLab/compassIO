@@ -4,7 +4,7 @@ import { fetchCave } from '../actions/index';
 
 export default class CaveShow extends React.Component {
   componentWillMount() {
-    this.props.fetchCave();
+    this.props.fetchCave(this.props.params.cave_id);
   }
 
   render() {

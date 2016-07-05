@@ -3,8 +3,8 @@ import { FETCH_CAVE, FETCH_CAVES } from './types';
 
 const ROOT_URL = 'http://localhost:4000'
 
-export function fetchCave() {
-  const request = axios.get(`${ROOT_URL}/api/v1/caves/1`);
+export function fetchCave(cave_id) {
+  const request = axios.get(`${ROOT_URL}/api/v1/caves/${cave_id}`);
 
   return {
     type: FETCH_CAVE,

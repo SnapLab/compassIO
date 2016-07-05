@@ -25,7 +25,7 @@ import ReactDOM from "react-dom";
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import ReduxPromise from 'redux-promise';
-import { Router, Route, hashHistory, IndexRoute } from 'react-router'
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 
 import reducers from './reducers';
 import App from './components/app'
@@ -40,12 +40,12 @@ var map_container = document.getElementById('react-container');
 if (map_container) {
   ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
       <Route path="/" component={App}>
 
-        <IndexRoute component={CaveNew} />
+        <IndexRoute component={CaveIndex} />
 
-        <Route path="/cave/:cave_id">{CaveShow} />
+        <Route path="/cave/:cave_id" component={CaveShow} />
         <Route path="/caves/new" component={CaveNew} />
         <Route path="/caves/" component={CaveIndex} />
 
