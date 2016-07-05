@@ -11,7 +11,7 @@ defmodule CompassIO.Api.CaveControllerTest do
 
   test "lists all entries on index", %{conn: conn} do
     conn = get conn, api_cave_path(conn, :index)
-    assert json_response(conn, 200)["data"] == []
+    assert json_response(conn, 200) == []
   end
 
   test "shows chosen resource", %{conn: conn} do
