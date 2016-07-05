@@ -11,7 +11,7 @@ class CaveIndex extends React.Component {
   renderCave(cave) {
     return(
       <li key={cave.id}>
-        <Link to={`/cave/${cave.id}`}>
+        <Link to={`/caves/${cave.id}`}>
           <span className="pull-xs-right">{cave.name}</span>
         </Link>
       </li>
