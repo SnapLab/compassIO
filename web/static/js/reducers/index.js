@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import CaveIndex from './cave_index';
-import CaveReducer from './reducer_cave';
+import CaveShow from './cave_show';
 
 const rootReducer = combineReducers({
   caves: CaveIndex,
-  cave: CaveReducer
+  cave: CaveShow
 });
 
 export default rootReducer;

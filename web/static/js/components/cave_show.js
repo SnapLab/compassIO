@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { fetchCave } from '../actions/index';
 
-export default class StickMap extends React.Component {
+export default class CaveShow extends React.Component {
   componentWillMount() {
     this.props.fetchCave();
   }
@@ -28,5 +28,5 @@ function mapStateToProps(state) {
   return { cave: state.cave.cave };
 }
 
-export default connect(mapStateToProps, { fetchCave })(StickMap);
+export default connect(mapStateToProps, { fetchCave })(CaveShow);
 

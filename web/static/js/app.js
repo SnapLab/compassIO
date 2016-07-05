@@ -29,7 +29,7 @@ import { Router, Route, hashHistory } from 'react-router'
 
 import reducers from './reducers';
 import App from './components/app'
-import StickMap from "./components/stick_map";
+import CaveShow from "./components/cave_show";
 import CaveNew from "./components/cave_new";
 import CaveIndex from "./components/cave_index";
 
