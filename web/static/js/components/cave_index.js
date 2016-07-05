@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { fetchCaves } from '../actions/index';
+import { Link } from 'react-router'
 
 class CaveIndex extends React.Component {
   componentWillMount() {
@@ -10,16 +11,17 @@ class CaveIndex extends React.Component {
   renderCave(cave) {
     return(
       <li key={cave.id}>
-        {cave.name}
+        <Link to={'cave/', cave.id}>
+          <span className="pull-xs-right">{cave.name}</span>
+        </Link>
       </li>
     )
   }
 
   render() {
-    console.log(this.props.caves)
     const caves = this.props.caves
 
-    if (caves.length == 0) { return (<div>Loading...</div>)}
+    if (caves.length == 0) { return (<div>Loading...</div>) }
 
     return (
       <div>

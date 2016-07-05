@@ -45,6 +45,7 @@ if (map_container) {
 
         <IndexRoute component={CaveNew} />
 
+        <Route path="/cave/:cave_id">{CaveShow} />
         <Route path="/caves/new" component={CaveNew} />
         <Route path="/caves/" component={CaveIndex} />
 
