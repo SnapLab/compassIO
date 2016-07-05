@@ -10,7 +10,7 @@ class CaveIndex extends React.Component {
 
   renderCave(cave) {
     return(
-      <li key={cave.id}>
+      <li key={cave.id} className="list-group-item">
         <Link to={`/caves/${cave.id}`}>
           <span className="pull-xs-right">{cave.name}</span>
         </Link>
@@ -26,7 +26,7 @@ class CaveIndex extends React.Component {
     return (
       <div>
         <h2>My Caves</h2>
-        <ul>
+        <ul className="list-group">
         {caves.map(this.renderCave)}
         </ul>
       </div>
