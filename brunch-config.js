@@ -68,6 +68,6 @@ exports.config = {
     // All other deps in package.json will be excluded from the bundle.
     whitelist: ["phoenix", "phoenix_html",
       "react", "react-dom", "paper", "react-redux", "redux", "lodash",
-      "redux-promise", "axios"]
+      "redux-promise", "axios", "react-router"]
   }
 };

@@ -25,17 +25,27 @@ import ReactDOM from "react-dom";
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import ReduxPromise from 'redux-promise';
+import { Router, Route, hashHistory } from 'react-router'
 
 import reducers from './reducers';
+import App from './components/app'
 import StickMap from "./components/stick_map";
+import CaveNew from "./components/cave_new";
+import CaveIndex from "./components/cave_index";
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
-var map_container = document.getElementById('cave-map');
+var map_container = document.getElementById('react-container');
+
 if (map_container) {
   ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <StickMap />
+    <Router history={hashHistory}>
+      <Route path="/" component={App}>
+        <Route path="/caves/new" component={CaveNew} />
+        <Route path="/caves/" component={CaveIndex} />
+      </Route>
+    </Router>
   </Provider>
   , map_container);
 }
