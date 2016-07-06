@@ -22,7 +22,7 @@ defmodule CompassIO.Router do
     resources "/caves", Browser.CaveController do
       resources "/surveys", Browser.SurveyController
     end
-    get "/", Browser.ReactController, :index
+    get "/", Browser.CaveController, :index
   end
 
   scope "/api/v1", CompassIO, as: :api do
