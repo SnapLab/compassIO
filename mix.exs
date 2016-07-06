@@ -44,7 +44,8 @@ defmodule CompassIO.Mixfile do
      {:ex_machina, "~> 0.6.1"},
      {:geo, "~> 1.0"},
      {:credo, "~> 0.4", only: [:dev, :test]},
-     {:basic_auth, ">= 0.0.1"}
+     {:basic_auth, ">= 0.0.1"},
+     {:corsica, "~> 0.5.0"}
    ]
   end
 

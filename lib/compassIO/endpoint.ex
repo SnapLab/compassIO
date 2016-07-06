@@ -35,5 +35,6 @@ defmodule CompassIO.Endpoint do
     key: "_compassIO_key",
     signing_salt: "uvbY8KFV"
 
+  plug Corsica, origins: ["http://localhost:4000", "http://cavemapper.com"]
   plug CompassIO.Router
 end
