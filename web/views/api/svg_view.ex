@@ -7,45 +7,32 @@ defmodule CompassIO.Api.SvgView do
         %{
             id: cave.id,
             name: cave.name,
-            surveys: []
+            surveys: Enum.map(surveys, &render_survey(&1, stations))
         }
      }
   end
 
-
-  def svg(surveys, stations) do
-    "<svg>
-      <g transform=\"translate(450,250) rotate(-90)\">
-      #{ svg_polylines(surveys, stations) }
-      <g>
-    </svg>"
+  def render_survey(survey, stations) do
+    %{
+      key: survey.prefix,
+      points: points(survey, stations)
+    }
   end
 
-  def svg_polylines(surveys, stations) do
-    surveys
-    |> Enum.map(&svg_polyline(&1, stations))
+  def coordinates(station_atom, stations) do
+    stations[station_atom].point.coordinates
+    |> to_svg
+    |> Tuple.to_list
   end
 
-  def svg_polyline(survey, stations) do
-    "<polyline points=\"#{
-      Enum.join(svg_points(survey, stations), " ")
-    }\" />"
+  def points(survey, stations) do
+    CompassIO.Survey.station_atoms(survey)
+    |> Enum.map(&coordinates(&1, stations))
   end
 
-  def svg_points(survey, stations) do
-    survey.shots
-    |> Enum.map(&svg_point(&1.station_to, stations))
-    |> List.insert_at(0, svg_point(survey.tie_in, stations))
+  def to_svg({cart_x,cart_y}, cart_w \\ 400, cart_h \\ 400) do
+    screen_x = cart_x + cart_w/2
+    screen_y = cart_h/2 - cart_y
+    {screen_x,screen_y}
   end
-
-  def svg_point(station, stations) do
-    if String.strip(station) == "" do
-      "0,0"
-    else
-      stations[String.to_atom(station)].point.coordinates
-      |> Tuple.to_list
-      |> Enum.join(",")
-    end
-  end
-
 end

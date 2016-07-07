@@ -30,4 +30,10 @@ defmodule CompassIO.Survey do
     |> cast_assoc(:shots)
     |> foreign_key_constraint(:surveys_cave_id_index)
   end
+
+  def station_atoms(model) do
+    Enum.map(model.shots, &(&1.station_to))
+    |> List.insert_at(0, List.first(model.shots).station_from)
+    |> Enum.map(&String.to_atom(&1))
+  end
 end
