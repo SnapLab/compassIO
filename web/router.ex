@@ -27,5 +27,6 @@ defmodule CompassIO.Router do
 
   scope "/api/v1", CompassIO, as: :api do
     resources "/caves", Api.CaveController, except: [:new, :edit]
+    resources "/svg", Api.SvgController, only: [:show]
   end
 end
