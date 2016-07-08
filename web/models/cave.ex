@@ -4,6 +4,8 @@ defmodule CompassIO.Cave do
   schema "caves" do
     field :name, :string
     field :station_start
+    field :svg_canvas_x, :float
+    field :svg_canvas_y, :float
     has_many :surveys, CompassIO.Survey, on_delete: :delete_all
 
     timestamps
