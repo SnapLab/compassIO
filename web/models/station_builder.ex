@@ -2,7 +2,6 @@ defmodule CompassIO.StationBuilder do
   import Ecto.Query
   alias CompassIO.Repo
   alias CompassIO.Cave
-  alias CompassIO.Survey
   alias CompassIO.Shot
   alias CompassIO.Station
   alias CompassIO.PointBuilder
@@ -11,7 +10,7 @@ defmodule CompassIO.StationBuilder do
   def build(cave) do
     reset_cave_stations(cave)
     Repo.get!(Cave, cave.id)
-      |> Repo.preload(surveys: from(s in Survey, order_by: s.id))
+      |> Repo.preload(:surveys)
       |> process_surveys(cave.surveys)
       |> CompassIO.SvgBuilder.build
   end
@@ -20,9 +19,7 @@ defmodule CompassIO.StationBuilder do
     Repo.delete_all(from(s in Station, where: s.cave_id == ^cave.id))
   end
 
-  defp process_surveys(cave, []) do
-    cave
-  end
+  defp process_surveys(cave, []), do: cave
   defp process_surveys(cave, [head|tail]) do
     tie_in = load_tie_in(cave, head)
     if is_nil(tie_in) do

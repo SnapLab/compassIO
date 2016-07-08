@@ -13,11 +13,14 @@ defmodule CompassIO.Api.SvgControllerTest do
     cave = Repo.insert! %Cave{name: "foo"}
     conn = get conn, api_svg_path(conn, :show, cave)
     assert json_response(conn, 200) ==
-      %{"cave" => %{
-        "id" => cave.id,
-        "name" => "foo",
-        "surveys" => []
-      }}
+      %{"data" =>
+        %{
+          "id" => cave.id,
+          "name" => "foo",
+          "surveys" => [],
+          "svg_canvas" => [nil, nil]
+        }
+      }
   end
 
   test "does not show resource and instead throw error when id is nonexistent", %{conn: conn} do

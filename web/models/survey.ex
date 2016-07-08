@@ -8,6 +8,7 @@ defmodule CompassIO.Survey do
     field :team, :string
     field :tie_in, :string
     field :prefix, :string
+    field :svg_polyline_points, :string
     belongs_to :cave, CompassIO.Cave
     has_many :shots, CompassIO.Shot, on_delete: :delete_all
     has_many :stations, CompassIO.Station, on_delete: :delete_all
@@ -16,7 +17,7 @@ defmodule CompassIO.Survey do
   end
 
   @required_fields ~w(name cave_id)
-  @optional_fields ~w(survey_date comment team tie_in prefix)
+  @optional_fields ~w(survey_date comment team tie_in prefix svg_polyline_points)
 
   @doc """
   Creates a changeset based on the `model` and `params`.
