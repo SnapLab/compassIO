@@ -10,30 +10,29 @@ defmodule CompassIO.StationBuilder do
 
   def build(cave) do
     reset_cave_stations(cave)
-    cave =
-      Cave
-      |> Repo.get!(cave.id)
+    Repo.get!(Cave, cave.id)
       |> Repo.preload(surveys: from(s in Survey, order_by: s.id))
-    process_surveys(cave.surveys, cave)
+      |> process_surveys(cave.surveys)
+      |> CompassIO.SvgBuilder.build
   end
 
   defp reset_cave_stations(cave) do
     Repo.delete_all(from(s in Station, where: s.cave_id == ^cave.id))
   end
 
-  defp process_surveys([], _cave) do
-    []
+  defp process_surveys(cave, []) do
+    cave
   end
-  defp process_surveys([head|tail], cave) do
+  defp process_surveys(cave, [head|tail]) do
     tie_in = load_tie_in(cave, head)
     if is_nil(tie_in) do
       # move this survey to the end of the list and get the next one
       [_head | tail] = tail ++ [head]
-      process_surveys(tail, cave)
+      process_surveys(cave, tail)
     else
       shots = Repo.all(from s in Shot, where: s.survey_id == ^head.id, order_by: s.id)
       build_stations(shots, head, tie_in)
-      process_surveys(tail, cave)
+      process_surveys(cave, tail)
     end
   end
 
