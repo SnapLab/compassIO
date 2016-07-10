@@ -13,7 +13,7 @@ defmodule CompassIO.Api.SvgControllerTest do
     cave = Repo.insert! %Cave{name: "foo"}
     conn = get conn, api_svg_path(conn, :show, cave)
     assert json_response(conn, 200) ==
-      %{"data" =>
+      %{"cave" =>
         %{
           "id" => cave.id,
           "name" => "foo",

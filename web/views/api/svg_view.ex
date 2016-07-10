@@ -3,7 +3,7 @@ defmodule CompassIO.Api.SvgView do
 
   def render("show.json", %{cave: cave}) do
     %{
-      data:
+      cave:
         %{
             id: cave.id,
             name: cave.name,
