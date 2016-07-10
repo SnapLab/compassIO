@@ -5,6 +5,7 @@ defmodule CompassIO.SvgBuilder do
   alias CompassIO.Cave
   alias CompassIO.Survey
   alias CompassIO.Station
+  alias CompassIO.Shot
 
   def run(cave) do
     stations =
@@ -33,7 +34,7 @@ defmodule CompassIO.SvgBuilder do
   defp set_svg_polylines(cave, stations) do
     Enum.map(cave.surveys,
         &(&1
-          |> Repo.preload(:shots)
+          |> Repo.preload(shots: from(s in Shot, order_by: s.id))
           |> Repo.preload(:cave)
           |> set_svg_polyline_points(stations)
           ))
@@ -41,10 +42,12 @@ defmodule CompassIO.SvgBuilder do
   end
 
   defp set_svg_polyline_points(survey, stations) do
+    shot_names = Survey.station_atoms(survey)
+
     svg_polyline_points =
-      Enum.map(survey.shots, &(svg_coordinates(&1.station_to, survey.cave, stations)))
-      |> List.insert_at(0, svg_coordinates(List.first(survey.shots).station_from, survey.cave, stations))
+      Enum.map(shot_names, &(svg_coordinates(&1, survey.cave, stations)))
       |> Enum.join(" ")
+
     Survey.changeset(survey, %{svg_polyline_points: svg_polyline_points})
     |> Repo.update!
   end
