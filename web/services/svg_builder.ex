@@ -42,7 +42,7 @@ defmodule CompassIO.SvgBuilder do
   end
 
   defp set_svg_polyline_points(survey, stations) do
-    shot_names = Survey.station_atoms(survey)
+    shot_names = Survey.station_names(survey)
 
     svg_polyline_points =
       Enum.map(shot_names, &(svg_coordinates(&1, survey.cave, stations)))
