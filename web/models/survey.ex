@@ -11,7 +11,6 @@ defmodule CompassIO.Survey do
     field :svg_polyline_points, :string
     belongs_to :cave, CompassIO.Cave
     has_many :shots, CompassIO.Shot, on_delete: :delete_all
-    has_many :stations, CompassIO.Station, on_delete: :delete_all
 
     timestamps
   end

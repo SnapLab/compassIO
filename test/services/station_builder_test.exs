@@ -3,6 +3,7 @@ defmodule CompassIO.StationBuilderTest do
   use CompassIO.ModelCase
 
   alias CompassIO.StationBuilder
+  alias CompassIO.Repo
 
   doctest CompassIO
 
@@ -13,11 +14,8 @@ defmodule CompassIO.StationBuilderTest do
   end
 
   def last_station do
-    survey =
-      CompassIO.Repo.get_by(CompassIO.Survey, name: "Principal")
-      |> Repo.preload(stations: (from s in CompassIO.Station, order_by: s.id))
-
-    List.last(survey.stations)
+    survey = Repo.get_by(CompassIO.Survey, name: "Principal")
+    Repo.get_by(CompassIO.Station, %{name: "LIPRI14", survey_id: survey.id})
   end
 
   test "it build stations with the correct depth" do
