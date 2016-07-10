@@ -8,7 +8,6 @@ defmodule CompassIO.Api.SvgController do
       Repo.get!(Cave, id)
       |> Repo.preload(:surveys)
 
-
     render(conn, "show.json", cave: cave)
   end
 end
