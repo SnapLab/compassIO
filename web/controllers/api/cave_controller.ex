@@ -16,7 +16,7 @@ defmodule CompassIO.Api.CaveController do
   def create(conn, %{"cave" => cave_params}) do
     changeset = Cave.changeset(%Cave{}, cave_params)
 
-    case Repo.insert(changeset) do
+    case MapBuilder.create(changeset) do
       {:ok, cave} ->
         conn
         |> put_status(:created)
@@ -49,7 +49,7 @@ defmodule CompassIO.Api.CaveController do
       |> Repo.preload(:surveys)
     changeset = Cave.changeset(cave, cave_params)
 
-    case Repo.update(changeset) do
+    case MapBuilder.update(changeset) do
       {:ok, cave} ->
         render(conn, "show.json", cave: cave, surveys: [], stations: [])
       {:error, changeset} ->

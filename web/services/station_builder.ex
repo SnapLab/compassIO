@@ -7,19 +7,17 @@ defmodule CompassIO.StationBuilder do
   alias CompassIO.PointBuilder
 
 
-  def build(cave) do
+  def run(cave) do
     reset_cave_stations(cave)
-    Repo.get!(Cave, cave.id)
+    Repo.get(Cave, cave.id)
       |> Repo.preload(:surveys)
       |> process_surveys(cave.surveys)
-      |> CompassIO.SvgBuilder.build
   end
 
   defp reset_cave_stations(cave) do
     Repo.delete_all(from(s in Station, where: s.cave_id == ^cave.id))
   end
 
-  defp process_surveys(cave, []), do: cave
   defp process_surveys(cave, [head|tail]) do
     tie_in = load_tie_in(cave, head)
     if is_nil(tie_in) do
@@ -32,6 +30,7 @@ defmodule CompassIO.StationBuilder do
       process_surveys(cave, tail)
     end
   end
+  defp process_surveys(cave, _), do: cave
 
   defp load_tie_in(cave, survey) do
     if to_string(survey.tie_in) == "" do

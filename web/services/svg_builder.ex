@@ -6,7 +6,7 @@ defmodule CompassIO.SvgBuilder do
   alias CompassIO.Survey
   alias CompassIO.Station
 
-  def build(cave) do
+  def run(cave) do
     stations =
       Repo.all(from s in Station, where: s.cave_id == ^cave.id, order_by: s.name)
 
@@ -32,6 +32,9 @@ defmodule CompassIO.SvgBuilder do
 
   def set_svg_polylines(cave, stations) do
     Enum.map(cave.surveys, &set_svg_polyline_points(&1, stations))
+
+    # hackily setting return as a cave
+    Repo.get!(Cave, cave.id)
   end
 
   def set_svg_polyline_points(survey, _stations) do

@@ -21,30 +21,30 @@ defmodule CompassIO.StationBuilderTest do
   end
 
   test "it build stations with the correct depth" do
-    StationBuilder.build(cave)
+    StationBuilder.run(cave)
     assert last_station.depth == -12.0
   end
 
   test "it build stations with the correct name" do
-    StationBuilder.build(cave)
+    StationBuilder.run(cave)
     assert last_station.name == "LIPRI14"
   end
 
   test "it build stations with the correct entrance distance" do
-    StationBuilder.build(cave)
+    StationBuilder.run(cave)
     assert last_station.entrance_distance == 210.0
   end
 
   test "it build stations with the correct point" do
-    StationBuilder.build(cave)
+    StationBuilder.run(cave)
     assert last_station.point == %Geo.Point{coordinates: {-80.29097495656191, -158.11384208405187}}
   end
 
   test "it is successful when the StationBuilder runs twice" do
     this_cave = cave
-    StationBuilder.build(this_cave)
+    StationBuilder.run(this_cave)
     assert last_station.depth == -12.0
-    StationBuilder.build(this_cave)
+    StationBuilder.run(this_cave)
     assert last_station.depth == -12.0
   end
 

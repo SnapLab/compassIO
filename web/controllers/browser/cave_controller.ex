@@ -4,7 +4,6 @@ defmodule CompassIO.Browser.CaveController do
   alias CompassIO.Cave
   alias CompassIO.Survey
   alias CompassIO.Station
-  alias CompassIO.StationBuilder
   alias CompassIO.Shot
 
   plug :scrub_params, "cave" when action in [:create, :update]
@@ -28,9 +27,8 @@ defmodule CompassIO.Browser.CaveController do
           Cave.changeset(%Cave{}, cave_params)
       end
 
-    case Repo.insert(changeset) do
+    case MapBuilder.create(changeset) do
       {:ok, cave} ->
-        StationBuilder.build(cave)
         conn
         |> put_flash(:info, "Cave created successfully.")
         |> redirect(to: cave_path(conn, :show, cave))
@@ -66,9 +64,8 @@ defmodule CompassIO.Browser.CaveController do
       |> Repo.preload(:surveys)
     changeset = Cave.changeset(cave, cave_params)
 
-    case Repo.update(changeset) do
+    case MapBuilder.update(changeset) do
       {:ok, cave} ->
-        StationBuilder.build(cave)
         conn
         |> put_flash(:info, "Cave updated successfully.")
         |> redirect(to: cave_path(conn, :show, cave))
