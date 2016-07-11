@@ -65,9 +65,13 @@ defmodule CompassIO.SvgBuilder do
     station_atoms[String.to_atom(station_name)].point.coordinates
   end
 
-  defp coordinate_transfomer({cart_x,cart_y}, x_max, y_max) do
+  defp coordinate_transfomer({cart_x,cart_y},
+    x_max, y_max, target_width \\ 400) do
+
     screen_x = (x_max/2 + (cart_x)*1)
     screen_y = (y_max/2 - (cart_y)*-1)
-    {screen_x,screen_y}
+
+    scale_factor = target_width / Enum.max([x_max, y_max])
+    {screen_x*scale_factor,screen_y*scale_factor}
   end
 end
