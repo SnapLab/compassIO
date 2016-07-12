@@ -1,6 +1,5 @@
 defmodule MapBuilder do
   alias CompassIO.Repo
-  alias CompassIO
   alias CompassIO.StationBuilder
   alias CompassIO.SvgBuilder
 
