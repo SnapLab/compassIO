@@ -25,6 +25,7 @@ defmodule CompassIO.Api.SvgView do
   def render_station(station) do
     %{
       id: station.id,
+      name: station.name,
       depth: station.depth,
       entrance_distance: station.entrance_distance,
       svg_point: station.svg_point
