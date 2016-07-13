@@ -4,6 +4,7 @@ defmodule CompassIO.SvgBuilderTest do
 
   alias CompassIO.Cave
   alias CompassIO.Repo
+  alias CompassIO.Station
   alias CompassIO.StationBuilder
   alias CompassIO.SvgBuilder
   doctest CompassIO
@@ -19,13 +20,19 @@ defmodule CompassIO.SvgBuilderTest do
     end
   end
 
-  test "setting the svg_canvas" do
+  test "setting the canvas#svg_canvas" do
     cave = SvgBuilder.run(cave)
     assert cave.svg_canvas_x == 142.34522816713937
     assert cave.svg_canvas_y == 275.0026826501509
   end
 
-  test "setting the svg_polyline_points" do
+  test "setting the station#svg_point" do
+    cave = SvgBuilder.run(cave)
+    station = Repo.get_by(Station, %{name: "LIPRI14"})
+    assert station.svg_point ==  "170.01847318675223,357.21551001559226"
+  end
+
+  test "setting the survey#svg_polyline_points" do
     cave = SvgBuilder.run(cave) |> Repo.preload(:surveys)
     assert List.first(cave.surveys).svg_polyline_points ==  svg_polyline_points
   end

@@ -6,6 +6,7 @@ defmodule CompassIO.Station do
     field :depth, :float, default: 0.0
     field :point, Geo.Point
     field :entrance_distance, :float, default: 0.0
+    field :svg_point, :string
     belongs_to :survey, CompassIO.Survey
     belongs_to :cave, CompassIO.Cave
 
@@ -13,7 +14,7 @@ defmodule CompassIO.Station do
   end
 
   @required_fields ~w(name survey_id cave_id depth point)
-  @optional_fields ~w()
+  @optional_fields ~w(svg_point)
 
   @doc """
   Creates a changeset based on the `model` and `params`.

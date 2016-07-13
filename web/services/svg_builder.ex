@@ -9,12 +9,12 @@ defmodule CompassIO.SvgBuilder do
   alias CompassIO.SvgCoordinateBuilder
 
   def run(cave) do
-    stations =
-      Repo.all(from s in Station, where: s.cave_id == ^cave.id, order_by: s.name)
+    stations = Repo.all(from s in Station, where: s.cave_id == ^cave.id)
 
     Repo.get!(Cave, cave.id)
     |> Repo.preload(:surveys)
     |> set_canvas(stations)
+    |> set_svg_points(stations)
     |> set_svg_polylines(stations)
   end
 
@@ -29,6 +29,18 @@ defmodule CompassIO.SvgBuilder do
     y_max = Enum.max(y_coords) - Enum.min(y_coords)
 
     Cave.changeset(cave, %{svg_canvas_x: x_max, svg_canvas_y: y_max})
+    |> Repo.update!
+  end
+
+  defp set_svg_points(cave, stations) do
+    Enum.map(stations, &(set_svg_point(cave, &1, stations)))
+    cave
+  end
+
+  def set_svg_point(cave, station, stations) do
+    Station.changeset(station, %{
+      svg_point: SvgCoordinateBuilder.build(station.name, cave, stations)
+      })
     |> Repo.update!
   end
 
