@@ -18,7 +18,8 @@ defmodule CompassIO.Api.SvgControllerTest do
           "id" => cave.id,
           "name" => "foo",
           "surveys" => [],
-          "svg_canvas" => [nil, nil]
+          "svg_canvas" => [nil, nil],
+          "stations" => []
         }
       }
   end
