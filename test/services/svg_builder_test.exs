@@ -37,6 +37,14 @@ defmodule CompassIO.SvgBuilderTest do
     assert List.first(cave.surveys).svg_polyline_points ==  svg_polyline_points
   end
 
+  test "setting the shot#svg_station_from and svg_station_to" do
+    cave = SvgBuilder.run(cave) |> Repo.preload(:surveys)
+    survey = List.first(cave.surveys) |> Repo.preload(:shots)
+    shot = List.first(survey.shots)
+    assert shot.svg_station_from ==  "83.97633719281976,268.4948963609381"
+    assert shot.svg_station_to ==  "115.92588629954065,256.86621148786537"
+  end
+
   def svg_polyline_points do
     "0.0,240.90018450287027 21.449244407331378,258.8982375740934 20.403375494359494,270.85257395119436 33.403375494359494,270.85257395119436 63.725951117107456,264.4073115358438 69.35960987053815,275.0026826501509 83.97633719281976,268.4948963609381 115.92588629954065,256.86621148786537"
   end

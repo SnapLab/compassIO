@@ -9,12 +9,14 @@ defmodule CompassIO.Shot do
     field :distance, :float
     field :flags, :string
     field :station_to, :string
+    field :svg_station_from, :string
+    field :svg_station_to, :string
     belongs_to :survey, CompassIO.Survey
     timestamps
   end
 
   @required_fields ~w(station_from station_to depth_change azimuth distance survey_id)
-  @optional_fields ~w()
+  @optional_fields ~w(svg_station_from svg_station_to)
 
   @doc """
   Creates a changeset based on the `model` and `params`.
