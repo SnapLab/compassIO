@@ -22,6 +22,6 @@ defmodule CompassIO.SvgCoordinateBuilderTest do
 
   test "builds a set of svg coordinates" do
     svg_coords = SvgCoordinateBuilder.build("ABC2", cave, stations)
-    assert svg_coords == "88.88888888888889,302.22222222222223"
+    assert svg_coords == "100.0,340.0"
   end
 end
