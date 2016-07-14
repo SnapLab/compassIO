@@ -17,7 +17,11 @@ defmodule CompassIO.Api.SvgView do
   def render_survey(survey) do
     %{
       id: survey.id,
-      key: survey.prefix,
+      name: survey.name,
+      team: survey.team,
+      comment: survey.comment,
+      tie_in: survey.tie_in,
+      prefix: survey.prefix,
       svg_polyline_points: survey.svg_polyline_points
     }
   end
