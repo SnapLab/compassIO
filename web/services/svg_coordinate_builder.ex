@@ -16,7 +16,7 @@ defmodule CompassIO.SvgCoordinateBuilder do
 
   defp coordinate_transfomer({cart_x, cart_y},
       %Cave{svg_canvas_x: canvas_x, svg_canvas_y: canvas_y},
-      stations, target_width \\ 400) do
+      stations, target_width \\ 1200) do
 
     scale_factor = target_width / Enum.max([canvas_x, canvas_y])
 
